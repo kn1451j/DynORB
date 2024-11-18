@@ -48,7 +48,8 @@ Frame::Frame(const Frame &frame)
      mpReferenceKF(frame.mpReferenceKF), mnScaleLevels(frame.mnScaleLevels),
      mfScaleFactor(frame.mfScaleFactor), mfLogScaleFactor(frame.mfLogScaleFactor),
      mvScaleFactors(frame.mvScaleFactors), mvInvScaleFactors(frame.mvInvScaleFactors),
-     mvLevelSigma2(frame.mvLevelSigma2), mvInvLevelSigma2(frame.mvInvLevelSigma2)
+     mvLevelSigma2(frame.mvLevelSigma2), mvInvLevelSigma2(frame.mvInvLevelSigma2),
+     dynObjInfo(frame.dynObjInfo), SAM2(frame.SAM2)
 {
     for(int i=0;i<FRAME_GRID_COLS;i++)
         for(int j=0; j<FRAME_GRID_ROWS; j++)
@@ -59,9 +60,12 @@ Frame::Frame(const Frame &frame)
 }
 
 
-Frame::Frame(const cv::Mat &imLeft, const cv::Mat &imRight, const double &timeStamp, ORBextractor* extractorLeft, ORBextractor* extractorRight, ORBVocabulary* voc, cv::Mat &K, cv::Mat &distCoef, const float &bf, const float &thDepth)
-    :mpORBvocabulary(voc),mpORBextractorLeft(extractorLeft),mpORBextractorRight(extractorRight), mTimeStamp(timeStamp), mK(K.clone()),mDistCoef(distCoef.clone()), mbf(bf), mThDepth(thDepth),
-     mpReferenceKF(static_cast<KeyFrame*>(NULL))
+Frame::Frame(const cv::Mat &imLeft, const cv::Mat &imRight, const double &timeStamp,
+     ORBextractor* extractorLeft, ORBextractor* extractorRight, ORBVocabulary* voc, cv::Mat &K, 
+     cv::Mat &distCoef, const float &bf, const float &thDepth, DynamObjTracker* tracker)
+    :mpORBvocabulary(voc),mpORBextractorLeft(extractorLeft),mpORBextractorRight(extractorRight), 
+    mTimeStamp(timeStamp), mK(K.clone()),mDistCoef(distCoef.clone()), mbf(bf), mThDepth(thDepth),
+     mpReferenceKF(static_cast<KeyFrame*>(NULL), dynaTracker(tracker))
 {
     // Frame ID
     mnId=nNextId++;
@@ -76,8 +80,8 @@ Frame::Frame(const cv::Mat &imLeft, const cv::Mat &imRight, const double &timeSt
     mvInvLevelSigma2 = mpORBextractorLeft->GetInverseScaleSigmaSquares();
 
     // ORB extraction
-    thread threadLeft(&Frame::ExtractORB,this,0,imLeft);
-    thread threadRight(&Frame::ExtractORB,this,1,imRight);
+    thread threadLeft(&Frame::ExtractORBStatic,this,0,imLeft);
+    thread threadRight(&Frame::ExtractORBStatic,this,1,imRight);
     threadLeft.join();
     threadRight.join();
 
@@ -117,9 +121,11 @@ Frame::Frame(const cv::Mat &imLeft, const cv::Mat &imRight, const double &timeSt
     AssignFeaturesToGrid();
 }
 
-Frame::Frame(const cv::Mat &imGray, const cv::Mat &imDepth, const double &timeStamp, ORBextractor* extractor,ORBVocabulary* voc, cv::Mat &K, cv::Mat &distCoef, const float &bf, const float &thDepth)
+Frame::Frame(const cv::Mat &imGray, const cv::Mat &imDepth, const double &timeStamp, 
+ORBextractor* extractor,ORBVocabulary* voc, cv::Mat &K, cv::Mat &distCoef, const float &bf, 
+const float &thDepth, DynamObjTracker* tracker)
     :mpORBvocabulary(voc),mpORBextractorLeft(extractor),mpORBextractorRight(static_cast<ORBextractor*>(NULL)),
-     mTimeStamp(timeStamp), mK(K.clone()),mDistCoef(distCoef.clone()), mbf(bf), mThDepth(thDepth)
+     mTimeStamp(timeStamp), mK(K.clone()),mDistCoef(distCoef.clone()), mbf(bf), mThDepth(thDepth), dynaTracker(tracker)
 {
     // Frame ID
     mnId=nNextId++;
@@ -134,7 +140,7 @@ Frame::Frame(const cv::Mat &imGray, const cv::Mat &imDepth, const double &timeSt
     mvInvLevelSigma2 = mpORBextractorLeft->GetInverseScaleSigmaSquares();
 
     // ORB extraction
-    ExtractORB(0,imGray);
+    ExtractORBStatic(0,imGray);
 
     N = mvKeys.size();
 
@@ -172,9 +178,11 @@ Frame::Frame(const cv::Mat &imGray, const cv::Mat &imDepth, const double &timeSt
 }
 
 
-Frame::Frame(const cv::Mat &imGray, const double &timeStamp, ORBextractor* extractor,ORBVocabulary* voc, cv::Mat &K, cv::Mat &distCoef, const float &bf, const float &thDepth)
+Frame::Frame(const cv::Mat &imGray, const double &timeStamp, ORBextractor* extractor,
+ORBVocabulary* voc, cv::Mat &K, cv::Mat &distCoef, const float &bf, const float &thDepth, 
+DynamObjTracker* tracker)
     :mpORBvocabulary(voc),mpORBextractorLeft(extractor),mpORBextractorRight(static_cast<ORBextractor*>(NULL)),
-     mTimeStamp(timeStamp), mK(K.clone()),mDistCoef(distCoef.clone()), mbf(bf), mThDepth(thDepth)
+     mTimeStamp(timeStamp), mK(K.clone()),mDistCoef(distCoef.clone()), mbf(bf), mThDepth(thDepth), dynaTracker(tracker)
 {
     // Frame ID
     mnId=nNextId++;
@@ -188,10 +196,8 @@ Frame::Frame(const cv::Mat &imGray, const double &timeStamp, ORBextractor* extra
     mvLevelSigma2 = mpORBextractorLeft->GetScaleSigmaSquares();
     mvInvLevelSigma2 = mpORBextractorLeft->GetInverseScaleSigmaSquares();
 
-    // DynORB CHANGE
-
     // ORB extraction
-    ExtractORB(0,imGray);
+    ExtractORBStatic(0,imGray);
 
     N = mvKeys.size();
 
@@ -247,13 +253,24 @@ void Frame::AssignFeaturesToGrid()
     }
 }
 
-void Frame::ExtractORB(int flag, const cv::Mat &im)
+// DynORB CHANGE
+void Frame::ExtractORBStatic(int flag, const cv::Mat &im)
 {
     if(flag==0)
-        (*mpORBextractorLeft)(im,cv::Mat(),mvKeys,mDescriptors);
+        (*mpORBextractorLeft)(im,cv::Mat(),mvKeys,mDescriptors, filter=SAM2->is_static);
     else
-        (*mpORBextractorRight)(im,cv::Mat(),mvKeysRight,mDescriptorsRight);
+        (*mpORBextractorRight)(im,cv::Mat(),mvKeysRight,mDescriptorsRight, filter=SAM2->is_static);
 }
+
+// DynORB CHANGE
+void Frame::ExtractORBDynamic(int flag, const cv::Mat &im)
+{
+    if(flag==0)
+        (*mpORBextractorLeft)(im,cv::Mat(),mvKeys,mDescriptors, filter=SAM2);
+    else
+        (*mpORBextractorRight)(im,cv::Mat(),mvKeysRight,mDescriptorsRight, filter=SAM2);
+}
+
 
 void Frame::SetPose(cv::Mat Tcw)
 {

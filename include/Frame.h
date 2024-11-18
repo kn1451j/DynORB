@@ -30,6 +30,7 @@
 #include "ORBVocabulary.h"
 #include "KeyFrame.h"
 #include "ORBextractor.h"
+#include "DynamObjTracker.h"
 
 #include <opencv2/opencv.hpp>
 
@@ -41,6 +42,14 @@ namespace ORB_SLAM2
 class MapPoint;
 class KeyFrame;
 
+// DynORB CHANGE
+// Stores information relevant to tracking a particular dynamic object in a frame
+struct DynFrameInfo
+{
+    std::vector<cv::KeyPoint> mvDynamicKeysUn;
+    cv::Mat mDynDescriptors;
+};
+
 class Frame
 {
 public:
@@ -50,16 +59,23 @@ public:
     Frame(const Frame &frame);
 
     // Constructor for stereo cameras.
-    Frame(const cv::Mat &imLeft, const cv::Mat &imRight, const double &timeStamp, ORBextractor* extractorLeft, ORBextractor* extractorRight, ORBVocabulary* voc, cv::Mat &K, cv::Mat &distCoef, const float &bf, const float &thDepth);
+    Frame(const cv::Mat &imLeft, const cv::Mat &imRight, const double &timeStamp, 
+    ORBextractor* extractorLeft, ORBextractor* extractorRight, ORBVocabulary* voc, 
+    cv::Mat &K, cv::Mat &distCoef, const float &bf, const float &thDepth, DynamObjTracker* tracker);
 
     // Constructor for RGB-D cameras.
-    Frame(const cv::Mat &imGray, const cv::Mat &imDepth, const double &timeStamp, ORBextractor* extractor,ORBVocabulary* voc, cv::Mat &K, cv::Mat &distCoef, const float &bf, const float &thDepth);
+    Frame(const cv::Mat &imGray, const cv::Mat &imDepth, const double &timeStamp, 
+    ORBextractor* extractor,ORBVocabulary* voc, cv::Mat &K, cv::Mat &distCoef, 
+    const float &bf, const float &thDepth, DynamObjTracker* tracker);
 
     // Constructor for Monocular cameras.
-    Frame(const cv::Mat &imGray, const double &timeStamp, ORBextractor* extractor,ORBVocabulary* voc, cv::Mat &K, cv::Mat &distCoef, const float &bf, const float &thDepth);
+    Frame(const cv::Mat &imGray, const double &timeStamp, ORBextractor* extractor,
+    ORBVocabulary* voc, cv::Mat &K, cv::Mat &distCoef, const float &bf, const float &thDepth, 
+    DynamObjTracker* tracker);
 
     // Extract ORB on the image. 0 for left image and 1 for right image.
-    void ExtractORB(int flag, const cv::Mat &im);
+    void ExtractORBStatic(int flag, const cv::Mat &im);
+    void ExtractORBDynamic(int flag, const cv::Mat &im);
 
     // Compute Bag of Words representation.
     void ComputeBoW();
@@ -137,6 +153,13 @@ public:
     // In the RGB-D case, RGB images can be distorted.
     std::vector<cv::KeyPoint> mvKeys, mvKeysRight;
     std::vector<cv::KeyPoint> mvKeysUn;
+
+    // DynORB CHANGE
+    // For each frame, we now store the dynamic keypoints and descriptors for every dynamic object
+    std::map<dynObjID, DynFrameInfo> dynObjInfo;
+
+    // Pointer to our SAM2 tracker node
+    DynamObjTracker* dynaTracker;
 
     // Corresponding stereo coordinate and depth for each keypoint.
     // "Monocular" keypoints have a negative value.

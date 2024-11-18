@@ -1041,7 +1041,7 @@ static void computeDescriptors(const Mat& image, vector<KeyPoint>& keypoints, Ma
 }
 
 void ORBextractor::operator()( InputArray _image, InputArray _mask, vector<KeyPoint>& _keypoints,
-                      OutputArray _descriptors)
+                      OutputArray _descriptors, const PointFilter* filter = new PointFilter())
 { 
     if(_image.empty())
         return;
@@ -1052,12 +1052,32 @@ void ORBextractor::operator()( InputArray _image, InputArray _mask, vector<KeyPo
     // Pre-compute the scale pyramid
     ComputePyramid(image);
 
-    vector < vector<KeyPoint> > allKeypoints;
-    ComputeKeyPointsOctTree(allKeypoints);
+    vector < vector<KeyPoint> > prefilterKeypoints;
+    ComputeKeyPointsOctTree(prefilterKeypoints);
     //ComputeKeyPointsOld(allKeypoints);
 
-    Mat descriptors;
+    // DynORB CHANGE
+    // We store create a new array for keypoints that pass the filter
+    vector < vector<KeyPoint> > allKeypoints;
+    /* We add the additional filter mechanism to check whether our
+        detected keypoints are dynamic. If they are, we separate them into a 
+        separate array that gets used for ORB feature computation */
+    for (int level = 0; level < nlevels; ++level){
+        //vector of points passing the filter
+        vector<KeyPoint> valid_pts;
 
+        //check whether the point passes the filter
+        float scale = this->mvScaleFactor[level];
+        for (vector<KeyPoint>::iterator keypoint = prefilterKeypoints[level].begin(),
+            keypointEnd = prefilterKeypoints[level].end(); keypoint != keypointEnd; ++keypoint){
+            Point2f scaled_pt = keypoint->pt * scale;
+            if((*filter)(scaled_pt)){valid_pts.push_back(*keypoint);}
+        }
+
+        allKeypoints.push_back(valid_pts);
+    }
+
+    Mat descriptors;
     int nkeypoints = 0;
     for (int level = 0; level < nlevels; ++level)
         nkeypoints += (int)allKeypoints[level].size();

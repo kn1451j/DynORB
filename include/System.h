@@ -139,7 +139,11 @@ private:
     // Tracker. It receives a frame and computes the associated camera pose.
     // It also decides when to insert a new keyframe, create some new MapPoints and
     // performs relocalization if tracking fails.
+    // DynORB CHANGE it also identifies dynamic objects and masks them from static keypoints
     Tracking* mpTracker;
+
+    // DynORB CHANGE
+    DynamObjTracker* dynaTracker;
 
     // Local Mapper. It manages the local map and performs local bundle adjustment.
     LocalMapping* mpLocalMapper;
@@ -159,6 +163,8 @@ private:
     std::thread* mptLocalMapping;
     std::thread* mptLoopClosing;
     std::thread* mptViewer;
+    // DynaORB CHANGE
+    std::thread* mptDynaTracker;
 
     // Reset flag
     std::mutex mMutexReset;

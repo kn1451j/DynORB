@@ -77,6 +77,11 @@ System::System(const string &strVocFile, const string &strSettingsFile, const eS
     //Create the Map
     mpMap = new Map();
 
+    //Create the Dynamic Map Tracker
+    dynaTracker = new DynamObjTracker();
+    //does this need to be separate thread? probably
+    //mptDynaTracker = new thread(&ORB_SLAM2::dynaTracker)
+
     //Create Drawers. These are used by the Viewer
     mpFrameDrawer = new FrameDrawer(mpMap);
     mpMapDrawer = new MapDrawer(mpMap, strSettingsFile);
@@ -105,6 +110,7 @@ System::System(const string &strVocFile, const string &strSettingsFile, const eS
     //Set pointers between threads
     mpTracker->SetLocalMapper(mpLocalMapper);
     mpTracker->SetLoopClosing(mpLoopCloser);
+    mpTracker->SetTracker(dynaTracker);
 
     mpLocalMapper->SetTracker(mpTracker);
     mpLocalMapper->SetLoopCloser(mpLoopCloser);
