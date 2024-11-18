@@ -30,7 +30,6 @@
 #include "ORBVocabulary.h"
 #include "KeyFrame.h"
 #include "ORBextractor.h"
-#include "DynamObjTracker.h"
 
 #include <opencv2/opencv.hpp>
 
@@ -41,6 +40,9 @@ namespace ORB_SLAM2
 
 class MapPoint;
 class KeyFrame;
+class DynamObjTracker;
+
+typedef size_t dynObjID;
 
 // DynORB CHANGE
 // Stores information relevant to tracking a particular dynamic object in a frame

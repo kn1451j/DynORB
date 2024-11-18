@@ -59,7 +59,7 @@ public:
     void operator()( cv::InputArray image, cv::InputArray mask,
       std::vector<cv::KeyPoint>& keypoints,
       cv::OutputArray descriptors,
-      const PointFilter* filter = new PointFilter());
+      PointFilter* filter = new PointFilter());
 
     int inline GetLevels(){
         return nlevels;}

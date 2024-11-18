@@ -49,7 +49,7 @@ Frame::Frame(const Frame &frame)
      mfScaleFactor(frame.mfScaleFactor), mfLogScaleFactor(frame.mfLogScaleFactor),
      mvScaleFactors(frame.mvScaleFactors), mvInvScaleFactors(frame.mvInvScaleFactors),
      mvLevelSigma2(frame.mvLevelSigma2), mvInvLevelSigma2(frame.mvInvLevelSigma2),
-     dynObjInfo(frame.dynObjInfo), SAM2(frame.SAM2)
+     dynObjInfo(frame.dynObjInfo), dynaTracker(frame.dynaTracker)
 {
     for(int i=0;i<FRAME_GRID_COLS;i++)
         for(int j=0; j<FRAME_GRID_ROWS; j++)
@@ -65,7 +65,7 @@ Frame::Frame(const cv::Mat &imLeft, const cv::Mat &imRight, const double &timeSt
      cv::Mat &distCoef, const float &bf, const float &thDepth, DynamObjTracker* tracker)
     :mpORBvocabulary(voc),mpORBextractorLeft(extractorLeft),mpORBextractorRight(extractorRight), 
     mTimeStamp(timeStamp), mK(K.clone()),mDistCoef(distCoef.clone()), mbf(bf), mThDepth(thDepth),
-     mpReferenceKF(static_cast<KeyFrame*>(NULL), dynaTracker(tracker))
+     mpReferenceKF(static_cast<KeyFrame*>(NULL)), dynaTracker(tracker)
 {
     // Frame ID
     mnId=nNextId++;
@@ -257,18 +257,18 @@ void Frame::AssignFeaturesToGrid()
 void Frame::ExtractORBStatic(int flag, const cv::Mat &im)
 {
     if(flag==0)
-        (*mpORBextractorLeft)(im,cv::Mat(),mvKeys,mDescriptors, filter=SAM2->is_static);
+        (*mpORBextractorLeft)(im,cv::Mat(),mvKeys,mDescriptors, dynaTracker->is_static);
     else
-        (*mpORBextractorRight)(im,cv::Mat(),mvKeysRight,mDescriptorsRight, filter=SAM2->is_static);
+        (*mpORBextractorRight)(im,cv::Mat(),mvKeysRight,mDescriptorsRight, dynaTracker->is_static);
 }
 
 // DynORB CHANGE
 void Frame::ExtractORBDynamic(int flag, const cv::Mat &im)
 {
     if(flag==0)
-        (*mpORBextractorLeft)(im,cv::Mat(),mvKeys,mDescriptors, filter=SAM2);
+        (*mpORBextractorLeft)(im,cv::Mat(),mvKeys,mDescriptors, dynaTracker);
     else
-        (*mpORBextractorRight)(im,cv::Mat(),mvKeysRight,mDescriptorsRight, filter=SAM2);
+        (*mpORBextractorRight)(im,cv::Mat(),mvKeysRight,mDescriptorsRight, dynaTracker);
 }
 
 

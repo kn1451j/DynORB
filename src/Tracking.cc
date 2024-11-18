@@ -165,7 +165,7 @@ void Tracking::SetViewer(Viewer *pViewer)
     mpViewer=pViewer;
 }
 
-void Tracking::SetTracker(DynamObjTracker* tracker);
+void Tracking::SetTracker(DynamObjTracker* tracker)
 {
     dynaTracker=tracker;
 }
