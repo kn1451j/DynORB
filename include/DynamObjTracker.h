@@ -60,7 +60,8 @@ class DynamObjTracker : public PointFilter
         dynObjID get_num_obj(){return objects.size();};
 
         //returns true if point in image is on a dynamic object, false o.w.
-        bool operator()(cv::Point2f& point) override {return point.x<200 && point.y<200;};
+        //rn is just a dummy function that removes all the keypoints in top left corner
+        bool operator()(cv::Point2f& point) override {return point.x<300 && point.y<300;};
 
         //filter used to negate the dynamic point filter (used to accept points on static objects)
         NegatePointFilter* is_static;
