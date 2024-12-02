@@ -30,8 +30,9 @@ namespace ORB_SLAM2
 {
 
 System::System(const string &strVocFile, const string &strSettingsFile, const eSensor sensor,
+                std::shared_ptr<DynamObjTracker> tracker_ptr, //DynORB CHANGE
                const bool bUseViewer):mSensor(sensor), mpViewer(static_cast<Viewer*>(NULL)), mbReset(false),mbActivateLocalizationMode(false),
-        mbDeactivateLocalizationMode(false)
+        mbDeactivateLocalizationMode(false), dynaTracker(tracker_ptr)
 {
     // Output welcome message
     cout << endl <<
@@ -78,7 +79,8 @@ System::System(const string &strVocFile, const string &strSettingsFile, const eS
     mpMap = new Map();
 
     //Create the Dynamic Map Tracker
-    dynaTracker = new DynamObjTracker();
+    // dynaTracker = new DynamObjTracker();
+    dynaTracker = tracker_ptr;
     //does this need to be separate thread? probably
     //mptDynaTracker = new thread(&ORB_SLAM2::dynaTracker)
 

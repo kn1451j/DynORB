@@ -1041,7 +1041,7 @@ static void computeDescriptors(const Mat& image, vector<KeyPoint>& keypoints, Ma
 }
 
 void ORBextractor::operator()( InputArray _image, InputArray _mask, vector<KeyPoint>& _keypoints,
-                      OutputArray _descriptors, PointFilter* filter)
+                      OutputArray _descriptors,  std::shared_ptr<PointFilter> filter)
 { 
     if(_image.empty())
         return;

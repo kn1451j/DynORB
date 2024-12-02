@@ -24,6 +24,7 @@
 
 #include<string>
 #include<thread>
+#include <memory>
 #include<opencv2/core/core.hpp>
 #include <unistd.h>
 #include "Tracking.h"
@@ -60,7 +61,11 @@ public:
 public:
 
     // Initialize the SLAM system. It launches the Local Mapping, Loop Closing and Viewer threads.
-    System(const string &strVocFile, const string &strSettingsFile, const eSensor sensor, const bool bUseViewer = true);
+    System(const string &strVocFile, const string &strSettingsFile, 
+    const eSensor sensor, 
+    //DynORB CHANGE
+    std::shared_ptr<DynamObjTracker> tracker_ptr,
+    const bool bUseViewer = true);
 
     // Proccess the given stereo frame. Images must be synchronized and rectified.
     // Input images: RGB (CV_8UC3) or grayscale (CV_8U). RGB is converted to grayscale.
@@ -144,7 +149,7 @@ private:
     Tracking* mpTracker;
 
     // DynORB CHANGE
-    DynamObjTracker* dynaTracker;
+    std::shared_ptr<DynamObjTracker> dynaTracker;
 
     // Local Mapper. It manages the local map and performs local bundle adjustment.
     LocalMapping* mpLocalMapper;
@@ -164,8 +169,6 @@ private:
     std::thread* mptLocalMapping;
     std::thread* mptLoopClosing;
     std::thread* mptViewer;
-    // DynaORB CHANGE
-    std::thread* mptDynaTracker;
 
     // Reset flag
     std::mutex mMutexReset;

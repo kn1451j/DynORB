@@ -165,7 +165,7 @@ void Tracking::SetViewer(Viewer *pViewer)
     mpViewer=pViewer;
 }
 
-void Tracking::SetTracker(DynamObjTracker* tracker)
+void Tracking::SetTracker(std::shared_ptr<DynamObjTracker> tracker)
 {
     dynaTracker=tracker;
 }
@@ -176,7 +176,7 @@ cv::Mat Tracking::GrabImageStereo(const cv::Mat &imRectLeft, const cv::Mat &imRe
     //DynaORB CHANGE
     //TODO MAKE THIS SEPARATE FOR LEFT AND RIGHT
     //set next SAM2 frame
-    dynaTracker->process_frame(imRectLeft);
+    // dynaTracker->process_frame(imRectLeft);
 
     mImGray = imRectLeft;
     cv::Mat imGrayRight = imRectRight;
@@ -223,7 +223,7 @@ cv::Mat Tracking::GrabImageRGBD(const cv::Mat &imRGB,const cv::Mat &imD, const d
 
     //DynaORB CHANGE
     //set next SAM2 frame
-    dynaTracker->process_frame(imRGB);
+    // dynaTracker->process_frame(imRGB);
 
     cv::Mat imDepth = imD;
 
@@ -260,7 +260,7 @@ cv::Mat Tracking::GrabImageMonocular(const cv::Mat &im, const double &timestamp)
 
     //DynaORB CHANGE
     //set next SAM2 frame
-    dynaTracker->process_frame(im);
+    // dynaTracker->process_frame(im);
 
     if(mImGray.channels()==3)
     {
@@ -296,7 +296,7 @@ void Tracking::Track()
         mState = NOT_INITIALIZED;
     }
 
-    mLastProcessedState=mState;
+    // mLastProcessedState=mState;
 
     // Get Map Mutex -> Map cannot be changed
     unique_lock<mutex> lock(mpMap->mMutexMapUpdate);

@@ -24,6 +24,7 @@
 #include <vector>
 #include <list>
 #include <opencv/cv.h>
+#include <memory>
 #include "PointFilter.h"
 
 namespace ORB_SLAM2
@@ -59,7 +60,7 @@ public:
     void operator()( cv::InputArray image, cv::InputArray mask,
       std::vector<cv::KeyPoint>& keypoints,
       cv::OutputArray descriptors,
-      PointFilter* filter = new PointFilter());
+    std::shared_ptr<PointFilter> filter = std::make_shared<PointFilter>());
 
     int inline GetLevels(){
         return nlevels;}

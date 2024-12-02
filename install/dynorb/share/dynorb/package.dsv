@@ -1,0 +1,8 @@
+source;share/dynorb/hook/cmake_prefix_path.ps1
+source;share/dynorb/hook/cmake_prefix_path.dsv
+source;share/dynorb/hook/cmake_prefix_path.sh
+source;share/dynorb/local_setup.bash
+source;share/dynorb/local_setup.dsv
+source;share/dynorb/local_setup.ps1
+source;share/dynorb/local_setup.sh
+source;share/dynorb/local_setup.zsh

@@ -65,7 +65,7 @@ public:
     void SetLocalMapper(LocalMapping* pLocalMapper);
     void SetLoopClosing(LoopClosing* pLoopClosing);
     void SetViewer(Viewer* pViewer);
-    void SetTracker(DynamObjTracker* tracker);
+    void SetTracker(std::shared_ptr<DynamObjTracker> tracker);
 
     // Load new settings
     // The focal lenght should be similar or scale prediction will fail when projecting points
@@ -172,7 +172,7 @@ protected:
     std::vector<MapPoint*> mvpLocalMapPoints;
 
     //Dynamic Object Tracker
-    DynamObjTracker* dynaTracker;
+    std::shared_ptr<DynamObjTracker> dynaTracker;
     
     // System
     System* mpSystem;

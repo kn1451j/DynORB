@@ -23,9 +23,8 @@
 #include<algorithm>
 #include<fstream>
 #include<chrono>
-
+#include <rclcpp/rclcpp.hpp>
 #include<opencv2/core/core.hpp>
-
 #include<System.h>
 
 using namespace std;
@@ -49,8 +48,18 @@ int main(int argc, char **argv)
 
     int nImages = vstrImageFilenames.size();
 
+    // DynaORB CHANGE
+    //initialize SAM2 tracker in separate ros thread and pass to system
+    rclcpp::init(argc, argv);
+    std::shared_ptr<ORB_SLAM2::DynamObjTracker> dynaTracker = std::make_shared<ORB_SLAM2::DynamObjTracker>();
+    rclcpp::executors::MultiThreadedExecutor executor;
+    executor.add_node(dynaTracker);
+    std::thread executor_thread([&executor]() {
+        executor.spin();
+    });
+
     // Create SLAM system. It initializes all system threads and gets ready to process frames.
-    ORB_SLAM2::System SLAM(argv[1],argv[2],ORB_SLAM2::System::MONOCULAR,true);
+    ORB_SLAM2::System SLAM(argv[1],argv[2],ORB_SLAM2::System::MONOCULAR,dynaTracker,true);
 
     // Vector for tracking time statistics
     vector<float> vTimesTrack;
@@ -81,6 +90,16 @@ int main(int argc, char **argv)
         std::chrono::monotonic_clock::time_point t1 = std::chrono::monotonic_clock::now();
 #endif
 
+        //Pass the image to the DynamObjTracker and wait for the result
+        auto result = client->async_send_request(request);
+        // Wait for the result.
+        if (rclcpp::spin_until_future_complete(node, result) ==
+            rclcpp::FutureReturnCode::SUCCESS)
+        {
+            RCLCPP_INFO(rclcpp::get_logger("rclcpp"), "Sum: %ld", result.get()->sum);
+        } else {
+            RCLCPP_ERROR(rclcpp::get_logger("rclcpp"), "Failed to call service add_two_ints");
+        }
         // Pass the image to the SLAM system
         SLAM.TrackMonocular(im,tframe);
 
@@ -107,6 +126,10 @@ int main(int argc, char **argv)
 
     // Stop all threads
     SLAM.Shutdown();
+
+    //DynORB CHANGE
+    executor_thread.join();
+    rclcpp::shutdown();
 
     // Tracking time statistics
     sort(vTimesTrack.begin(),vTimesTrack.end());
