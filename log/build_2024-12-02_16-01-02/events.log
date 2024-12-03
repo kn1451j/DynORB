@@ -1,0 +1,499 @@
+[0.000000] (-) TimerEvent: {}
+[0.000153] (dynorb) JobQueued: {'identifier': 'dynorb', 'dependencies': OrderedDict()}
+[0.000170] (dynorb) JobStarted: {'identifier': 'dynorb'}
+[0.009171] (dynorb) JobProgress: {'identifier': 'dynorb', 'progress': 'cmake'}
+[0.011840] (dynorb) JobProgress: {'identifier': 'dynorb', 'progress': 'build'}
+[0.011959] (dynorb) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/parallels/DynORBBase/src/dynorb/build/dynorb', '--', '-j2', '-l2'], 'cwd': '/home/parallels/DynORBBase/src/dynorb/build/dynorb', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'parallels'), ('XDG_SESSION_TYPE', 'wayland'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/parallels/DynORBBase/install/dynorb_interface/lib:/home/parallels/DynORBBase/src/install/dynorb_interface/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/aarch64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/parallels'), ('OLDPWD', '/home/parallels/DynORBBase/src'), ('DESKTOP_SESSION', 'ubuntu'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('SYSTEMD_EXEC_PID', '1968'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('IM_CONFIG_PHASE', '1'), ('WAYLAND_DISPLAY', 'wayland-0'), ('COLCON_PREFIX_PATH', '/home/parallels/DynORBBase/install:/home/parallels/DynORBBase/src/install:/home/parallels/DynORBBase/src/dynorb/install'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'parallels'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'parallels'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/ubuntu-linux-22-04-desktop:@/tmp/.ICE-unix/1946,unix/ubuntu-linux-22-04-desktop:/tmp/.ICE-unix/1946'), ('XDG_MENU_PREFIX', 'gnome-'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/1f83b559_dc20_4efd_a665_d1718842caf8'), ('GNOME_SETUP_DISPLAY', ':1'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('LANG', 'C.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/.mutter-Xwaylandauth.ECDVX2'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.2488'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/home/parallels/DynORBBase/src/dynorb/install/dynorb:/home/parallels/DynORBBase/install/sam_tracking:/home/parallels/DynORBBase/install/dynorb:/home/parallels/DynORBBase/install/dynorb_interface:/home/parallels/DynORBBase/src/install/sam_tracking:/home/parallels/DynORBBase/src/install/dynorb:/home/parallels/DynORBBase/src/install/dynorb_interface:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/parallels/DynORBBase/src/dynorb/build/dynorb'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/parallels/DynORBBase/install/sam_tracking/lib/python3.10/site-packages:/home/parallels/DynORBBase/install/dynorb_interface/local/lib/python3.10/dist-packages:/home/parallels/DynORBBase/src/install/sam_tracking/lib/python3.10/site-packages:/home/parallels/DynORBBase/src/install/dynorb_interface/local/lib/python3.10/dist-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/home/parallels/DynORBBase/src/dynorb/install/dynorb:/home/parallels/DynORBBase/install/dynorb:/home/parallels/DynORBBase/install/dynorb_interface:/home/parallels/DynORBBase/src/install/dynorb:/home/parallels/DynORBBase/src/install/dynorb_interface:/home/parallels/DynORBBase/install/sam_tracking:/home/parallels/DynORBBase/src/install/sam_tracking:/opt/ros/humble')]), 'shell': False}
+[0.099193] (-) TimerEvent: {}
+[0.105375] (dynorb) StdoutLine: {'line': b'-- Found ament_cmake: 1.3.10 (/opt/ros/humble/share/ament_cmake/cmake)\n'}
+[0.199302] (-) TimerEvent: {}
+[0.201852] (dynorb) StdoutLine: {'line': b'-- Found rclcpp: 16.0.10 (/opt/ros/humble/share/rclcpp/cmake)\n'}
+[0.233593] (dynorb) StdoutLine: {'line': b'-- Found rosidl_generator_c: 3.1.5 (/opt/ros/humble/share/rosidl_generator_c/cmake)\n'}
+[0.236099] (dynorb) StdoutLine: {'line': b'-- Found rosidl_adapter: 3.1.5 (/opt/ros/humble/share/rosidl_adapter/cmake)\n'}
+[0.242151] (dynorb) StdoutLine: {'line': b'-- Found rosidl_generator_cpp: 3.1.5 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)\n'}
+[0.251611] (dynorb) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[0.262793] (dynorb) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[0.299212] (dynorb) StdoutLine: {'line': b'-- Found rmw_implementation_cmake: 6.1.2 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)\n'}
+[0.299345] (-) TimerEvent: {}
+[0.301824] (dynorb) StdoutLine: {'line': b'-- Found rmw_fastrtps_cpp: 6.2.7 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)\n'}
+[0.399603] (-) TimerEvent: {}
+[0.522452] (-) TimerEvent: {}
+[0.625644] (-) TimerEvent: {}
+[0.728796] (-) TimerEvent: {}
+[0.763284] (dynorb) StdoutLine: {'line': b"-- Using RMW implementation 'rmw_fastrtps_cpp' as default\n"}
+[0.828894] (-) TimerEvent: {}
+[0.838764] (dynorb) StdoutLine: {'line': b'-- Found cv_bridge: 3.2.1 (/opt/ros/humble/share/cv_bridge/cmake)\n'}
+[0.890805] (dynorb) StdoutLine: {'line': b'-- Found OpenCV: /usr/local (found version "3.4.20") \n'}
+[0.891971] (dynorb) StdoutLine: {'line': b'-- Found rosidl_default_generators: 1.2.0 (/opt/ros/humble/share/rosidl_default_generators/cmake)\n'}
+[0.902854] (dynorb) StdoutLine: {'line': b'-- Found dynorb_interface: 0.0.0 (/home/parallels/DynORBBase/src/install/dynorb_interface/share/dynorb_interface/cmake)\n'}
+[0.923837] (dynorb) StderrLine: {'line': b'\x1b[0mBuild type: Release\x1b[0m\n'}
+[0.925674] (dynorb) StdoutLine: {'line': b'-- Using flag -std=c++17.\n'}
+[0.928968] (-) TimerEvent: {}
+[0.933159] (dynorb) StdoutLine: {'line': b'-- Found ament_lint_auto: 0.12.11 (/opt/ros/humble/share/ament_lint_auto/cmake)\n'}
+[1.029204] (-) TimerEvent: {}
+[1.059651] (dynorb) StdoutLine: {'line': b"-- Added test 'cppcheck' to perform static code analysis on C / C++ code\n"}
+[1.059941] (dynorb) StdoutLine: {'line': b'-- Configured cppcheck include dirs: /home/parallels/DynORBBase/src/dynorb/include\n'}
+[1.059984] (dynorb) StdoutLine: {'line': b'-- Configured cppcheck exclude dirs and/or files: \n'}
+[1.064336] (dynorb) StdoutLine: {'line': b"-- Added test 'flake8' to check Python code syntax and style conventions\n"}
+[1.072502] (dynorb) StdoutLine: {'line': b"-- Added test 'lint_cmake' to check CMake code style\n"}
+[1.076250] (dynorb) StdoutLine: {'line': b"-- Added test 'pep257' to check Python code against some of the docstring style conventions in PEP 257\n"}
+[1.108167] (dynorb) StdoutLine: {'line': b"-- Added test 'uncrustify' to check C / C++ code style\n"}
+[1.108305] (dynorb) StdoutLine: {'line': b'-- Configured uncrustify additional arguments: \n'}
+[1.117864] (dynorb) StdoutLine: {'line': b"-- Added test 'xmllint' to check XML markup files\n"}
+[1.124823] (dynorb) StdoutLine: {'line': b'-- Configuring done\n'}
+[1.129379] (-) TimerEvent: {}
+[1.157922] (dynorb) StdoutLine: {'line': b'-- Generating done\n'}
+[1.159470] (dynorb) StdoutLine: {'line': b'-- Build files have been written to: /home/parallels/DynORBBase/src/dynorb/build/dynorb\n'}
+[1.194098] (dynorb) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target dynorb\x1b[0m\n'}
+[1.229576] (-) TimerEvent: {}
+[1.240959] (dynorb) StdoutLine: {'line': b'[  4%] \x1b[32mBuilding CXX object CMakeFiles/dynorb.dir/src/System.cc.o\x1b[0m\n'}
+[1.331042] (-) TimerEvent: {}
+[1.431425] (-) TimerEvent: {}
+[1.531840] (-) TimerEvent: {}
+[1.632263] (-) TimerEvent: {}
+[1.732671] (-) TimerEvent: {}
+[1.832969] (-) TimerEvent: {}
+[1.933390] (-) TimerEvent: {}
+[2.033774] (-) TimerEvent: {}
+[2.134440] (-) TimerEvent: {}
+[2.234742] (-) TimerEvent: {}
+[2.335128] (-) TimerEvent: {}
+[2.435578] (-) TimerEvent: {}
+[2.536588] (-) TimerEvent: {}
+[2.637043] (-) TimerEvent: {}
+[2.737810] (-) TimerEvent: {}
+[2.826228] (dynorb) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/home/parallels/DynORBBase/src/dynorb/include/ORBextractor.h:28\x1b[m\x1b[K,\n'}
+[2.826426] (dynorb) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/parallels/DynORBBase/src/dynorb/include/KeyFrame.h:28\x1b[m\x1b[K,\n'}
+[2.826465] (dynorb) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/parallels/DynORBBase/src/dynorb/include/MapPoint.h:24\x1b[m\x1b[K,\n'}
+[2.826492] (dynorb) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/parallels/DynORBBase/src/dynorb/include/FrameDrawer.h:25\x1b[m\x1b[K,\n'}
+[2.826517] (dynorb) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/parallels/DynORBBase/src/dynorb/include/Viewer.h:25\x1b[m\x1b[K,\n'}
+[2.826553] (dynorb) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/parallels/DynORBBase/src/dynorb/include/Tracking.h:28\x1b[m\x1b[K,\n'}
+[2.826579] (dynorb) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/parallels/DynORBBase/src/dynorb/include/System.h:30\x1b[m\x1b[K,\n'}
+[2.826605] (dynorb) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/parallels/DynORBBase/src/dynorb/src/System.cc:23\x1b[m\x1b[K:\n'}
+[2.826655] (dynorb) StderrLine: {'line': b'\x1b[01m\x1b[K/home/parallels/DynORBBase/src/dynorb/include/PointFilter.h:\x1b[m\x1b[K In member function \xe2\x80\x98\x1b[01m\x1b[Kvirtual bool ORB_SLAM2::PointFilter::operator()(cv::Point2f&)\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[2.826741] (dynorb) StderrLine: {'line': b'\x1b[01m\x1b[K/home/parallels/DynORBBase/src/dynorb/include/PointFilter.h:6:50:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kunused parameter \xe2\x80\x98\x1b[01m\x1b[Kpt\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter\x07-Wunused-parameter\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[2.826793] (dynorb) StderrLine: {'line': b'    6 |             virtual bool operator()(\x1b[01;35m\x1b[Kcv::Point2f& pt\x1b[m\x1b[K){return true;};\n'}
+[2.826832] (dynorb) StderrLine: {'line': b'      |                                     \x1b[01;35m\x1b[K~~~~~~~~~~~~~^~\x1b[m\x1b[K\n'}
+[2.837980] (-) TimerEvent: {}
+[2.938368] (-) TimerEvent: {}
+[3.039332] (-) TimerEvent: {}
+[3.139834] (-) TimerEvent: {}
+[3.240822] (-) TimerEvent: {}
+[3.341179] (-) TimerEvent: {}
+[3.441668] (-) TimerEvent: {}
+[3.541975] (-) TimerEvent: {}
+[3.642313] (-) TimerEvent: {}
+[3.742568] (-) TimerEvent: {}
+[3.801844] (dynorb) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/home/parallels/DynORBBase/src/dynorb/Thirdparty/g2o/g2o/types/types_seven_dof_expmap.h:34\x1b[m\x1b[K,\n'}
+[3.802008] (dynorb) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/parallels/DynORBBase/src/dynorb/include/LoopClosing.h:34\x1b[m\x1b[K,\n'}
+[3.802046] (dynorb) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/parallels/DynORBBase/src/dynorb/include/LocalMapping.h:26\x1b[m\x1b[K,\n'}
+[3.802080] (dynorb) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/parallels/DynORBBase/src/dynorb/include/Tracking.h:31\x1b[m\x1b[K,\n'}
+[3.802117] (dynorb) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/parallels/DynORBBase/src/dynorb/include/System.h:30\x1b[m\x1b[K,\n'}
+[3.802145] (dynorb) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/parallels/DynORBBase/src/dynorb/src/System.cc:23\x1b[m\x1b[K:\n'}
+[3.802185] (dynorb) StderrLine: {'line': b'\x1b[01m\x1b[K/home/parallels/DynORBBase/src/dynorb/Thirdparty/g2o/g2o/types/../core/base_vertex.h:\x1b[m\x1b[K At global scope:\n'}
+[3.802320] (dynorb) StderrLine: {'line': b'\x1b[01m\x1b[K/home/parallels/DynORBBase/src/dynorb/Thirdparty/g2o/g2o/types/../core/base_vertex.h:62:74:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[KEigen::AlignedBit\x1b[m\x1b[K\xe2\x80\x99 is deprecated [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wdeprecated-declarations\x07-Wdeprecated-declarations\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[3.802363] (dynorb) StderrLine: {'line': b'   62 | igen::Map<Matrix<double, D, D>, Matrix<double,D,D>::Flags & \x1b[01;35m\x1b[KAlignedBit\x1b[m\x1b[K ? Aligned : Unaligned >  HessianBlockType;\n'}
+[3.802391] (dynorb) StderrLine: {'line': b'      |                                                             \x1b[01;35m\x1b[K^~~~~~~~~~\x1b[m\x1b[K\n'}
+[3.802430] (dynorb) StderrLine: {'line': b'\n'}
+[3.802456] (dynorb) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/usr/include/eigen3/Eigen/Core:161\x1b[m\x1b[K,\n'}
+[3.802497] (dynorb) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/parallels/Pangolin/include/pangolin/display/opengl_render_state.h:40\x1b[m\x1b[K,\n'}
+[3.802537] (dynorb) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/parallels/Pangolin/include/pangolin/display/viewport.h:31\x1b[m\x1b[K,\n'}
+[3.802587] (dynorb) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/parallels/Pangolin/include/pangolin/gl/gl.h:30\x1b[m\x1b[K,\n'}
+[3.802617] (dynorb) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/parallels/Pangolin/include/pangolin/pangolin.h:33\x1b[m\x1b[K,\n'}
+[3.802644] (dynorb) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/parallels/DynORBBase/src/dynorb/include/MapDrawer.h:27\x1b[m\x1b[K,\n'}
+[3.802671] (dynorb) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/parallels/DynORBBase/src/dynorb/include/Viewer.h:26\x1b[m\x1b[K,\n'}
+[3.802697] (dynorb) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/parallels/DynORBBase/src/dynorb/include/Tracking.h:28\x1b[m\x1b[K,\n'}
+[3.802724] (dynorb) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/parallels/DynORBBase/src/dynorb/include/System.h:30\x1b[m\x1b[K,\n'}
+[3.802751] (dynorb) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/parallels/DynORBBase/src/dynorb/src/System.cc:23\x1b[m\x1b[K:\n'}
+[3.802778] (dynorb) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/eigen3/Eigen/src/Core/util/Constants.h:167:37:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kdeclared here\n'}
+[3.802806] (dynorb) StderrLine: {'line': b'  167 | EIGEN_DEPRECATED const unsigned int \x1b[01;36m\x1b[KAlignedBit\x1b[m\x1b[K = 0x80;\n'}
+[3.802837] (dynorb) StderrLine: {'line': b'      |                                     \x1b[01;36m\x1b[K^~~~~~~~~~\x1b[m\x1b[K\n'}
+[3.807402] (dynorb) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/home/parallels/DynORBBase/src/dynorb/Thirdparty/g2o/g2o/types/types_seven_dof_expmap.h:35\x1b[m\x1b[K,\n'}
+[3.807463] (dynorb) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/parallels/DynORBBase/src/dynorb/include/LoopClosing.h:34\x1b[m\x1b[K,\n'}
+[3.807494] (dynorb) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/parallels/DynORBBase/src/dynorb/include/LocalMapping.h:26\x1b[m\x1b[K,\n'}
+[3.807519] (dynorb) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/parallels/DynORBBase/src/dynorb/include/Tracking.h:31\x1b[m\x1b[K,\n'}
+[3.807545] (dynorb) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/parallels/DynORBBase/src/dynorb/include/System.h:30\x1b[m\x1b[K,\n'}
+[3.807570] (dynorb) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/parallels/DynORBBase/src/dynorb/src/System.cc:23\x1b[m\x1b[K:\n'}
+[3.807595] (dynorb) StderrLine: {'line': b'\x1b[01m\x1b[K/home/parallels/DynORBBase/src/dynorb/Thirdparty/g2o/g2o/types/../core/base_binary_edge.h:59:82:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[KEigen::AlignedBit\x1b[m\x1b[K\xe2\x80\x99 is deprecated [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wdeprecated-declarations\x07-Wdeprecated-declarations\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[3.807622] (dynorb) StderrLine: {'line': b'   59 | Map<Matrix<double, Di, Dj>, Matrix<double, Di, Dj>::Flags & \x1b[01;35m\x1b[KAlignedBit\x1b[m\x1b[K ? Aligned : Unaligned > HessianBlockType;\n'}
+[3.807648] (dynorb) StderrLine: {'line': b'      |                                                             \x1b[01;35m\x1b[K^~~~~~~~~~\x1b[m\x1b[K\n'}
+[3.807676] (dynorb) StderrLine: {'line': b'\n'}
+[3.807766] (dynorb) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/usr/include/eigen3/Eigen/Core:161\x1b[m\x1b[K,\n'}
+[3.807794] (dynorb) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/parallels/Pangolin/include/pangolin/display/opengl_render_state.h:40\x1b[m\x1b[K,\n'}
+[3.807819] (dynorb) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/parallels/Pangolin/include/pangolin/display/viewport.h:31\x1b[m\x1b[K,\n'}
+[3.807845] (dynorb) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/parallels/Pangolin/include/pangolin/gl/gl.h:30\x1b[m\x1b[K,\n'}
+[3.807869] (dynorb) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/parallels/Pangolin/include/pangolin/pangolin.h:33\x1b[m\x1b[K,\n'}
+[3.807894] (dynorb) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/parallels/DynORBBase/src/dynorb/include/MapDrawer.h:27\x1b[m\x1b[K,\n'}
+[3.807919] (dynorb) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/parallels/DynORBBase/src/dynorb/include/Viewer.h:26\x1b[m\x1b[K,\n'}
+[3.807944] (dynorb) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/parallels/DynORBBase/src/dynorb/include/Tracking.h:28\x1b[m\x1b[K,\n'}
+[3.807972] (dynorb) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/parallels/DynORBBase/src/dynorb/include/System.h:30\x1b[m\x1b[K,\n'}
+[3.808009] (dynorb) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/parallels/DynORBBase/src/dynorb/src/System.cc:23\x1b[m\x1b[K:\n'}
+[3.808037] (dynorb) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/eigen3/Eigen/src/Core/util/Constants.h:167:37:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kdeclared here\n'}
+[3.808062] (dynorb) StderrLine: {'line': b'  167 | EIGEN_DEPRECATED const unsigned int \x1b[01;36m\x1b[KAlignedBit\x1b[m\x1b[K = 0x80;\n'}
+[3.808087] (dynorb) StderrLine: {'line': b'      |                                     \x1b[01;36m\x1b[K^~~~~~~~~~\x1b[m\x1b[K\n'}
+[3.808112] (dynorb) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/home/parallels/DynORBBase/src/dynorb/Thirdparty/g2o/g2o/types/types_seven_dof_expmap.h:35\x1b[m\x1b[K,\n'}
+[3.808139] (dynorb) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/parallels/DynORBBase/src/dynorb/include/LoopClosing.h:34\x1b[m\x1b[K,\n'}
+[3.808181] (dynorb) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/parallels/DynORBBase/src/dynorb/include/LocalMapping.h:26\x1b[m\x1b[K,\n'}
+[3.808207] (dynorb) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/parallels/DynORBBase/src/dynorb/include/Tracking.h:31\x1b[m\x1b[K,\n'}
+[3.808233] (dynorb) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/parallels/DynORBBase/src/dynorb/include/System.h:30\x1b[m\x1b[K,\n'}
+[3.808258] (dynorb) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/parallels/DynORBBase/src/dynorb/src/System.cc:23\x1b[m\x1b[K:\n'}
+[3.808295] (dynorb) StderrLine: {'line': b'\x1b[01m\x1b[K/home/parallels/DynORBBase/src/dynorb/Thirdparty/g2o/g2o/types/../core/base_binary_edge.h:60:82:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[KEigen::AlignedBit\x1b[m\x1b[K\xe2\x80\x99 is deprecated [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wdeprecated-declarations\x07-Wdeprecated-declarations\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[3.808330] (dynorb) StderrLine: {'line': b'   60 | Map<Matrix<double, Dj, Di>, Matrix<double, Dj, Di>::Flags & \x1b[01;35m\x1b[KAlignedBit\x1b[m\x1b[K ? Aligned : Unaligned > HessianBlockTransposedType;\n'}
+[3.808356] (dynorb) StderrLine: {'line': b'      |                                                             \x1b[01;35m\x1b[K^~~~~~~~~~\x1b[m\x1b[K\n'}
+[3.808382] (dynorb) StderrLine: {'line': b'\n'}
+[3.808408] (dynorb) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/usr/include/eigen3/Eigen/Core:161\x1b[m\x1b[K,\n'}
+[3.808444] (dynorb) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/parallels/Pangolin/include/pangolin/display/opengl_render_state.h:40\x1b[m\x1b[K,\n'}
+[3.808500] (dynorb) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/parallels/Pangolin/include/pangolin/display/viewport.h:31\x1b[m\x1b[K,\n'}
+[3.808526] (dynorb) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/parallels/Pangolin/include/pangolin/gl/gl.h:30\x1b[m\x1b[K,\n'}
+[3.808553] (dynorb) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/parallels/Pangolin/include/pangolin/pangolin.h:33\x1b[m\x1b[K,\n'}
+[3.808579] (dynorb) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/parallels/DynORBBase/src/dynorb/include/MapDrawer.h:27\x1b[m\x1b[K,\n'}
+[3.808617] (dynorb) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/parallels/DynORBBase/src/dynorb/include/Viewer.h:26\x1b[m\x1b[K,\n'}
+[3.808647] (dynorb) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/parallels/DynORBBase/src/dynorb/include/Tracking.h:28\x1b[m\x1b[K,\n'}
+[3.808725] (dynorb) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/parallels/DynORBBase/src/dynorb/include/System.h:30\x1b[m\x1b[K,\n'}
+[3.808766] (dynorb) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/parallels/DynORBBase/src/dynorb/src/System.cc:23\x1b[m\x1b[K:\n'}
+[3.808791] (dynorb) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/eigen3/Eigen/src/Core/util/Constants.h:167:37:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kdeclared here\n'}
+[3.808817] (dynorb) StderrLine: {'line': b'  167 | EIGEN_DEPRECATED const unsigned int \x1b[01;36m\x1b[KAlignedBit\x1b[m\x1b[K = 0x80;\n'}
+[3.808842] (dynorb) StderrLine: {'line': b'      |                                     \x1b[01;36m\x1b[K^~~~~~~~~~\x1b[m\x1b[K\n'}
+[3.820364] (dynorb) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/home/parallels/DynORBBase/src/dynorb/Thirdparty/g2o/g2o/types/types_six_dof_expmap.h:41\x1b[m\x1b[K,\n'}
+[3.820529] (dynorb) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/parallels/DynORBBase/src/dynorb/Thirdparty/g2o/g2o/types/types_seven_dof_expmap.h:36\x1b[m\x1b[K,\n'}
+[3.820569] (dynorb) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/parallels/DynORBBase/src/dynorb/include/LoopClosing.h:34\x1b[m\x1b[K,\n'}
+[3.820599] (dynorb) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/parallels/DynORBBase/src/dynorb/include/LocalMapping.h:26\x1b[m\x1b[K,\n'}
+[3.820627] (dynorb) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/parallels/DynORBBase/src/dynorb/include/Tracking.h:31\x1b[m\x1b[K,\n'}
+[3.820655] (dynorb) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/parallels/DynORBBase/src/dynorb/include/System.h:30\x1b[m\x1b[K,\n'}
+[3.820683] (dynorb) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/parallels/DynORBBase/src/dynorb/src/System.cc:23\x1b[m\x1b[K:\n'}
+[3.820730] (dynorb) StderrLine: {'line': b'\x1b[01m\x1b[K/home/parallels/DynORBBase/src/dynorb/Thirdparty/g2o/g2o/types/se3quat.h:43:38:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kextra \xe2\x80\x98\x1b[01m\x1b[K;\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wpedantic\x07-Wpedantic\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[3.820764] (dynorb) StderrLine: {'line': b'   43 |       EIGEN_MAKE_ALIGNED_OPERATOR_NEW\x1b[01;35m\x1b[K;\x1b[m\x1b[K\n'}
+[3.820791] (dynorb) StderrLine: {'line': b'      |                                      \x1b[01;35m\x1b[K^\x1b[m\x1b[K\n'}
+[3.820820] (dynorb) StderrLine: {'line': b'      |                                      \x1b[31m\x1b[K-\x1b[m\x1b[K\n'}
+[3.842711] (-) TimerEvent: {}
+[3.943048] (-) TimerEvent: {}
+[4.008828] (dynorb) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/home/parallels/DynORBBase/src/dynorb/Thirdparty/g2o/g2o/types/types_seven_dof_expmap.h:34\x1b[m\x1b[K,\n'}
+[4.008959] (dynorb) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/parallels/DynORBBase/src/dynorb/include/LoopClosing.h:34\x1b[m\x1b[K,\n'}
+[4.008999] (dynorb) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/parallels/DynORBBase/src/dynorb/include/LocalMapping.h:26\x1b[m\x1b[K,\n'}
+[4.009036] (dynorb) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/parallels/DynORBBase/src/dynorb/include/Tracking.h:31\x1b[m\x1b[K,\n'}
+[4.009062] (dynorb) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/parallels/DynORBBase/src/dynorb/include/System.h:30\x1b[m\x1b[K,\n'}
+[4.009088] (dynorb) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/parallels/DynORBBase/src/dynorb/src/System.cc:23\x1b[m\x1b[K:\n'}
+[4.009116] (dynorb) StderrLine: {'line': b'/home/parallels/DynORBBase/src/dynorb/Thirdparty/g2o/g2o/types/../core/base_vertex.h: In instantiation of \xe2\x80\x98\x1b[01m\x1b[Kclass g2o::BaseVertex<3, Eigen::Matrix<double, 3, 1> >\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[4.009149] (dynorb) StderrLine: {'line': b'\x1b[01m\x1b[K/home/parallels/DynORBBase/src/dynorb/Thirdparty/g2o/g2o/types/types_sba.h:40:35:\x1b[m\x1b[K   required from here\n'}
+[4.009177] (dynorb) StderrLine: {'line': b'\x1b[01m\x1b[K/home/parallels/DynORBBase/src/dynorb/Thirdparty/g2o/g2o/types/../core/base_vertex.h:62:72:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[KEigen::AlignedBit\x1b[m\x1b[K\xe2\x80\x99 is deprecated [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wdeprecated-declarations\x07-Wdeprecated-declarations\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[4.009260] (dynorb) StderrLine: {'line': b'   62 |  Eigen::Map<Matrix<double, D, D>, Matrix<double,D,D>::\x1b[01;35m\x1b[KFlags & AlignedBit\x1b[m\x1b[K ? Aligned : Unaligned >  HessianBlockType;\n'}
+[4.009296] (dynorb) StderrLine: {'line': b'      |                                                       \x1b[01;35m\x1b[K~~~~~~^~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[4.009325] (dynorb) StderrLine: {'line': b'\n'}
+[4.009352] (dynorb) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/usr/include/eigen3/Eigen/Core:161\x1b[m\x1b[K,\n'}
+[4.009378] (dynorb) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/parallels/Pangolin/include/pangolin/display/opengl_render_state.h:40\x1b[m\x1b[K,\n'}
+[4.009409] (dynorb) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/parallels/Pangolin/include/pangolin/display/viewport.h:31\x1b[m\x1b[K,\n'}
+[4.009439] (dynorb) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/parallels/Pangolin/include/pangolin/gl/gl.h:30\x1b[m\x1b[K,\n'}
+[4.009465] (dynorb) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/parallels/Pangolin/include/pangolin/pangolin.h:33\x1b[m\x1b[K,\n'}
+[4.009491] (dynorb) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/parallels/DynORBBase/src/dynorb/include/MapDrawer.h:27\x1b[m\x1b[K,\n'}
+[4.009517] (dynorb) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/parallels/DynORBBase/src/dynorb/include/Viewer.h:26\x1b[m\x1b[K,\n'}
+[4.009542] (dynorb) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/parallels/DynORBBase/src/dynorb/include/Tracking.h:28\x1b[m\x1b[K,\n'}
+[4.009566] (dynorb) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/parallels/DynORBBase/src/dynorb/include/System.h:30\x1b[m\x1b[K,\n'}
+[4.009591] (dynorb) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/parallels/DynORBBase/src/dynorb/src/System.cc:23\x1b[m\x1b[K:\n'}
+[4.009620] (dynorb) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/eigen3/Eigen/src/Core/util/Constants.h:167:37:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kdeclared here\n'}
+[4.009656] (dynorb) StderrLine: {'line': b'  167 | EIGEN_DEPRECATED const unsigned int \x1b[01;36m\x1b[KAlignedBit\x1b[m\x1b[K = 0x80;\n'}
+[4.009684] (dynorb) StderrLine: {'line': b'      |                                     \x1b[01;36m\x1b[K^~~~~~~~~~\x1b[m\x1b[K\n'}
+[4.017985] (dynorb) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/home/parallels/DynORBBase/src/dynorb/Thirdparty/g2o/g2o/types/types_seven_dof_expmap.h:34\x1b[m\x1b[K,\n'}
+[4.018094] (dynorb) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/parallels/DynORBBase/src/dynorb/include/LoopClosing.h:34\x1b[m\x1b[K,\n'}
+[4.018123] (dynorb) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/parallels/DynORBBase/src/dynorb/include/LocalMapping.h:26\x1b[m\x1b[K,\n'}
+[4.018150] (dynorb) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/parallels/DynORBBase/src/dynorb/include/Tracking.h:31\x1b[m\x1b[K,\n'}
+[4.018176] (dynorb) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/parallels/DynORBBase/src/dynorb/include/System.h:30\x1b[m\x1b[K,\n'}
+[4.018202] (dynorb) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/parallels/DynORBBase/src/dynorb/src/System.cc:23\x1b[m\x1b[K:\n'}
+[4.018229] (dynorb) StderrLine: {'line': b'/home/parallels/DynORBBase/src/dynorb/Thirdparty/g2o/g2o/types/../core/base_vertex.h: In instantiation of \xe2\x80\x98\x1b[01m\x1b[Kclass g2o::BaseVertex<6, g2o::SE3Quat>\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[4.018257] (dynorb) StderrLine: {'line': b'\x1b[01m\x1b[K/home/parallels/DynORBBase/src/dynorb/Thirdparty/g2o/g2o/types/types_six_dof_expmap.h:59:33:\x1b[m\x1b[K   required from here\n'}
+[4.018284] (dynorb) StderrLine: {'line': b'\x1b[01m\x1b[K/home/parallels/DynORBBase/src/dynorb/Thirdparty/g2o/g2o/types/../core/base_vertex.h:62:72:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[KEigen::AlignedBit\x1b[m\x1b[K\xe2\x80\x99 is deprecated [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wdeprecated-declarations\x07-Wdeprecated-declarations\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[4.018316] (dynorb) StderrLine: {'line': b'   62 |  Eigen::Map<Matrix<double, D, D>, Matrix<double,D,D>::\x1b[01;35m\x1b[KFlags & AlignedBit\x1b[m\x1b[K ? Aligned : Unaligned >  HessianBlockType;\n'}
+[4.018343] (dynorb) StderrLine: {'line': b'      |                                                       \x1b[01;35m\x1b[K~~~~~~^~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[4.018370] (dynorb) StderrLine: {'line': b'\n'}
+[4.018395] (dynorb) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/usr/include/eigen3/Eigen/Core:161\x1b[m\x1b[K,\n'}
+[4.018430] (dynorb) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/parallels/Pangolin/include/pangolin/display/opengl_render_state.h:40\x1b[m\x1b[K,\n'}
+[4.018459] (dynorb) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/parallels/Pangolin/include/pangolin/display/viewport.h:31\x1b[m\x1b[K,\n'}
+[4.018499] (dynorb) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/parallels/Pangolin/include/pangolin/gl/gl.h:30\x1b[m\x1b[K,\n'}
+[4.018528] (dynorb) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/parallels/Pangolin/include/pangolin/pangolin.h:33\x1b[m\x1b[K,\n'}
+[4.018556] (dynorb) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/parallels/DynORBBase/src/dynorb/include/MapDrawer.h:27\x1b[m\x1b[K,\n'}
+[4.018582] (dynorb) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/parallels/DynORBBase/src/dynorb/include/Viewer.h:26\x1b[m\x1b[K,\n'}
+[4.018609] (dynorb) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/parallels/DynORBBase/src/dynorb/include/Tracking.h:28\x1b[m\x1b[K,\n'}
+[4.018696] (dynorb) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/parallels/DynORBBase/src/dynorb/include/System.h:30\x1b[m\x1b[K,\n'}
+[4.018742] (dynorb) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/parallels/DynORBBase/src/dynorb/src/System.cc:23\x1b[m\x1b[K:\n'}
+[4.018773] (dynorb) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/eigen3/Eigen/src/Core/util/Constants.h:167:37:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kdeclared here\n'}
+[4.018802] (dynorb) StderrLine: {'line': b'  167 | EIGEN_DEPRECATED const unsigned int \x1b[01;36m\x1b[KAlignedBit\x1b[m\x1b[K = 0x80;\n'}
+[4.018829] (dynorb) StderrLine: {'line': b'      |                                     \x1b[01;36m\x1b[K^~~~~~~~~~\x1b[m\x1b[K\n'}
+[4.043737] (-) TimerEvent: {}
+[4.088273] (dynorb) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/home/parallels/DynORBBase/src/dynorb/Thirdparty/g2o/g2o/types/types_seven_dof_expmap.h:35\x1b[m\x1b[K,\n'}
+[4.088402] (dynorb) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/parallels/DynORBBase/src/dynorb/include/LoopClosing.h:34\x1b[m\x1b[K,\n'}
+[4.088459] (dynorb) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/parallels/DynORBBase/src/dynorb/include/LocalMapping.h:26\x1b[m\x1b[K,\n'}
+[4.088505] (dynorb) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/parallels/DynORBBase/src/dynorb/include/Tracking.h:31\x1b[m\x1b[K,\n'}
+[4.088536] (dynorb) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/parallels/DynORBBase/src/dynorb/include/System.h:30\x1b[m\x1b[K,\n'}
+[4.088563] (dynorb) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/parallels/DynORBBase/src/dynorb/src/System.cc:23\x1b[m\x1b[K:\n'}
+[4.088603] (dynorb) StderrLine: {'line': b'/home/parallels/DynORBBase/src/dynorb/Thirdparty/g2o/g2o/types/../core/base_binary_edge.h: In instantiation of \xe2\x80\x98\x1b[01m\x1b[Kclass g2o::BaseBinaryEdge<2, Eigen::Matrix<double, 2, 1>, g2o::VertexSBAPointXYZ, g2o::VertexSE3Expmap>\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[4.088634] (dynorb) StderrLine: {'line': b'\x1b[01m\x1b[K/home/parallels/DynORBBase/src/dynorb/Thirdparty/g2o/g2o/types/types_six_dof_expmap.h:80:35:\x1b[m\x1b[K   required from here\n'}
+[4.088661] (dynorb) StderrLine: {'line': b'\x1b[01m\x1b[K/home/parallels/DynORBBase/src/dynorb/Thirdparty/g2o/g2o/types/../core/base_binary_edge.h:59:80:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[KEigen::AlignedBit\x1b[m\x1b[K\xe2\x80\x99 is deprecated [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wdeprecated-declarations\x07-Wdeprecated-declarations\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[4.088702] (dynorb) StderrLine: {'line': b'   59 | ::Map<Matrix<double, Di, Dj>, Matrix<double, Di, Dj>::\x1b[01;35m\x1b[KFlags & AlignedBit\x1b[m\x1b[K ? Aligned : Unaligned > HessianBlockType;\n'}
+[4.088767] (dynorb) StderrLine: {'line': b'      |                                                       \x1b[01;35m\x1b[K~~~~~~^~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[4.088794] (dynorb) StderrLine: {'line': b'\n'}
+[4.088864] (dynorb) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/usr/include/eigen3/Eigen/Core:161\x1b[m\x1b[K,\n'}
+[4.088894] (dynorb) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/parallels/Pangolin/include/pangolin/display/opengl_render_state.h:40\x1b[m\x1b[K,\n'}
+[4.088920] (dynorb) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/parallels/Pangolin/include/pangolin/display/viewport.h:31\x1b[m\x1b[K,\n'}
+[4.088946] (dynorb) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/parallels/Pangolin/include/pangolin/gl/gl.h:30\x1b[m\x1b[K,\n'}
+[4.088972] (dynorb) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/parallels/Pangolin/include/pangolin/pangolin.h:33\x1b[m\x1b[K,\n'}
+[4.088998] (dynorb) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/parallels/DynORBBase/src/dynorb/include/MapDrawer.h:27\x1b[m\x1b[K,\n'}
+[4.089023] (dynorb) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/parallels/DynORBBase/src/dynorb/include/Viewer.h:26\x1b[m\x1b[K,\n'}
+[4.089049] (dynorb) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/parallels/DynORBBase/src/dynorb/include/Tracking.h:28\x1b[m\x1b[K,\n'}
+[4.089074] (dynorb) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/parallels/DynORBBase/src/dynorb/include/System.h:30\x1b[m\x1b[K,\n'}
+[4.089100] (dynorb) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/parallels/DynORBBase/src/dynorb/src/System.cc:23\x1b[m\x1b[K:\n'}
+[4.089126] (dynorb) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/eigen3/Eigen/src/Core/util/Constants.h:167:37:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kdeclared here\n'}
+[4.089151] (dynorb) StderrLine: {'line': b'  167 | EIGEN_DEPRECATED const unsigned int \x1b[01;36m\x1b[KAlignedBit\x1b[m\x1b[K = 0x80;\n'}
+[4.089177] (dynorb) StderrLine: {'line': b'      |                                     \x1b[01;36m\x1b[K^~~~~~~~~~\x1b[m\x1b[K\n'}
+[4.099663] (dynorb) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/home/parallels/DynORBBase/src/dynorb/Thirdparty/g2o/g2o/types/types_seven_dof_expmap.h:35\x1b[m\x1b[K,\n'}
+[4.099804] (dynorb) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/parallels/DynORBBase/src/dynorb/include/LoopClosing.h:34\x1b[m\x1b[K,\n'}
+[4.099840] (dynorb) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/parallels/DynORBBase/src/dynorb/include/LocalMapping.h:26\x1b[m\x1b[K,\n'}
+[4.099878] (dynorb) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/parallels/DynORBBase/src/dynorb/include/Tracking.h:31\x1b[m\x1b[K,\n'}
+[4.099909] (dynorb) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/parallels/DynORBBase/src/dynorb/include/System.h:30\x1b[m\x1b[K,\n'}
+[4.099938] (dynorb) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/parallels/DynORBBase/src/dynorb/src/System.cc:23\x1b[m\x1b[K:\n'}
+[4.099965] (dynorb) StderrLine: {'line': b'\x1b[01m\x1b[K/home/parallels/DynORBBase/src/dynorb/Thirdparty/g2o/g2o/types/../core/base_binary_edge.h:60:80:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[KEigen::AlignedBit\x1b[m\x1b[K\xe2\x80\x99 is deprecated [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wdeprecated-declarations\x07-Wdeprecated-declarations\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[4.099996] (dynorb) StderrLine: {'line': b'   60 | ::Map<Matrix<double, Dj, Di>, Matrix<double, Dj, Di>::\x1b[01;35m\x1b[KFlags & AlignedBit\x1b[m\x1b[K ? Aligned : Unaligned > HessianBlockTransposedType;\n'}
+[4.100024] (dynorb) StderrLine: {'line': b'      |                                                       \x1b[01;35m\x1b[K~~~~~~^~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[4.100051] (dynorb) StderrLine: {'line': b'\n'}
+[4.100078] (dynorb) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/usr/include/eigen3/Eigen/Core:161\x1b[m\x1b[K,\n'}
+[4.100122] (dynorb) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/parallels/Pangolin/include/pangolin/display/opengl_render_state.h:40\x1b[m\x1b[K,\n'}
+[4.100149] (dynorb) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/parallels/Pangolin/include/pangolin/display/viewport.h:31\x1b[m\x1b[K,\n'}
+[4.100176] (dynorb) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/parallels/Pangolin/include/pangolin/gl/gl.h:30\x1b[m\x1b[K,\n'}
+[4.100202] (dynorb) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/parallels/Pangolin/include/pangolin/pangolin.h:33\x1b[m\x1b[K,\n'}
+[4.100228] (dynorb) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/parallels/DynORBBase/src/dynorb/include/MapDrawer.h:27\x1b[m\x1b[K,\n'}
+[4.100253] (dynorb) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/parallels/DynORBBase/src/dynorb/include/Viewer.h:26\x1b[m\x1b[K,\n'}
+[4.100278] (dynorb) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/parallels/DynORBBase/src/dynorb/include/Tracking.h:28\x1b[m\x1b[K,\n'}
+[4.100304] (dynorb) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/parallels/DynORBBase/src/dynorb/include/System.h:30\x1b[m\x1b[K,\n'}
+[4.100329] (dynorb) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/parallels/DynORBBase/src/dynorb/src/System.cc:23\x1b[m\x1b[K:\n'}
+[4.100358] (dynorb) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/eigen3/Eigen/src/Core/util/Constants.h:167:37:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kdeclared here\n'}
+[4.100385] (dynorb) StderrLine: {'line': b'  167 | EIGEN_DEPRECATED const unsigned int \x1b[01;36m\x1b[KAlignedBit\x1b[m\x1b[K = 0x80;\n'}
+[4.100410] (dynorb) StderrLine: {'line': b'      |                                     \x1b[01;36m\x1b[K^~~~~~~~~~\x1b[m\x1b[K\n'}
+[4.144120] (-) TimerEvent: {}
+[4.244625] (-) TimerEvent: {}
+[4.295067] (dynorb) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/home/parallels/DynORBBase/src/dynorb/Thirdparty/g2o/g2o/types/types_seven_dof_expmap.h:35\x1b[m\x1b[K,\n'}
+[4.295323] (dynorb) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/parallels/DynORBBase/src/dynorb/include/LoopClosing.h:34\x1b[m\x1b[K,\n'}
+[4.295389] (dynorb) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/parallels/DynORBBase/src/dynorb/include/LocalMapping.h:26\x1b[m\x1b[K,\n'}
+[4.295417] (dynorb) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/parallels/DynORBBase/src/dynorb/include/Tracking.h:31\x1b[m\x1b[K,\n'}
+[4.295443] (dynorb) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/parallels/DynORBBase/src/dynorb/include/System.h:30\x1b[m\x1b[K,\n'}
+[4.295468] (dynorb) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/parallels/DynORBBase/src/dynorb/src/System.cc:23\x1b[m\x1b[K:\n'}
+[4.295494] (dynorb) StderrLine: {'line': b'/home/parallels/DynORBBase/src/dynorb/Thirdparty/g2o/g2o/types/../core/base_binary_edge.h: In instantiation of \xe2\x80\x98\x1b[01m\x1b[Kclass g2o::BaseBinaryEdge<3, Eigen::Matrix<double, 3, 1>, g2o::VertexSBAPointXYZ, g2o::VertexSE3Expmap>\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[4.295525] (dynorb) StderrLine: {'line': b'\x1b[01m\x1b[K/home/parallels/DynORBBase/src/dynorb/Thirdparty/g2o/g2o/types/types_six_dof_expmap.h:112:41:\x1b[m\x1b[K   required from here\n'}
+[4.295552] (dynorb) StderrLine: {'line': b'\x1b[01m\x1b[K/home/parallels/DynORBBase/src/dynorb/Thirdparty/g2o/g2o/types/../core/base_binary_edge.h:59:80:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[KEigen::AlignedBit\x1b[m\x1b[K\xe2\x80\x99 is deprecated [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wdeprecated-declarations\x07-Wdeprecated-declarations\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[4.295587] (dynorb) StderrLine: {'line': b'   59 | ::Map<Matrix<double, Di, Dj>, Matrix<double, Di, Dj>::\x1b[01;35m\x1b[KFlags & AlignedBit\x1b[m\x1b[K ? Aligned : Unaligned > HessianBlockType;\n'}
+[4.295619] (dynorb) StderrLine: {'line': b'      |                                                       \x1b[01;35m\x1b[K~~~~~~^~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[4.295645] (dynorb) StderrLine: {'line': b'\n'}
+[4.295759] (dynorb) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/usr/include/eigen3/Eigen/Core:161\x1b[m\x1b[K,\n'}
+[4.295789] (dynorb) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/parallels/Pangolin/include/pangolin/display/opengl_render_state.h:40\x1b[m\x1b[K,\n'}
+[4.295814] (dynorb) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/parallels/Pangolin/include/pangolin/display/viewport.h:31\x1b[m\x1b[K,\n'}
+[4.295839] (dynorb) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/parallels/Pangolin/include/pangolin/gl/gl.h:30\x1b[m\x1b[K,\n'}
+[4.295873] (dynorb) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/parallels/Pangolin/include/pangolin/pangolin.h:33\x1b[m\x1b[K,\n'}
+[4.295902] (dynorb) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/parallels/DynORBBase/src/dynorb/include/MapDrawer.h:27\x1b[m\x1b[K,\n'}
+[4.295926] (dynorb) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/parallels/DynORBBase/src/dynorb/include/Viewer.h:26\x1b[m\x1b[K,\n'}
+[4.295951] (dynorb) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/parallels/DynORBBase/src/dynorb/include/Tracking.h:28\x1b[m\x1b[K,\n'}
+[4.295976] (dynorb) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/parallels/DynORBBase/src/dynorb/include/System.h:30\x1b[m\x1b[K,\n'}
+[4.296001] (dynorb) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/parallels/DynORBBase/src/dynorb/src/System.cc:23\x1b[m\x1b[K:\n'}
+[4.296026] (dynorb) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/eigen3/Eigen/src/Core/util/Constants.h:167:37:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kdeclared here\n'}
+[4.296051] (dynorb) StderrLine: {'line': b'  167 | EIGEN_DEPRECATED const unsigned int \x1b[01;36m\x1b[KAlignedBit\x1b[m\x1b[K = 0x80;\n'}
+[4.296075] (dynorb) StderrLine: {'line': b'      |                                     \x1b[01;36m\x1b[K^~~~~~~~~~\x1b[m\x1b[K\n'}
+[4.296100] (dynorb) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/home/parallels/DynORBBase/src/dynorb/Thirdparty/g2o/g2o/types/types_seven_dof_expmap.h:35\x1b[m\x1b[K,\n'}
+[4.296125] (dynorb) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/parallels/DynORBBase/src/dynorb/include/LoopClosing.h:34\x1b[m\x1b[K,\n'}
+[4.296150] (dynorb) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/parallels/DynORBBase/src/dynorb/include/LocalMapping.h:26\x1b[m\x1b[K,\n'}
+[4.296174] (dynorb) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/parallels/DynORBBase/src/dynorb/include/Tracking.h:31\x1b[m\x1b[K,\n'}
+[4.296198] (dynorb) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/parallels/DynORBBase/src/dynorb/include/System.h:30\x1b[m\x1b[K,\n'}
+[4.296223] (dynorb) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/parallels/DynORBBase/src/dynorb/src/System.cc:23\x1b[m\x1b[K:\n'}
+[4.296248] (dynorb) StderrLine: {'line': b'\x1b[01m\x1b[K/home/parallels/DynORBBase/src/dynorb/Thirdparty/g2o/g2o/types/../core/base_binary_edge.h:60:80:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[KEigen::AlignedBit\x1b[m\x1b[K\xe2\x80\x99 is deprecated [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wdeprecated-declarations\x07-Wdeprecated-declarations\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[4.296277] (dynorb) StderrLine: {'line': b'   60 | ::Map<Matrix<double, Dj, Di>, Matrix<double, Dj, Di>::\x1b[01;35m\x1b[KFlags & AlignedBit\x1b[m\x1b[K ? Aligned : Unaligned > HessianBlockTransposedType;\n'}
+[4.296303] (dynorb) StderrLine: {'line': b'      |                                                       \x1b[01;35m\x1b[K~~~~~~^~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[4.296327] (dynorb) StderrLine: {'line': b'\n'}
+[4.296351] (dynorb) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/usr/include/eigen3/Eigen/Core:161\x1b[m\x1b[K,\n'}
+[4.296398] (dynorb) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/parallels/Pangolin/include/pangolin/display/opengl_render_state.h:40\x1b[m\x1b[K,\n'}
+[4.296424] (dynorb) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/parallels/Pangolin/include/pangolin/display/viewport.h:31\x1b[m\x1b[K,\n'}
+[4.296450] (dynorb) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/parallels/Pangolin/include/pangolin/gl/gl.h:30\x1b[m\x1b[K,\n'}
+[4.296475] (dynorb) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/parallels/Pangolin/include/pangolin/pangolin.h:33\x1b[m\x1b[K,\n'}
+[4.296500] (dynorb) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/parallels/DynORBBase/src/dynorb/include/MapDrawer.h:27\x1b[m\x1b[K,\n'}
+[4.296525] (dynorb) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/parallels/DynORBBase/src/dynorb/include/Viewer.h:26\x1b[m\x1b[K,\n'}
+[4.296549] (dynorb) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/parallels/DynORBBase/src/dynorb/include/Tracking.h:28\x1b[m\x1b[K,\n'}
+[4.296574] (dynorb) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/parallels/DynORBBase/src/dynorb/include/System.h:30\x1b[m\x1b[K,\n'}
+[4.296598] (dynorb) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/parallels/DynORBBase/src/dynorb/src/System.cc:23\x1b[m\x1b[K:\n'}
+[4.296623] (dynorb) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/eigen3/Eigen/src/Core/util/Constants.h:167:37:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kdeclared here\n'}
+[4.296648] (dynorb) StderrLine: {'line': b'  167 | EIGEN_DEPRECATED const unsigned int \x1b[01;36m\x1b[KAlignedBit\x1b[m\x1b[K = 0x80;\n'}
+[4.296672] (dynorb) StderrLine: {'line': b'      |                                     \x1b[01;36m\x1b[K^~~~~~~~~~\x1b[m\x1b[K\n'}
+[4.344944] (-) TimerEvent: {}
+[4.418719] (dynorb) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/home/parallels/DynORBBase/src/dynorb/Thirdparty/g2o/g2o/types/types_seven_dof_expmap.h:34\x1b[m\x1b[K,\n'}
+[4.418880] (dynorb) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/parallels/DynORBBase/src/dynorb/include/LoopClosing.h:34\x1b[m\x1b[K,\n'}
+[4.418928] (dynorb) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/parallels/DynORBBase/src/dynorb/include/LocalMapping.h:26\x1b[m\x1b[K,\n'}
+[4.418956] (dynorb) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/parallels/DynORBBase/src/dynorb/include/Tracking.h:31\x1b[m\x1b[K,\n'}
+[4.419004] (dynorb) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/parallels/DynORBBase/src/dynorb/include/System.h:30\x1b[m\x1b[K,\n'}
+[4.419067] (dynorb) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/parallels/DynORBBase/src/dynorb/src/System.cc:23\x1b[m\x1b[K:\n'}
+[4.419099] (dynorb) StderrLine: {'line': b'/home/parallels/DynORBBase/src/dynorb/Thirdparty/g2o/g2o/types/../core/base_vertex.h: In instantiation of \xe2\x80\x98\x1b[01m\x1b[Kclass g2o::BaseVertex<7, g2o::Sim3>\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[4.419130] (dynorb) StderrLine: {'line': b'\x1b[01m\x1b[K/home/parallels/DynORBBase/src/dynorb/Thirdparty/g2o/g2o/types/types_seven_dof_expmap.h:48:35:\x1b[m\x1b[K   required from here\n'}
+[4.419158] (dynorb) StderrLine: {'line': b'\x1b[01m\x1b[K/home/parallels/DynORBBase/src/dynorb/Thirdparty/g2o/g2o/types/../core/base_vertex.h:62:72:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[KEigen::AlignedBit\x1b[m\x1b[K\xe2\x80\x99 is deprecated [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wdeprecated-declarations\x07-Wdeprecated-declarations\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[4.419216] (dynorb) StderrLine: {'line': b'   62 |  Eigen::Map<Matrix<double, D, D>, Matrix<double,D,D>::\x1b[01;35m\x1b[KFlags & AlignedBit\x1b[m\x1b[K ? Aligned : Unaligned >  HessianBlockType;\n'}
+[4.419256] (dynorb) StderrLine: {'line': b'      |                                                       \x1b[01;35m\x1b[K~~~~~~^~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[4.419289] (dynorb) StderrLine: {'line': b'\n'}
+[4.419316] (dynorb) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/usr/include/eigen3/Eigen/Core:161\x1b[m\x1b[K,\n'}
+[4.419343] (dynorb) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/parallels/Pangolin/include/pangolin/display/opengl_render_state.h:40\x1b[m\x1b[K,\n'}
+[4.419371] (dynorb) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/parallels/Pangolin/include/pangolin/display/viewport.h:31\x1b[m\x1b[K,\n'}
+[4.419442] (dynorb) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/parallels/Pangolin/include/pangolin/gl/gl.h:30\x1b[m\x1b[K,\n'}
+[4.419483] (dynorb) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/parallels/Pangolin/include/pangolin/pangolin.h:33\x1b[m\x1b[K,\n'}
+[4.419514] (dynorb) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/parallels/DynORBBase/src/dynorb/include/MapDrawer.h:27\x1b[m\x1b[K,\n'}
+[4.419542] (dynorb) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/parallels/DynORBBase/src/dynorb/include/Viewer.h:26\x1b[m\x1b[K,\n'}
+[4.419573] (dynorb) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/parallels/DynORBBase/src/dynorb/include/Tracking.h:28\x1b[m\x1b[K,\n'}
+[4.419600] (dynorb) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/parallels/DynORBBase/src/dynorb/include/System.h:30\x1b[m\x1b[K,\n'}
+[4.419625] (dynorb) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/parallels/DynORBBase/src/dynorb/src/System.cc:23\x1b[m\x1b[K:\n'}
+[4.419650] (dynorb) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/eigen3/Eigen/src/Core/util/Constants.h:167:37:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kdeclared here\n'}
+[4.419675] (dynorb) StderrLine: {'line': b'  167 | EIGEN_DEPRECATED const unsigned int \x1b[01;36m\x1b[KAlignedBit\x1b[m\x1b[K = 0x80;\n'}
+[4.419701] (dynorb) StderrLine: {'line': b'      |                                     \x1b[01;36m\x1b[K^~~~~~~~~~\x1b[m\x1b[K\n'}
+[4.435852] (dynorb) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/home/parallels/DynORBBase/src/dynorb/Thirdparty/g2o/g2o/types/types_seven_dof_expmap.h:35\x1b[m\x1b[K,\n'}
+[4.435975] (dynorb) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/parallels/DynORBBase/src/dynorb/include/LoopClosing.h:34\x1b[m\x1b[K,\n'}
+[4.436005] (dynorb) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/parallels/DynORBBase/src/dynorb/include/LocalMapping.h:26\x1b[m\x1b[K,\n'}
+[4.436030] (dynorb) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/parallels/DynORBBase/src/dynorb/include/Tracking.h:31\x1b[m\x1b[K,\n'}
+[4.436069] (dynorb) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/parallels/DynORBBase/src/dynorb/include/System.h:30\x1b[m\x1b[K,\n'}
+[4.436095] (dynorb) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/parallels/DynORBBase/src/dynorb/src/System.cc:23\x1b[m\x1b[K:\n'}
+[4.436120] (dynorb) StderrLine: {'line': b'/home/parallels/DynORBBase/src/dynorb/Thirdparty/g2o/g2o/types/../core/base_binary_edge.h: In instantiation of \xe2\x80\x98\x1b[01m\x1b[Kclass g2o::BaseBinaryEdge<7, g2o::Sim3, g2o::VertexSim3Expmap, g2o::VertexSim3Expmap>\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[4.436148] (dynorb) StderrLine: {'line': b'\x1b[01m\x1b[K/home/parallels/DynORBBase/src/dynorb/Thirdparty/g2o/g2o/types/types_seven_dof_expmap.h:99:27:\x1b[m\x1b[K   required from here\n'}
+[4.436173] (dynorb) StderrLine: {'line': b'\x1b[01m\x1b[K/home/parallels/DynORBBase/src/dynorb/Thirdparty/g2o/g2o/types/../core/base_binary_edge.h:59:80:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[KEigen::AlignedBit\x1b[m\x1b[K\xe2\x80\x99 is deprecated [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wdeprecated-declarations\x07-Wdeprecated-declarations\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[4.436201] (dynorb) StderrLine: {'line': b'   59 | ::Map<Matrix<double, Di, Dj>, Matrix<double, Di, Dj>::\x1b[01;35m\x1b[KFlags & AlignedBit\x1b[m\x1b[K ? Aligned : Unaligned > HessianBlockType;\n'}
+[4.436229] (dynorb) StderrLine: {'line': b'      |                                                       \x1b[01;35m\x1b[K~~~~~~^~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[4.436255] (dynorb) StderrLine: {'line': b'\n'}
+[4.436280] (dynorb) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/usr/include/eigen3/Eigen/Core:161\x1b[m\x1b[K,\n'}
+[4.436305] (dynorb) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/parallels/Pangolin/include/pangolin/display/opengl_render_state.h:40\x1b[m\x1b[K,\n'}
+[4.436330] (dynorb) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/parallels/Pangolin/include/pangolin/display/viewport.h:31\x1b[m\x1b[K,\n'}
+[4.436355] (dynorb) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/parallels/Pangolin/include/pangolin/gl/gl.h:30\x1b[m\x1b[K,\n'}
+[4.436379] (dynorb) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/parallels/Pangolin/include/pangolin/pangolin.h:33\x1b[m\x1b[K,\n'}
+[4.436404] (dynorb) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/parallels/DynORBBase/src/dynorb/include/MapDrawer.h:27\x1b[m\x1b[K,\n'}
+[4.436429] (dynorb) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/parallels/DynORBBase/src/dynorb/include/Viewer.h:26\x1b[m\x1b[K,\n'}
+[4.436455] (dynorb) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/parallels/DynORBBase/src/dynorb/include/Tracking.h:28\x1b[m\x1b[K,\n'}
+[4.436482] (dynorb) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/parallels/DynORBBase/src/dynorb/include/System.h:30\x1b[m\x1b[K,\n'}
+[4.436515] (dynorb) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/parallels/DynORBBase/src/dynorb/src/System.cc:23\x1b[m\x1b[K:\n'}
+[4.436542] (dynorb) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/eigen3/Eigen/src/Core/util/Constants.h:167:37:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kdeclared here\n'}
+[4.436569] (dynorb) StderrLine: {'line': b'  167 | EIGEN_DEPRECATED const unsigned int \x1b[01;36m\x1b[KAlignedBit\x1b[m\x1b[K = 0x80;\n'}
+[4.436630] (dynorb) StderrLine: {'line': b'      |                                     \x1b[01;36m\x1b[K^~~~~~~~~~\x1b[m\x1b[K\n'}
+[4.436744] (dynorb) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/home/parallels/DynORBBase/src/dynorb/Thirdparty/g2o/g2o/types/types_seven_dof_expmap.h:35\x1b[m\x1b[K,\n'}
+[4.436778] (dynorb) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/parallels/DynORBBase/src/dynorb/include/LoopClosing.h:34\x1b[m\x1b[K,\n'}
+[4.436805] (dynorb) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/parallels/DynORBBase/src/dynorb/include/LocalMapping.h:26\x1b[m\x1b[K,\n'}
+[4.436831] (dynorb) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/parallels/DynORBBase/src/dynorb/include/Tracking.h:31\x1b[m\x1b[K,\n'}
+[4.436856] (dynorb) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/parallels/DynORBBase/src/dynorb/include/System.h:30\x1b[m\x1b[K,\n'}
+[4.436885] (dynorb) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/parallels/DynORBBase/src/dynorb/src/System.cc:23\x1b[m\x1b[K:\n'}
+[4.436911] (dynorb) StderrLine: {'line': b'\x1b[01m\x1b[K/home/parallels/DynORBBase/src/dynorb/Thirdparty/g2o/g2o/types/../core/base_binary_edge.h:60:80:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[KEigen::AlignedBit\x1b[m\x1b[K\xe2\x80\x99 is deprecated [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wdeprecated-declarations\x07-Wdeprecated-declarations\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[4.436939] (dynorb) StderrLine: {'line': b'   60 | ::Map<Matrix<double, Dj, Di>, Matrix<double, Dj, Di>::\x1b[01;35m\x1b[KFlags & AlignedBit\x1b[m\x1b[K ? Aligned : Unaligned > HessianBlockTransposedType;\n'}
+[4.436965] (dynorb) StderrLine: {'line': b'      |                                                       \x1b[01;35m\x1b[K~~~~~~^~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[4.436993] (dynorb) StderrLine: {'line': b'\n'}
+[4.437017] (dynorb) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/usr/include/eigen3/Eigen/Core:161\x1b[m\x1b[K,\n'}
+[4.437042] (dynorb) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/parallels/Pangolin/include/pangolin/display/opengl_render_state.h:40\x1b[m\x1b[K,\n'}
+[4.437068] (dynorb) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/parallels/Pangolin/include/pangolin/display/viewport.h:31\x1b[m\x1b[K,\n'}
+[4.437092] (dynorb) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/parallels/Pangolin/include/pangolin/gl/gl.h:30\x1b[m\x1b[K,\n'}
+[4.437117] (dynorb) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/parallels/Pangolin/include/pangolin/pangolin.h:33\x1b[m\x1b[K,\n'}
+[4.437142] (dynorb) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/parallels/DynORBBase/src/dynorb/include/MapDrawer.h:27\x1b[m\x1b[K,\n'}
+[4.437166] (dynorb) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/parallels/DynORBBase/src/dynorb/include/Viewer.h:26\x1b[m\x1b[K,\n'}
+[4.437193] (dynorb) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/parallels/DynORBBase/src/dynorb/include/Tracking.h:28\x1b[m\x1b[K,\n'}
+[4.437219] (dynorb) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/parallels/DynORBBase/src/dynorb/include/System.h:30\x1b[m\x1b[K,\n'}
+[4.437245] (dynorb) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/parallels/DynORBBase/src/dynorb/src/System.cc:23\x1b[m\x1b[K:\n'}
+[4.437271] (dynorb) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/eigen3/Eigen/src/Core/util/Constants.h:167:37:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kdeclared here\n'}
+[4.437297] (dynorb) StderrLine: {'line': b'  167 | EIGEN_DEPRECATED const unsigned int \x1b[01;36m\x1b[KAlignedBit\x1b[m\x1b[K = 0x80;\n'}
+[4.437332] (dynorb) StderrLine: {'line': b'      |                                     \x1b[01;36m\x1b[K^~~~~~~~~~\x1b[m\x1b[K\n'}
+[4.445031] (-) TimerEvent: {}
+[4.461208] (dynorb) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/home/parallels/DynORBBase/src/dynorb/Thirdparty/g2o/g2o/types/types_seven_dof_expmap.h:35\x1b[m\x1b[K,\n'}
+[4.461360] (dynorb) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/parallels/DynORBBase/src/dynorb/include/LoopClosing.h:34\x1b[m\x1b[K,\n'}
+[4.461394] (dynorb) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/parallels/DynORBBase/src/dynorb/include/LocalMapping.h:26\x1b[m\x1b[K,\n'}
+[4.461420] (dynorb) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/parallels/DynORBBase/src/dynorb/include/Tracking.h:31\x1b[m\x1b[K,\n'}
+[4.461449] (dynorb) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/parallels/DynORBBase/src/dynorb/include/System.h:30\x1b[m\x1b[K,\n'}
+[4.461476] (dynorb) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/parallels/DynORBBase/src/dynorb/src/System.cc:23\x1b[m\x1b[K:\n'}
+[4.461504] (dynorb) StderrLine: {'line': b'/home/parallels/DynORBBase/src/dynorb/Thirdparty/g2o/g2o/types/../core/base_binary_edge.h: In instantiation of \xe2\x80\x98\x1b[01m\x1b[Kclass g2o::BaseBinaryEdge<2, Eigen::Matrix<double, 2, 1>, g2o::VertexSBAPointXYZ, g2o::VertexSim3Expmap>\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[4.461535] (dynorb) StderrLine: {'line': b'\x1b[01m\x1b[K/home/parallels/DynORBBase/src/dynorb/Thirdparty/g2o/g2o/types/types_seven_dof_expmap.h:130:36:\x1b[m\x1b[K   required from here\n'}
+[4.461613] (dynorb) StderrLine: {'line': b'\x1b[01m\x1b[K/home/parallels/DynORBBase/src/dynorb/Thirdparty/g2o/g2o/types/../core/base_binary_edge.h:59:80:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[KEigen::AlignedBit\x1b[m\x1b[K\xe2\x80\x99 is deprecated [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wdeprecated-declarations\x07-Wdeprecated-declarations\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[4.461709] (dynorb) StderrLine: {'line': b'   59 | ::Map<Matrix<double, Di, Dj>, Matrix<double, Di, Dj>::\x1b[01;35m\x1b[KFlags & AlignedBit\x1b[m\x1b[K ? Aligned : Unaligned > HessianBlockType;\n'}
+[4.461744] (dynorb) StderrLine: {'line': b'      |                                                       \x1b[01;35m\x1b[K~~~~~~^~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[4.461772] (dynorb) StderrLine: {'line': b'\n'}
+[4.461861] (dynorb) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/usr/include/eigen3/Eigen/Core:161\x1b[m\x1b[K,\n'}
+[4.461929] (dynorb) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/parallels/Pangolin/include/pangolin/display/opengl_render_state.h:40\x1b[m\x1b[K,\n'}
+[4.461965] (dynorb) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/parallels/Pangolin/include/pangolin/display/viewport.h:31\x1b[m\x1b[K,\n'}
+[4.462023] (dynorb) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/parallels/Pangolin/include/pangolin/gl/gl.h:30\x1b[m\x1b[K,\n'}
+[4.462058] (dynorb) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/parallels/Pangolin/include/pangolin/pangolin.h:33\x1b[m\x1b[K,\n'}
+[4.462086] (dynorb) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/parallels/DynORBBase/src/dynorb/include/MapDrawer.h:27\x1b[m\x1b[K,\n'}
+[4.462124] (dynorb) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/parallels/DynORBBase/src/dynorb/include/Viewer.h:26\x1b[m\x1b[K,\n'}
+[4.462150] (dynorb) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/parallels/DynORBBase/src/dynorb/include/Tracking.h:28\x1b[m\x1b[K,\n'}
+[4.462176] (dynorb) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/parallels/DynORBBase/src/dynorb/include/System.h:30\x1b[m\x1b[K,\n'}
+[4.462202] (dynorb) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/parallels/DynORBBase/src/dynorb/src/System.cc:23\x1b[m\x1b[K:\n'}
+[4.462229] (dynorb) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/eigen3/Eigen/src/Core/util/Constants.h:167:37:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kdeclared here\n'}
+[4.462257] (dynorb) StderrLine: {'line': b'  167 | EIGEN_DEPRECATED const unsigned int \x1b[01;36m\x1b[KAlignedBit\x1b[m\x1b[K = 0x80;\n'}
+[4.462283] (dynorb) StderrLine: {'line': b'      |                                     \x1b[01;36m\x1b[K^~~~~~~~~~\x1b[m\x1b[K\n'}
+[4.470545] (dynorb) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/home/parallels/DynORBBase/src/dynorb/Thirdparty/g2o/g2o/types/types_seven_dof_expmap.h:35\x1b[m\x1b[K,\n'}
+[4.470667] (dynorb) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/parallels/DynORBBase/src/dynorb/include/LoopClosing.h:34\x1b[m\x1b[K,\n'}
+[4.470699] (dynorb) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/parallels/DynORBBase/src/dynorb/include/LocalMapping.h:26\x1b[m\x1b[K,\n'}
+[4.470726] (dynorb) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/parallels/DynORBBase/src/dynorb/include/Tracking.h:31\x1b[m\x1b[K,\n'}
+[4.470753] (dynorb) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/parallels/DynORBBase/src/dynorb/include/System.h:30\x1b[m\x1b[K,\n'}
+[4.470779] (dynorb) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/parallels/DynORBBase/src/dynorb/src/System.cc:23\x1b[m\x1b[K:\n'}
+[4.470804] (dynorb) StderrLine: {'line': b'\x1b[01m\x1b[K/home/parallels/DynORBBase/src/dynorb/Thirdparty/g2o/g2o/types/../core/base_binary_edge.h:60:80:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[KEigen::AlignedBit\x1b[m\x1b[K\xe2\x80\x99 is deprecated [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wdeprecated-declarations\x07-Wdeprecated-declarations\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[4.470842] (dynorb) StderrLine: {'line': b'   60 | ::Map<Matrix<double, Dj, Di>, Matrix<double, Dj, Di>::\x1b[01;35m\x1b[KFlags & AlignedBit\x1b[m\x1b[K ? Aligned : Unaligned > HessianBlockTransposedType;\n'}
+[4.470878] (dynorb) StderrLine: {'line': b'      |                                                       \x1b[01;35m\x1b[K~~~~~~^~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[4.470904] (dynorb) StderrLine: {'line': b'\n'}
+[4.472634] (dynorb) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/usr/include/eigen3/Eigen/Core:161\x1b[m\x1b[K,\n'}
+[4.472747] (dynorb) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/parallels/Pangolin/include/pangolin/display/opengl_render_state.h:40\x1b[m\x1b[K,\n'}
+[4.472780] (dynorb) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/parallels/Pangolin/include/pangolin/display/viewport.h:31\x1b[m\x1b[K,\n'}
+[4.472842] (dynorb) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/parallels/Pangolin/include/pangolin/gl/gl.h:30\x1b[m\x1b[K,\n'}
+[4.472876] (dynorb) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/parallels/Pangolin/include/pangolin/pangolin.h:33\x1b[m\x1b[K,\n'}
+[4.472909] (dynorb) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/parallels/DynORBBase/src/dynorb/include/MapDrawer.h:27\x1b[m\x1b[K,\n'}
+[4.472935] (dynorb) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/parallels/DynORBBase/src/dynorb/include/Viewer.h:26\x1b[m\x1b[K,\n'}
+[4.472960] (dynorb) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/parallels/DynORBBase/src/dynorb/include/Tracking.h:28\x1b[m\x1b[K,\n'}
+[4.472986] (dynorb) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/parallels/DynORBBase/src/dynorb/include/System.h:30\x1b[m\x1b[K,\n'}
+[4.473012] (dynorb) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/parallels/DynORBBase/src/dynorb/src/System.cc:23\x1b[m\x1b[K:\n'}
+[4.473042] (dynorb) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/eigen3/Eigen/src/Core/util/Constants.h:167:37:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kdeclared here\n'}
+[4.473069] (dynorb) StderrLine: {'line': b'  167 | EIGEN_DEPRECATED const unsigned int \x1b[01;36m\x1b[KAlignedBit\x1b[m\x1b[K = 0x80;\n'}
+[4.473096] (dynorb) StderrLine: {'line': b'      |                                     \x1b[01;36m\x1b[K^~~~~~~~~~\x1b[m\x1b[K\n'}
+[4.516642] (dynorb) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/home/parallels/DynORBBase/src/dynorb/include/System.h:39\x1b[m\x1b[K,\n'}
+[4.516828] (dynorb) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/parallels/DynORBBase/src/dynorb/src/System.cc:23\x1b[m\x1b[K:\n'}
+[4.516887] (dynorb) StderrLine: {'line': b'\x1b[01m\x1b[K/home/parallels/DynORBBase/src/dynorb/include/DynamObjTracker.h:\x1b[m\x1b[K In member function \xe2\x80\x98\x1b[01m\x1b[Kvirtual bool ORB_SLAM2::DynamObjTracker::operator()(cv::Point2f&)\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[4.516943] (dynorb) StderrLine: {'line': b'\x1b[01m\x1b[K/home/parallels/DynORBBase/src/dynorb/include/DynamObjTracker.h:75:62:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kinvalid operands of types \xe2\x80\x98\x1b[01m\x1b[Kint\x1b[m\x1b[K\xe2\x80\x99 and \xe2\x80\x98\x1b[01m\x1b[Kconst char [2]\x1b[m\x1b[K\xe2\x80\x99 to binary \xe2\x80\x98\x1b[01m\x1b[Koperator<<\x1b[m\x1b[K\xe2\x80\x99\n'}
+[4.517005] (dynorb) StderrLine: {'line': b'   75 |             cout<<"Dynamic: "<<this->get_object_at(point)<\x1b[32m\x1b[K255\x1b[m\x1b[K\x1b[01;31m\x1b[K<<\x1b[m\x1b[K\x1b[34m\x1b[K"\\n"\x1b[m\x1b[K;\n'}
+[4.517059] (dynorb) StderrLine: {'line': b'      |                                                           \x1b[32m\x1b[K~~~\x1b[m\x1b[K\x1b[01;31m\x1b[K^~\x1b[m\x1b[K\x1b[34m\x1b[K~~~~\x1b[m\x1b[K\n'}
+[4.517121] (dynorb) StderrLine: {'line': b'      |                                                           \x1b[32m\x1b[K|\x1b[m\x1b[K    \x1b[34m\x1b[K|\x1b[m\x1b[K\n'}
+[4.517170] (dynorb) StderrLine: {'line': b'      |                                                           \x1b[32m\x1b[Kint\x1b[m\x1b[K  \x1b[34m\x1b[Kconst char [2]\x1b[m\x1b[K\n'}
+[4.517961] (dynorb) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/home/parallels/DynORBBase/src/dynorb/src/System.cc:23\x1b[m\x1b[K:\n'}
+[4.518023] (dynorb) StderrLine: {'line': b'\x1b[01m\x1b[K/home/parallels/DynORBBase/src/dynorb/include/System.h:\x1b[m\x1b[K In constructor \xe2\x80\x98\x1b[01m\x1b[KORB_SLAM2::System::System(const string&, const string&, ORB_SLAM2::System::eSensor, std::shared_ptr<ORB_SLAM2::DynamObjTracker>, bool)\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[4.518077] (dynorb) StderrLine: {'line': b'\x1b[01m\x1b[K/home/parallels/DynORBBase/src/dynorb/include/System.h:180:10:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[KORB_SLAM2::System::mbDeactivateLocalizationMode\x1b[m\x1b[K\xe2\x80\x99 will be initialized after [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wreorder\x07-Wreorder\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[4.518138] (dynorb) StderrLine: {'line': b'  180 |     bool \x1b[01;35m\x1b[KmbDeactivateLocalizationMode\x1b[m\x1b[K;\n'}
+[4.518186] (dynorb) StderrLine: {'line': b'      |          \x1b[01;35m\x1b[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[4.518265] (dynorb) StderrLine: {'line': b'\x1b[01m\x1b[K/home/parallels/DynORBBase/src/dynorb/include/System.h:152:38:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[K  \xe2\x80\x98\x1b[01m\x1b[Kstd::shared_ptr<ORB_SLAM2::DynamObjTracker> ORB_SLAM2::System::dynaTracker\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wreorder\x07-Wreorder\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[4.518331] (dynorb) StderrLine: {'line': b'  152 |     std::shared_ptr<DynamObjTracker> \x1b[01;35m\x1b[KdynaTracker\x1b[m\x1b[K;\n'}
+[4.518381] (dynorb) StderrLine: {'line': b'      |                                      \x1b[01;35m\x1b[K^~~~~~~~~~~\x1b[m\x1b[K\n'}
+[4.518490] (dynorb) StderrLine: {'line': b'\x1b[01m\x1b[K/home/parallels/DynORBBase/src/dynorb/src/System.cc:32:1:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[K  when initialized here [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wreorder\x07-Wreorder\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[4.518547] (dynorb) StderrLine: {'line': b'   32 | \x1b[01;35m\x1b[KSystem\x1b[m\x1b[K::System(const string &strVocFile, const string &strSettingsFile, const eSensor sensor,\n'}
+[4.518591] (dynorb) StderrLine: {'line': b'      | \x1b[01;35m\x1b[K^~~~~~\x1b[m\x1b[K\n'}
+[4.545139] (-) TimerEvent: {}
+[4.645473] (-) TimerEvent: {}
+[4.745783] (-) TimerEvent: {}
+[4.846117] (-) TimerEvent: {}
+[4.946464] (-) TimerEvent: {}
+[5.046907] (-) TimerEvent: {}
+[5.147202] (-) TimerEvent: {}
+[5.247616] (-) TimerEvent: {}
+[5.347936] (-) TimerEvent: {}
+[5.448769] (-) TimerEvent: {}
+[5.549081] (-) TimerEvent: {}
+[5.649361] (-) TimerEvent: {}
+[5.750253] (-) TimerEvent: {}
+[5.850632] (-) TimerEvent: {}
+[5.951155] (-) TimerEvent: {}
+[6.051426] (-) TimerEvent: {}
+[6.151982] (-) TimerEvent: {}
+[6.252707] (-) TimerEvent: {}
+[6.353262] (-) TimerEvent: {}
+[6.453544] (-) TimerEvent: {}
+[6.553879] (-) TimerEvent: {}
+[6.654184] (-) TimerEvent: {}
+[6.754630] (-) TimerEvent: {}
+[6.855358] (-) TimerEvent: {}
+[6.955814] (-) TimerEvent: {}
+[7.056351] (-) TimerEvent: {}
+[7.157439] (-) TimerEvent: {}
+[7.257942] (-) TimerEvent: {}
+[7.358257] (-) TimerEvent: {}
+[7.458753] (-) TimerEvent: {}
+[7.559349] (-) TimerEvent: {}
+[7.659980] (-) TimerEvent: {}
+[7.700582] (dynorb) StderrLine: {'line': b'gmake[2]: *** [CMakeFiles/dynorb.dir/build.make:76: CMakeFiles/dynorb.dir/src/System.cc.o] Error 1\n'}
+[7.700788] (dynorb) StderrLine: {'line': b'gmake[1]: *** [CMakeFiles/Makefile2:139: CMakeFiles/dynorb.dir/all] Error 2\n'}
+[7.701020] (dynorb) StderrLine: {'line': b'gmake: *** [Makefile:146: all] Error 2\n'}
+[7.704360] (dynorb) CommandEnded: {'returncode': 2}
+[7.760079] (-) TimerEvent: {}
+[7.770725] (dynorb) JobEnded: {'identifier': 'dynorb', 'rc': 2}
+[7.772272] (-) EventReactorShutdown: {}

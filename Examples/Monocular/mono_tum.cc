@@ -23,9 +23,12 @@
 #include<algorithm>
 #include<fstream>
 #include<chrono>
+#include <memory>
 #include <rclcpp/rclcpp.hpp>
-#include<opencv2/core/core.hpp>
+#include <cv_bridge/cv_bridge.h>
 #include<System.h>
+
+#include "dynorb_interface/srv/feed_frame.hpp"
 
 using namespace std;
 
@@ -51,12 +54,11 @@ int main(int argc, char **argv)
     // DynaORB CHANGE
     //initialize SAM2 tracker in separate ros thread and pass to system
     rclcpp::init(argc, argv);
+    std::shared_ptr<rclcpp::Node> node = rclcpp::Node::make_shared("dynam_obj_tracker");
+    rclcpp::Client<dynorb_interface::srv::FeedFrame>::SharedPtr client = 
+        node->create_client<dynorb_interface::srv::FeedFrame>("feed_frame");
+
     std::shared_ptr<ORB_SLAM2::DynamObjTracker> dynaTracker = std::make_shared<ORB_SLAM2::DynamObjTracker>();
-    rclcpp::executors::MultiThreadedExecutor executor;
-    executor.add_node(dynaTracker);
-    std::thread executor_thread([&executor]() {
-        executor.spin();
-    });
 
     // Create SLAM system. It initializes all system threads and gets ready to process frames.
     ORB_SLAM2::System SLAM(argv[1],argv[2],ORB_SLAM2::System::MONOCULAR,dynaTracker,true);
@@ -71,6 +73,7 @@ int main(int argc, char **argv)
 
     // Main loop
     cv::Mat im;
+    cv::Mat argim;
     for(int ni=0; ni<nImages; ni++)
     {
         // Read image from file
@@ -90,16 +93,38 @@ int main(int argc, char **argv)
         std::chrono::monotonic_clock::time_point t1 = std::chrono::monotonic_clock::now();
 #endif
 
-        //Pass the image to the DynamObjTracker and wait for the result
+        //call the sam2 ros service to process frame
+        auto request = std::make_shared<dynorb_interface::srv::FeedFrame::Request>();
+
+        RCLCPP_INFO(node->get_logger(), "Created request");
+
+        while (!client->wait_for_service(1s)) {
+            if (!rclcpp::ok()) {
+            RCLCPP_ERROR(rclcpp::get_logger("rclcpp"), "Interrupted while waiting for the service. Exiting.");
+            exit(1);
+            }
+            RCLCPP_INFO(rclcpp::get_logger("rclcpp"), "Service not available, waiting again...");
+        }
+
+        std_msgs::msg::Header hdr;
+        im.copyTo(argim);
+        cv_bridge::CvImage(hdr, "rgb8", argim).toImageMsg(request->frame);
+
         auto result = client->async_send_request(request);
+
         // Wait for the result.
         if (rclcpp::spin_until_future_complete(node, result) ==
             rclcpp::FutureReturnCode::SUCCESS)
         {
-            RCLCPP_INFO(rclcpp::get_logger("rclcpp"), "Sum: %ld", result.get()->sum);
+            auto frame = cv_bridge::toCvCopy(result.get()->seg, "mono8")->image;
+            RCLCPP_INFO(node->get_logger(), "Successfully extracted frame.");
+            dynaTracker->set_frame(frame);
         } else {
-            RCLCPP_ERROR(rclcpp::get_logger("rclcpp"), "Failed to call service add_two_ints");
+            RCLCPP_ERROR(rclcpp::get_logger("rclcpp"), "Failed to call service");
         }
+
+        RCLCPP_INFO(node->get_logger(), "Successfully set frame.");
+
         // Pass the image to the SLAM system
         SLAM.TrackMonocular(im,tframe);
 
@@ -128,7 +153,6 @@ int main(int argc, char **argv)
     SLAM.Shutdown();
 
     //DynORB CHANGE
-    executor_thread.join();
     rclcpp::shutdown();
 
     // Tracking time statistics

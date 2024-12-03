@@ -59,6 +59,7 @@
 #include <opencv2/features2d/features2d.hpp>
 #include <opencv2/imgproc/imgproc.hpp>
 #include <vector>
+#include <iostream>
 
 #include "ORBextractor.h"
 

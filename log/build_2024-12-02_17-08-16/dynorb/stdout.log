@@ -1,0 +1,22 @@
+[35m[1mConsolidate compiler generated dependencies of target dynorb[0m
+[ 90%] Built target dynorb
+[35m[1mConsolidate compiler generated dependencies of target mono_tum[0m
+[ 95%] [32mBuilding CXX object CMakeFiles/mono_tum.dir/Examples/Monocular/mono_tum.cc.o[0m
+[100%] [32m[1mLinking CXX executable ../../Examples/Monocular/mono_tum[0m
+[100%] Built target mono_tum
+-- Install configuration: "Release"
+-- Up-to-date: /home/parallels/DynORBBase/src/dynorb/install/dynorb/share/ament_index/resource_index/package_run_dependencies/dynorb
+-- Up-to-date: /home/parallels/DynORBBase/src/dynorb/install/dynorb/share/ament_index/resource_index/parent_prefix_path/dynorb
+-- Up-to-date: /home/parallels/DynORBBase/src/dynorb/install/dynorb/share/dynorb/environment/ament_prefix_path.sh
+-- Up-to-date: /home/parallels/DynORBBase/src/dynorb/install/dynorb/share/dynorb/environment/ament_prefix_path.dsv
+-- Up-to-date: /home/parallels/DynORBBase/src/dynorb/install/dynorb/share/dynorb/environment/path.sh
+-- Up-to-date: /home/parallels/DynORBBase/src/dynorb/install/dynorb/share/dynorb/environment/path.dsv
+-- Up-to-date: /home/parallels/DynORBBase/src/dynorb/install/dynorb/share/dynorb/local_setup.bash
+-- Up-to-date: /home/parallels/DynORBBase/src/dynorb/install/dynorb/share/dynorb/local_setup.sh
+-- Up-to-date: /home/parallels/DynORBBase/src/dynorb/install/dynorb/share/dynorb/local_setup.zsh
+-- Up-to-date: /home/parallels/DynORBBase/src/dynorb/install/dynorb/share/dynorb/local_setup.dsv
+-- Installing: /home/parallels/DynORBBase/src/dynorb/install/dynorb/share/dynorb/package.dsv
+-- Up-to-date: /home/parallels/DynORBBase/src/dynorb/install/dynorb/share/ament_index/resource_index/packages/dynorb
+-- Up-to-date: /home/parallels/DynORBBase/src/dynorb/install/dynorb/share/dynorb/cmake/dynorbConfig.cmake
+-- Up-to-date: /home/parallels/DynORBBase/src/dynorb/install/dynorb/share/dynorb/cmake/dynorbConfig-version.cmake
+-- Up-to-date: /home/parallels/DynORBBase/src/dynorb/install/dynorb/share/dynorb/package.xml

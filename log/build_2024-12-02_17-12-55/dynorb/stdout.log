@@ -1,0 +1,5 @@
+[  4%] [32mBuilding CXX object CMakeFiles/dynorb.dir/src/System.cc.o[0m
+[  9%] [32mBuilding CXX object CMakeFiles/dynorb.dir/src/Tracking.cc.o[0m
+[ 13%] [32mBuilding CXX object CMakeFiles/dynorb.dir/src/LocalMapping.cc.o[0m
+[ 18%] [32mBuilding CXX object CMakeFiles/dynorb.dir/src/LoopClosing.cc.o[0m
+[ 22%] [32mBuilding CXX object CMakeFiles/dynorb.dir/src/FrameDrawer.cc.o[0m

@@ -1,0 +1,272 @@
+[35m[1mConsolidate compiler generated dependencies of target dynorb[0m
+[  4%] [32mBuilding CXX object CMakeFiles/dynorb.dir/src/Frame.cc.o[0m
+In file included from [01m[K/home/parallels/DynORBBase/src/dynorb/include/ORBextractor.h:28[m[K,
+                 from [01m[K/home/parallels/DynORBBase/src/dynorb/include/KeyFrame.h:28[m[K,
+                 from [01m[K/home/parallels/DynORBBase/src/dynorb/include/MapPoint.h:24[m[K,
+                 from [01m[K/home/parallels/DynORBBase/src/dynorb/include/Frame.h:28[m[K,
+                 from [01m[K/home/parallels/DynORBBase/src/dynorb/src/Frame.cc:21[m[K:
+[01m[K/home/parallels/DynORBBase/src/dynorb/include/PointFilter.h:[m[K In member function ‘[01m[Kvirtual bool ORB_SLAM2::PointFilter::operator()(cv::Point2f&)[m[K’:
+[01m[K/home/parallels/DynORBBase/src/dynorb/include/PointFilter.h:6:50:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kpt[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+    6 |             virtual bool operator()([01;35m[Kcv::Point2f& pt[m[K){return true;};
+      |                                     [01;35m[K~~~~~~~~~~~~~^~[m[K
+In file included from [01m[K/home/parallels/DynORBBase/src/dynorb/Thirdparty/g2o/g2o/types/types_six_dof_expmap.h:37[m[K,
+                 from [01m[K/home/parallels/DynORBBase/src/dynorb/include/Converter.h:27[m[K,
+                 from [01m[K/home/parallels/DynORBBase/src/dynorb/src/Frame.cc:22[m[K:
+[01m[K/home/parallels/DynORBBase/src/dynorb/Thirdparty/g2o/g2o/types/../core/base_vertex.h:[m[K At global scope:
+[01m[K/home/parallels/DynORBBase/src/dynorb/Thirdparty/g2o/g2o/types/../core/base_vertex.h:62:74:[m[K [01;35m[Kwarning: [m[K‘[01m[KEigen::AlignedBit[m[K’ is deprecated [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wdeprecated-declarations-Wdeprecated-declarations]8;;[m[K]
+   62 | igen::Map<Matrix<double, D, D>, Matrix<double,D,D>::Flags & [01;35m[KAlignedBit[m[K ? Aligned : Unaligned >  HessianBlockType;
+      |                                                             [01;35m[K^~~~~~~~~~[m[K
+
+In file included from [01m[K/usr/include/eigen3/Eigen/Core:161[m[K,
+                 from [01m[K/usr/include/eigen3/Eigen/Dense:1[m[K,
+                 from [01m[K/home/parallels/DynORBBase/src/dynorb/include/Converter.h:26[m[K,
+                 from [01m[K/home/parallels/DynORBBase/src/dynorb/src/Frame.cc:22[m[K:
+[01m[K/usr/include/eigen3/Eigen/src/Core/util/Constants.h:167:37:[m[K [01;36m[Knote: [m[Kdeclared here
+  167 | EIGEN_DEPRECATED const unsigned int [01;36m[KAlignedBit[m[K = 0x80;
+      |                                     [01;36m[K^~~~~~~~~~[m[K
+In file included from [01m[K/home/parallels/DynORBBase/src/dynorb/Thirdparty/g2o/g2o/types/types_six_dof_expmap.h:38[m[K,
+                 from [01m[K/home/parallels/DynORBBase/src/dynorb/include/Converter.h:27[m[K,
+                 from [01m[K/home/parallels/DynORBBase/src/dynorb/src/Frame.cc:22[m[K:
+[01m[K/home/parallels/DynORBBase/src/dynorb/Thirdparty/g2o/g2o/types/../core/base_binary_edge.h:59:82:[m[K [01;35m[Kwarning: [m[K‘[01m[KEigen::AlignedBit[m[K’ is deprecated [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wdeprecated-declarations-Wdeprecated-declarations]8;;[m[K]
+   59 | Map<Matrix<double, Di, Dj>, Matrix<double, Di, Dj>::Flags & [01;35m[KAlignedBit[m[K ? Aligned : Unaligned > HessianBlockType;
+      |                                                             [01;35m[K^~~~~~~~~~[m[K
+
+In file included from [01m[K/usr/include/eigen3/Eigen/Core:161[m[K,
+                 from [01m[K/usr/include/eigen3/Eigen/Dense:1[m[K,
+                 from [01m[K/home/parallels/DynORBBase/src/dynorb/include/Converter.h:26[m[K,
+                 from [01m[K/home/parallels/DynORBBase/src/dynorb/src/Frame.cc:22[m[K:
+[01m[K/usr/include/eigen3/Eigen/src/Core/util/Constants.h:167:37:[m[K [01;36m[Knote: [m[Kdeclared here
+  167 | EIGEN_DEPRECATED const unsigned int [01;36m[KAlignedBit[m[K = 0x80;
+      |                                     [01;36m[K^~~~~~~~~~[m[K
+In file included from [01m[K/home/parallels/DynORBBase/src/dynorb/Thirdparty/g2o/g2o/types/types_six_dof_expmap.h:38[m[K,
+                 from [01m[K/home/parallels/DynORBBase/src/dynorb/include/Converter.h:27[m[K,
+                 from [01m[K/home/parallels/DynORBBase/src/dynorb/src/Frame.cc:22[m[K:
+[01m[K/home/parallels/DynORBBase/src/dynorb/Thirdparty/g2o/g2o/types/../core/base_binary_edge.h:60:82:[m[K [01;35m[Kwarning: [m[K‘[01m[KEigen::AlignedBit[m[K’ is deprecated [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wdeprecated-declarations-Wdeprecated-declarations]8;;[m[K]
+   60 | Map<Matrix<double, Dj, Di>, Matrix<double, Dj, Di>::Flags & [01;35m[KAlignedBit[m[K ? Aligned : Unaligned > HessianBlockTransposedType;
+      |                                                             [01;35m[K^~~~~~~~~~[m[K
+
+In file included from [01m[K/usr/include/eigen3/Eigen/Core:161[m[K,
+                 from [01m[K/usr/include/eigen3/Eigen/Dense:1[m[K,
+                 from [01m[K/home/parallels/DynORBBase/src/dynorb/include/Converter.h:26[m[K,
+                 from [01m[K/home/parallels/DynORBBase/src/dynorb/src/Frame.cc:22[m[K:
+[01m[K/usr/include/eigen3/Eigen/src/Core/util/Constants.h:167:37:[m[K [01;36m[Knote: [m[Kdeclared here
+  167 | EIGEN_DEPRECATED const unsigned int [01;36m[KAlignedBit[m[K = 0x80;
+      |                                     [01;36m[K^~~~~~~~~~[m[K
+In file included from [01m[K/home/parallels/DynORBBase/src/dynorb/Thirdparty/g2o/g2o/types/types_six_dof_expmap.h:41[m[K,
+                 from [01m[K/home/parallels/DynORBBase/src/dynorb/include/Converter.h:27[m[K,
+                 from [01m[K/home/parallels/DynORBBase/src/dynorb/src/Frame.cc:22[m[K:
+[01m[K/home/parallels/DynORBBase/src/dynorb/Thirdparty/g2o/g2o/types/se3quat.h:43:38:[m[K [01;35m[Kwarning: [m[Kextra ‘[01m[K;[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wpedantic-Wpedantic]8;;[m[K]
+   43 |       EIGEN_MAKE_ALIGNED_OPERATOR_NEW[01;35m[K;[m[K
+      |                                      [01;35m[K^[m[K
+      |                                      [31m[K-[m[K
+In file included from [01m[K/home/parallels/DynORBBase/src/dynorb/Thirdparty/g2o/g2o/types/types_six_dof_expmap.h:37[m[K,
+                 from [01m[K/home/parallels/DynORBBase/src/dynorb/include/Converter.h:27[m[K,
+                 from [01m[K/home/parallels/DynORBBase/src/dynorb/src/Frame.cc:22[m[K:
+/home/parallels/DynORBBase/src/dynorb/Thirdparty/g2o/g2o/types/../core/base_vertex.h: In instantiation of ‘[01m[Kclass g2o::BaseVertex<3, Eigen::Matrix<double, 3, 1> >[m[K’:
+[01m[K/home/parallels/DynORBBase/src/dynorb/Thirdparty/g2o/g2o/types/types_sba.h:40:35:[m[K   required from here
+[01m[K/home/parallels/DynORBBase/src/dynorb/Thirdparty/g2o/g2o/types/../core/base_vertex.h:62:72:[m[K [01;35m[Kwarning: [m[K‘[01m[KEigen::AlignedBit[m[K’ is deprecated [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wdeprecated-declarations-Wdeprecated-declarations]8;;[m[K]
+   62 |  Eigen::Map<Matrix<double, D, D>, Matrix<double,D,D>::[01;35m[KFlags & AlignedBit[m[K ? Aligned : Unaligned >  HessianBlockType;
+      |                                                       [01;35m[K~~~~~~^~~~~~~~~~~~[m[K
+
+In file included from [01m[K/usr/include/eigen3/Eigen/Core:161[m[K,
+                 from [01m[K/usr/include/eigen3/Eigen/Dense:1[m[K,
+                 from [01m[K/home/parallels/DynORBBase/src/dynorb/include/Converter.h:26[m[K,
+                 from [01m[K/home/parallels/DynORBBase/src/dynorb/src/Frame.cc:22[m[K:
+[01m[K/usr/include/eigen3/Eigen/src/Core/util/Constants.h:167:37:[m[K [01;36m[Knote: [m[Kdeclared here
+  167 | EIGEN_DEPRECATED const unsigned int [01;36m[KAlignedBit[m[K = 0x80;
+      |                                     [01;36m[K^~~~~~~~~~[m[K
+In file included from [01m[K/home/parallels/DynORBBase/src/dynorb/Thirdparty/g2o/g2o/types/types_six_dof_expmap.h:37[m[K,
+                 from [01m[K/home/parallels/DynORBBase/src/dynorb/include/Converter.h:27[m[K,
+                 from [01m[K/home/parallels/DynORBBase/src/dynorb/src/Frame.cc:22[m[K:
+/home/parallels/DynORBBase/src/dynorb/Thirdparty/g2o/g2o/types/../core/base_vertex.h: In instantiation of ‘[01m[Kclass g2o::BaseVertex<6, g2o::SE3Quat>[m[K’:
+[01m[K/home/parallels/DynORBBase/src/dynorb/Thirdparty/g2o/g2o/types/types_six_dof_expmap.h:59:33:[m[K   required from here
+[01m[K/home/parallels/DynORBBase/src/dynorb/Thirdparty/g2o/g2o/types/../core/base_vertex.h:62:72:[m[K [01;35m[Kwarning: [m[K‘[01m[KEigen::AlignedBit[m[K’ is deprecated [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wdeprecated-declarations-Wdeprecated-declarations]8;;[m[K]
+   62 |  Eigen::Map<Matrix<double, D, D>, Matrix<double,D,D>::[01;35m[KFlags & AlignedBit[m[K ? Aligned : Unaligned >  HessianBlockType;
+      |                                                       [01;35m[K~~~~~~^~~~~~~~~~~~[m[K
+
+In file included from [01m[K/usr/include/eigen3/Eigen/Core:161[m[K,
+                 from [01m[K/usr/include/eigen3/Eigen/Dense:1[m[K,
+                 from [01m[K/home/parallels/DynORBBase/src/dynorb/include/Converter.h:26[m[K,
+                 from [01m[K/home/parallels/DynORBBase/src/dynorb/src/Frame.cc:22[m[K:
+[01m[K/usr/include/eigen3/Eigen/src/Core/util/Constants.h:167:37:[m[K [01;36m[Knote: [m[Kdeclared here
+  167 | EIGEN_DEPRECATED const unsigned int [01;36m[KAlignedBit[m[K = 0x80;
+      |                                     [01;36m[K^~~~~~~~~~[m[K
+In file included from [01m[K/home/parallels/DynORBBase/src/dynorb/Thirdparty/g2o/g2o/types/types_six_dof_expmap.h:38[m[K,
+                 from [01m[K/home/parallels/DynORBBase/src/dynorb/include/Converter.h:27[m[K,
+                 from [01m[K/home/parallels/DynORBBase/src/dynorb/src/Frame.cc:22[m[K:
+/home/parallels/DynORBBase/src/dynorb/Thirdparty/g2o/g2o/types/../core/base_binary_edge.h: In instantiation of ‘[01m[Kclass g2o::BaseBinaryEdge<2, Eigen::Matrix<double, 2, 1>, g2o::VertexSBAPointXYZ, g2o::VertexSE3Expmap>[m[K’:
+[01m[K/home/parallels/DynORBBase/src/dynorb/Thirdparty/g2o/g2o/types/types_six_dof_expmap.h:80:35:[m[K   required from here
+[01m[K/home/parallels/DynORBBase/src/dynorb/Thirdparty/g2o/g2o/types/../core/base_binary_edge.h:59:80:[m[K [01;35m[Kwarning: [m[K‘[01m[KEigen::AlignedBit[m[K’ is deprecated [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wdeprecated-declarations-Wdeprecated-declarations]8;;[m[K]
+   59 | ::Map<Matrix<double, Di, Dj>, Matrix<double, Di, Dj>::[01;35m[KFlags & AlignedBit[m[K ? Aligned : Unaligned > HessianBlockType;
+      |                                                       [01;35m[K~~~~~~^~~~~~~~~~~~[m[K
+
+In file included from [01m[K/usr/include/eigen3/Eigen/Core:161[m[K,
+                 from [01m[K/usr/include/eigen3/Eigen/Dense:1[m[K,
+                 from [01m[K/home/parallels/DynORBBase/src/dynorb/include/Converter.h:26[m[K,
+                 from [01m[K/home/parallels/DynORBBase/src/dynorb/src/Frame.cc:22[m[K:
+[01m[K/usr/include/eigen3/Eigen/src/Core/util/Constants.h:167:37:[m[K [01;36m[Knote: [m[Kdeclared here
+  167 | EIGEN_DEPRECATED const unsigned int [01;36m[KAlignedBit[m[K = 0x80;
+      |                                     [01;36m[K^~~~~~~~~~[m[K
+In file included from [01m[K/home/parallels/DynORBBase/src/dynorb/Thirdparty/g2o/g2o/types/types_six_dof_expmap.h:38[m[K,
+                 from [01m[K/home/parallels/DynORBBase/src/dynorb/include/Converter.h:27[m[K,
+                 from [01m[K/home/parallels/DynORBBase/src/dynorb/src/Frame.cc:22[m[K:
+[01m[K/home/parallels/DynORBBase/src/dynorb/Thirdparty/g2o/g2o/types/../core/base_binary_edge.h:60:80:[m[K [01;35m[Kwarning: [m[K‘[01m[KEigen::AlignedBit[m[K’ is deprecated [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wdeprecated-declarations-Wdeprecated-declarations]8;;[m[K]
+   60 | ::Map<Matrix<double, Dj, Di>, Matrix<double, Dj, Di>::[01;35m[KFlags & AlignedBit[m[K ? Aligned : Unaligned > HessianBlockTransposedType;
+      |                                                       [01;35m[K~~~~~~^~~~~~~~~~~~[m[K
+
+In file included from [01m[K/usr/include/eigen3/Eigen/Core:161[m[K,
+                 from [01m[K/usr/include/eigen3/Eigen/Dense:1[m[K,
+                 from [01m[K/home/parallels/DynORBBase/src/dynorb/include/Converter.h:26[m[K,
+                 from [01m[K/home/parallels/DynORBBase/src/dynorb/src/Frame.cc:22[m[K:
+[01m[K/usr/include/eigen3/Eigen/src/Core/util/Constants.h:167:37:[m[K [01;36m[Knote: [m[Kdeclared here
+  167 | EIGEN_DEPRECATED const unsigned int [01;36m[KAlignedBit[m[K = 0x80;
+      |                                     [01;36m[K^~~~~~~~~~[m[K
+In file included from [01m[K/home/parallels/DynORBBase/src/dynorb/Thirdparty/g2o/g2o/types/types_six_dof_expmap.h:38[m[K,
+                 from [01m[K/home/parallels/DynORBBase/src/dynorb/include/Converter.h:27[m[K,
+                 from [01m[K/home/parallels/DynORBBase/src/dynorb/src/Frame.cc:22[m[K:
+/home/parallels/DynORBBase/src/dynorb/Thirdparty/g2o/g2o/types/../core/base_binary_edge.h: In instantiation of ‘[01m[Kclass g2o::BaseBinaryEdge<3, Eigen::Matrix<double, 3, 1>, g2o::VertexSBAPointXYZ, g2o::VertexSE3Expmap>[m[K’:
+[01m[K/home/parallels/DynORBBase/src/dynorb/Thirdparty/g2o/g2o/types/types_six_dof_expmap.h:112:41:[m[K   required from here
+[01m[K/home/parallels/DynORBBase/src/dynorb/Thirdparty/g2o/g2o/types/../core/base_binary_edge.h:59:80:[m[K [01;35m[Kwarning: [m[K‘[01m[KEigen::AlignedBit[m[K’ is deprecated [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wdeprecated-declarations-Wdeprecated-declarations]8;;[m[K]
+   59 | ::Map<Matrix<double, Di, Dj>, Matrix<double, Di, Dj>::[01;35m[KFlags & AlignedBit[m[K ? Aligned : Unaligned > HessianBlockType;
+      |                                                       [01;35m[K~~~~~~^~~~~~~~~~~~[m[K
+
+In file included from [01m[K/usr/include/eigen3/Eigen/Core:161[m[K,
+                 from [01m[K/usr/include/eigen3/Eigen/Dense:1[m[K,
+                 from [01m[K/home/parallels/DynORBBase/src/dynorb/include/Converter.h:26[m[K,
+                 from [01m[K/home/parallels/DynORBBase/src/dynorb/src/Frame.cc:22[m[K:
+[01m[K/usr/include/eigen3/Eigen/src/Core/util/Constants.h:167:37:[m[K [01;36m[Knote: [m[Kdeclared here
+  167 | EIGEN_DEPRECATED const unsigned int [01;36m[KAlignedBit[m[K = 0x80;
+      |                                     [01;36m[K^~~~~~~~~~[m[K
+In file included from [01m[K/home/parallels/DynORBBase/src/dynorb/Thirdparty/g2o/g2o/types/types_six_dof_expmap.h:38[m[K,
+                 from [01m[K/home/parallels/DynORBBase/src/dynorb/include/Converter.h:27[m[K,
+                 from [01m[K/home/parallels/DynORBBase/src/dynorb/src/Frame.cc:22[m[K:
+[01m[K/home/parallels/DynORBBase/src/dynorb/Thirdparty/g2o/g2o/types/../core/base_binary_edge.h:60:80:[m[K [01;35m[Kwarning: [m[K‘[01m[KEigen::AlignedBit[m[K’ is deprecated [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wdeprecated-declarations-Wdeprecated-declarations]8;;[m[K]
+   60 | ::Map<Matrix<double, Dj, Di>, Matrix<double, Dj, Di>::[01;35m[KFlags & AlignedBit[m[K ? Aligned : Unaligned > HessianBlockTransposedType;
+      |                                                       [01;35m[K~~~~~~^~~~~~~~~~~~[m[K
+
+In file included from [01m[K/usr/include/eigen3/Eigen/Core:161[m[K,
+                 from [01m[K/usr/include/eigen3/Eigen/Dense:1[m[K,
+                 from [01m[K/home/parallels/DynORBBase/src/dynorb/include/Converter.h:26[m[K,
+                 from [01m[K/home/parallels/DynORBBase/src/dynorb/src/Frame.cc:22[m[K:
+[01m[K/usr/include/eigen3/Eigen/src/Core/util/Constants.h:167:37:[m[K [01;36m[Knote: [m[Kdeclared here
+  167 | EIGEN_DEPRECATED const unsigned int [01;36m[KAlignedBit[m[K = 0x80;
+      |                                     [01;36m[K^~~~~~~~~~[m[K
+In file included from [01m[K/home/parallels/DynORBBase/src/dynorb/Thirdparty/g2o/g2o/types/types_six_dof_expmap.h:37[m[K,
+                 from [01m[K/home/parallels/DynORBBase/src/dynorb/include/Converter.h:27[m[K,
+                 from [01m[K/home/parallels/DynORBBase/src/dynorb/src/Frame.cc:22[m[K:
+/home/parallels/DynORBBase/src/dynorb/Thirdparty/g2o/g2o/types/../core/base_vertex.h: In instantiation of ‘[01m[Kclass g2o::BaseVertex<7, g2o::Sim3>[m[K’:
+[01m[K/home/parallels/DynORBBase/src/dynorb/Thirdparty/g2o/g2o/types/types_seven_dof_expmap.h:48:35:[m[K   required from here
+[01m[K/home/parallels/DynORBBase/src/dynorb/Thirdparty/g2o/g2o/types/../core/base_vertex.h:62:72:[m[K [01;35m[Kwarning: [m[K‘[01m[KEigen::AlignedBit[m[K’ is deprecated [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wdeprecated-declarations-Wdeprecated-declarations]8;;[m[K]
+   62 |  Eigen::Map<Matrix<double, D, D>, Matrix<double,D,D>::[01;35m[KFlags & AlignedBit[m[K ? Aligned : Unaligned >  HessianBlockType;
+      |                                                       [01;35m[K~~~~~~^~~~~~~~~~~~[m[K
+
+In file included from [01m[K/usr/include/eigen3/Eigen/Core:161[m[K,
+                 from [01m[K/usr/include/eigen3/Eigen/Dense:1[m[K,
+                 from [01m[K/home/parallels/DynORBBase/src/dynorb/include/Converter.h:26[m[K,
+                 from [01m[K/home/parallels/DynORBBase/src/dynorb/src/Frame.cc:22[m[K:
+[01m[K/usr/include/eigen3/Eigen/src/Core/util/Constants.h:167:37:[m[K [01;36m[Knote: [m[Kdeclared here
+  167 | EIGEN_DEPRECATED const unsigned int [01;36m[KAlignedBit[m[K = 0x80;
+      |                                     [01;36m[K^~~~~~~~~~[m[K
+In file included from [01m[K/home/parallels/DynORBBase/src/dynorb/Thirdparty/g2o/g2o/types/types_six_dof_expmap.h:38[m[K,
+                 from [01m[K/home/parallels/DynORBBase/src/dynorb/include/Converter.h:27[m[K,
+                 from [01m[K/home/parallels/DynORBBase/src/dynorb/src/Frame.cc:22[m[K:
+/home/parallels/DynORBBase/src/dynorb/Thirdparty/g2o/g2o/types/../core/base_binary_edge.h: In instantiation of ‘[01m[Kclass g2o::BaseBinaryEdge<7, g2o::Sim3, g2o::VertexSim3Expmap, g2o::VertexSim3Expmap>[m[K’:
+[01m[K/home/parallels/DynORBBase/src/dynorb/Thirdparty/g2o/g2o/types/types_seven_dof_expmap.h:99:27:[m[K   required from here
+[01m[K/home/parallels/DynORBBase/src/dynorb/Thirdparty/g2o/g2o/types/../core/base_binary_edge.h:59:80:[m[K [01;35m[Kwarning: [m[K‘[01m[KEigen::AlignedBit[m[K’ is deprecated [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wdeprecated-declarations-Wdeprecated-declarations]8;;[m[K]
+   59 | ::Map<Matrix<double, Di, Dj>, Matrix<double, Di, Dj>::[01;35m[KFlags & AlignedBit[m[K ? Aligned : Unaligned > HessianBlockType;
+      |                                                       [01;35m[K~~~~~~^~~~~~~~~~~~[m[K
+
+In file included from [01m[K/usr/include/eigen3/Eigen/Core:161[m[K,
+                 from [01m[K/usr/include/eigen3/Eigen/Dense:1[m[K,
+                 from [01m[K/home/parallels/DynORBBase/src/dynorb/include/Converter.h:26[m[K,
+                 from [01m[K/home/parallels/DynORBBase/src/dynorb/src/Frame.cc:22[m[K:
+[01m[K/usr/include/eigen3/Eigen/src/Core/util/Constants.h:167:37:[m[K [01;36m[Knote: [m[Kdeclared here
+  167 | EIGEN_DEPRECATED const unsigned int [01;36m[KAlignedBit[m[K = 0x80;
+      |                                     [01;36m[K^~~~~~~~~~[m[K
+In file included from [01m[K/home/parallels/DynORBBase/src/dynorb/Thirdparty/g2o/g2o/types/types_six_dof_expmap.h:38[m[K,
+                 from [01m[K/home/parallels/DynORBBase/src/dynorb/include/Converter.h:27[m[K,
+                 from [01m[K/home/parallels/DynORBBase/src/dynorb/src/Frame.cc:22[m[K:
+[01m[K/home/parallels/DynORBBase/src/dynorb/Thirdparty/g2o/g2o/types/../core/base_binary_edge.h:60:80:[m[K [01;35m[Kwarning: [m[K‘[01m[KEigen::AlignedBit[m[K’ is deprecated [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wdeprecated-declarations-Wdeprecated-declarations]8;;[m[K]
+   60 | ::Map<Matrix<double, Dj, Di>, Matrix<double, Dj, Di>::[01;35m[KFlags & AlignedBit[m[K ? Aligned : Unaligned > HessianBlockTransposedType;
+      |                                                       [01;35m[K~~~~~~^~~~~~~~~~~~[m[K
+
+In file included from [01m[K/usr/include/eigen3/Eigen/Core:161[m[K,
+                 from [01m[K/usr/include/eigen3/Eigen/Dense:1[m[K,
+                 from [01m[K/home/parallels/DynORBBase/src/dynorb/include/Converter.h:26[m[K,
+                 from [01m[K/home/parallels/DynORBBase/src/dynorb/src/Frame.cc:22[m[K:
+[01m[K/usr/include/eigen3/Eigen/src/Core/util/Constants.h:167:37:[m[K [01;36m[Knote: [m[Kdeclared here
+  167 | EIGEN_DEPRECATED const unsigned int [01;36m[KAlignedBit[m[K = 0x80;
+      |                                     [01;36m[K^~~~~~~~~~[m[K
+In file included from [01m[K/home/parallels/DynORBBase/src/dynorb/Thirdparty/g2o/g2o/types/types_six_dof_expmap.h:38[m[K,
+                 from [01m[K/home/parallels/DynORBBase/src/dynorb/include/Converter.h:27[m[K,
+                 from [01m[K/home/parallels/DynORBBase/src/dynorb/src/Frame.cc:22[m[K:
+/home/parallels/DynORBBase/src/dynorb/Thirdparty/g2o/g2o/types/../core/base_binary_edge.h: In instantiation of ‘[01m[Kclass g2o::BaseBinaryEdge<2, Eigen::Matrix<double, 2, 1>, g2o::VertexSBAPointXYZ, g2o::VertexSim3Expmap>[m[K’:
+[01m[K/home/parallels/DynORBBase/src/dynorb/Thirdparty/g2o/g2o/types/types_seven_dof_expmap.h:130:36:[m[K   required from here
+[01m[K/home/parallels/DynORBBase/src/dynorb/Thirdparty/g2o/g2o/types/../core/base_binary_edge.h:59:80:[m[K [01;35m[Kwarning: [m[K‘[01m[KEigen::AlignedBit[m[K’ is deprecated [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wdeprecated-declarations-Wdeprecated-declarations]8;;[m[K]
+   59 | ::Map<Matrix<double, Di, Dj>, Matrix<double, Di, Dj>::[01;35m[KFlags & AlignedBit[m[K ? Aligned : Unaligned > HessianBlockType;
+      |                                                       [01;35m[K~~~~~~^~~~~~~~~~~~[m[K
+
+In file included from [01m[K/usr/include/eigen3/Eigen/Core:161[m[K,
+                 from [01m[K/usr/include/eigen3/Eigen/Dense:1[m[K,
+                 from [01m[K/home/parallels/DynORBBase/src/dynorb/include/Converter.h:26[m[K,
+                 from [01m[K/home/parallels/DynORBBase/src/dynorb/src/Frame.cc:22[m[K:
+[01m[K/usr/include/eigen3/Eigen/src/Core/util/Constants.h:167:37:[m[K [01;36m[Knote: [m[Kdeclared here
+  167 | EIGEN_DEPRECATED const unsigned int [01;36m[KAlignedBit[m[K = 0x80;
+      |                                     [01;36m[K^~~~~~~~~~[m[K
+In file included from [01m[K/home/parallels/DynORBBase/src/dynorb/Thirdparty/g2o/g2o/types/types_six_dof_expmap.h:38[m[K,
+                 from [01m[K/home/parallels/DynORBBase/src/dynorb/include/Converter.h:27[m[K,
+                 from [01m[K/home/parallels/DynORBBase/src/dynorb/src/Frame.cc:22[m[K:
+[01m[K/home/parallels/DynORBBase/src/dynorb/Thirdparty/g2o/g2o/types/../core/base_binary_edge.h:60:80:[m[K [01;35m[Kwarning: [m[K‘[01m[KEigen::AlignedBit[m[K’ is deprecated [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wdeprecated-declarations-Wdeprecated-declarations]8;;[m[K]
+   60 | ::Map<Matrix<double, Dj, Di>, Matrix<double, Dj, Di>::[01;35m[KFlags & AlignedBit[m[K ? Aligned : Unaligned > HessianBlockTransposedType;
+      |                                                       [01;35m[K~~~~~~^~~~~~~~~~~~[m[K
+
+In file included from [01m[K/usr/include/eigen3/Eigen/Core:161[m[K,
+                 from [01m[K/usr/include/eigen3/Eigen/Dense:1[m[K,
+                 from [01m[K/home/parallels/DynORBBase/src/dynorb/include/Converter.h:26[m[K,
+                 from [01m[K/home/parallels/DynORBBase/src/dynorb/src/Frame.cc:22[m[K:
+[01m[K/usr/include/eigen3/Eigen/src/Core/util/Constants.h:167:37:[m[K [01;36m[Knote: [m[Kdeclared here
+  167 | EIGEN_DEPRECATED const unsigned int [01;36m[KAlignedBit[m[K = 0x80;
+      |                                     [01;36m[K^~~~~~~~~~[m[K
+In file included from [01m[K/home/parallels/DynORBBase/src/dynorb/src/Frame.cc:21[m[K:
+[01m[K/home/parallels/DynORBBase/src/dynorb/include/Frame.h:[m[K In copy constructor ‘[01m[KORB_SLAM2::Frame::Frame(const ORB_SLAM2::Frame&)[m[K’:
+[01m[K/home/parallels/DynORBBase/src/dynorb/include/Frame.h:207:19:[m[K [01;35m[Kwarning: [m[K‘[01m[KORB_SLAM2::Frame::mvInvLevelSigma2[m[K’ will be initialized after [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wreorder-Wreorder]8;;[m[K]
+  207 |     vector<float> [01;35m[KmvInvLevelSigma2[m[K;
+      |                   [01;35m[K^~~~~~~~~~~~~~~~[m[K
+[01m[K/home/parallels/DynORBBase/src/dynorb/include/Frame.h:162:38:[m[K [01;35m[Kwarning: [m[K  ‘[01m[Kstd::map<long unsigned int, ORB_SLAM2::DynFrameInfo> ORB_SLAM2::Frame::dynObjInfo[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wreorder-Wreorder]8;;[m[K]
+  162 |     std::map<dynObjID, DynFrameInfo> [01;35m[KdynObjInfo[m[K;
+      |                                      [01;35m[K^~~~~~~~~~[m[K
+[01m[K/home/parallels/DynORBBase/src/dynorb/src/Frame.cc:40:1:[m[K [01;35m[Kwarning: [m[K  when initialized here [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wreorder-Wreorder]8;;[m[K]
+   40 | [01;35m[KFrame[m[K::Frame(const Frame &frame)
+      | [01;35m[K^~~~~[m[K
+In file included from [01m[K/home/parallels/DynORBBase/src/dynorb/src/Frame.cc:21[m[K:
+[01m[K/home/parallels/DynORBBase/src/dynorb/include/Frame.h:[m[K In constructor ‘[01m[KORB_SLAM2::Frame::Frame(const cv::Mat&, const cv::Mat&, const double&, ORB_SLAM2::ORBextractor*, ORB_SLAM2::ORBextractor*, ORB_SLAM2::ORBVocabulary*, cv::Mat&, cv::Mat&, const float&, const float&, std::shared_ptr<ORB_SLAM2::DynamObjTracker>)[m[K’:
+[01m[K/home/parallels/DynORBBase/src/dynorb/include/Frame.h:198:15:[m[K [01;35m[Kwarning: [m[K‘[01m[KORB_SLAM2::Frame::mpReferenceKF[m[K’ will be initialized after [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wreorder-Wreorder]8;;[m[K]
+  198 |     KeyFrame* [01;35m[KmpReferenceKF[m[K;
+      |               [01;35m[K^~~~~~~~~~~~~[m[K
+[01m[K/home/parallels/DynORBBase/src/dynorb/include/Frame.h:165:38:[m[K [01;35m[Kwarning: [m[K  ‘[01m[Kstd::shared_ptr<ORB_SLAM2::DynamObjTracker> ORB_SLAM2::Frame::dynaTracker[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wreorder-Wreorder]8;;[m[K]
+  165 |     std::shared_ptr<DynamObjTracker> [01;35m[KdynaTracker[m[K;
+      |                                      [01;35m[K^~~~~~~~~~~[m[K
+[01m[K/home/parallels/DynORBBase/src/dynorb/src/Frame.cc:63:1:[m[K [01;35m[Kwarning: [m[K  when initialized here [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wreorder-Wreorder]8;;[m[K]
+   63 | [01;35m[KFrame[m[K::Frame(const cv::Mat &imLeft, const cv::Mat &imRight, const double &timeStamp,
+      | [01;35m[K^~~~~[m[K
+[  9%] [32m[1mLinking CXX shared library ../../lib/libdynorb.so[0m
+[ 90%] Built target dynorb
+[35m[1mConsolidate compiler generated dependencies of target mono_tum[0m
+[ 95%] [32m[1mLinking CXX executable ../../Examples/Monocular/mono_tum[0m
+[100%] Built target mono_tum
+-- Install configuration: "Release"
+-- Up-to-date: /home/parallels/DynORBBase/src/dynorb/install/dynorb/share/ament_index/resource_index/package_run_dependencies/dynorb
+-- Up-to-date: /home/parallels/DynORBBase/src/dynorb/install/dynorb/share/ament_index/resource_index/parent_prefix_path/dynorb
+-- Up-to-date: /home/parallels/DynORBBase/src/dynorb/install/dynorb/share/dynorb/environment/ament_prefix_path.sh
+-- Up-to-date: /home/parallels/DynORBBase/src/dynorb/install/dynorb/share/dynorb/environment/ament_prefix_path.dsv
+-- Up-to-date: /home/parallels/DynORBBase/src/dynorb/install/dynorb/share/dynorb/environment/path.sh
+-- Up-to-date: /home/parallels/DynORBBase/src/dynorb/install/dynorb/share/dynorb/environment/path.dsv
+-- Up-to-date: /home/parallels/DynORBBase/src/dynorb/install/dynorb/share/dynorb/local_setup.bash
+-- Up-to-date: /home/parallels/DynORBBase/src/dynorb/install/dynorb/share/dynorb/local_setup.sh
+-- Up-to-date: /home/parallels/DynORBBase/src/dynorb/install/dynorb/share/dynorb/local_setup.zsh
+-- Up-to-date: /home/parallels/DynORBBase/src/dynorb/install/dynorb/share/dynorb/local_setup.dsv
+-- Installing: /home/parallels/DynORBBase/src/dynorb/install/dynorb/share/dynorb/package.dsv
+-- Up-to-date: /home/parallels/DynORBBase/src/dynorb/install/dynorb/share/ament_index/resource_index/packages/dynorb
+-- Up-to-date: /home/parallels/DynORBBase/src/dynorb/install/dynorb/share/dynorb/cmake/dynorbConfig.cmake
+-- Up-to-date: /home/parallels/DynORBBase/src/dynorb/install/dynorb/share/dynorb/cmake/dynorbConfig-version.cmake
+-- Up-to-date: /home/parallels/DynORBBase/src/dynorb/install/dynorb/share/dynorb/package.xml

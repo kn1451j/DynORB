@@ -1,0 +1,388 @@
+[0.008s] Invoking command in '/home/parallels/DynORBBase/src/dynorb/build/dynorb': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/parallels/DynORBBase/install/sam_tracking:/home/parallels/DynORBBase/src/install/sam_tracking:/opt/ros/humble /usr/bin/cmake --build /home/parallels/DynORBBase/src/dynorb/build/dynorb -- -j2 -l2
+[0.058s] [35m[1mConsolidate compiler generated dependencies of target dynorb[0m
+[0.113s] [ 90%] Built target dynorb
+[0.141s] [35m[1mConsolidate compiler generated dependencies of target mono_tum[0m
+[0.162s] [ 95%] [32mBuilding CXX object CMakeFiles/mono_tum.dir/Examples/Monocular/mono_tum.cc.o[0m
+[2.629s] In file included from [01m[K/home/parallels/DynORBBase/src/dynorb/include/ORBextractor.h:28[m[K,
+[2.629s]                  from [01m[K/home/parallels/DynORBBase/src/dynorb/include/KeyFrame.h:28[m[K,
+[2.629s]                  from [01m[K/home/parallels/DynORBBase/src/dynorb/include/MapPoint.h:24[m[K,
+[2.629s]                  from [01m[K/home/parallels/DynORBBase/src/dynorb/include/FrameDrawer.h:25[m[K,
+[2.629s]                  from [01m[K/home/parallels/DynORBBase/src/dynorb/include/Viewer.h:25[m[K,
+[2.629s]                  from [01m[K/home/parallels/DynORBBase/src/dynorb/include/Tracking.h:28[m[K,
+[2.629s]                  from [01m[K/home/parallels/DynORBBase/src/dynorb/include/System.h:30[m[K,
+[2.629s]                  from [01m[K/home/parallels/DynORBBase/src/dynorb/Examples/Monocular/mono_tum.cc:29[m[K:
+[2.629s] [01m[K/home/parallels/DynORBBase/src/dynorb/include/PointFilter.h:[m[K In member function ‘[01m[Kvirtual bool ORB_SLAM2::PointFilter::operator()(cv::Point2f&)[m[K’:
+[2.629s] [01m[K/home/parallels/DynORBBase/src/dynorb/include/PointFilter.h:6:50:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kpt[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+[2.629s]     6 |             virtual bool operator()([01;35m[Kcv::Point2f& pt[m[K){return true;};
+[2.629s]       |                                     [01;35m[K~~~~~~~~~~~~~^~[m[K
+[3.582s] In file included from [01m[K/home/parallels/DynORBBase/src/dynorb/Thirdparty/g2o/g2o/types/types_seven_dof_expmap.h:34[m[K,
+[3.582s]                  from [01m[K/home/parallels/DynORBBase/src/dynorb/include/LoopClosing.h:34[m[K,
+[3.582s]                  from [01m[K/home/parallels/DynORBBase/src/dynorb/include/LocalMapping.h:26[m[K,
+[3.582s]                  from [01m[K/home/parallels/DynORBBase/src/dynorb/include/Tracking.h:31[m[K,
+[3.582s]                  from [01m[K/home/parallels/DynORBBase/src/dynorb/include/System.h:30[m[K,
+[3.582s]                  from [01m[K/home/parallels/DynORBBase/src/dynorb/Examples/Monocular/mono_tum.cc:29[m[K:
+[3.582s] [01m[K/home/parallels/DynORBBase/src/dynorb/Thirdparty/g2o/g2o/types/../core/base_vertex.h:[m[K At global scope:
+[3.583s] [01m[K/home/parallels/DynORBBase/src/dynorb/Thirdparty/g2o/g2o/types/../core/base_vertex.h:62:74:[m[K [01;35m[Kwarning: [m[K‘[01m[KEigen::AlignedBit[m[K’ is deprecated [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wdeprecated-declarations-Wdeprecated-declarations]8;;[m[K]
+[3.583s]    62 | igen::Map<Matrix<double, D, D>, Matrix<double,D,D>::Flags & [01;35m[KAlignedBit[m[K ? Aligned : Unaligned >  HessianBlockType;
+[3.583s]       |                                                             [01;35m[K^~~~~~~~~~[m[K
+[3.583s] 
+[3.583s] In file included from [01m[K/usr/include/eigen3/Eigen/Core:161[m[K,
+[3.583s]                  from [01m[K/home/parallels/Pangolin/include/pangolin/display/opengl_render_state.h:40[m[K,
+[3.583s]                  from [01m[K/home/parallels/Pangolin/include/pangolin/display/viewport.h:31[m[K,
+[3.583s]                  from [01m[K/home/parallels/Pangolin/include/pangolin/gl/gl.h:30[m[K,
+[3.583s]                  from [01m[K/home/parallels/Pangolin/include/pangolin/pangolin.h:33[m[K,
+[3.583s]                  from [01m[K/home/parallels/DynORBBase/src/dynorb/include/MapDrawer.h:27[m[K,
+[3.583s]                  from [01m[K/home/parallels/DynORBBase/src/dynorb/include/Viewer.h:26[m[K,
+[3.583s]                  from [01m[K/home/parallels/DynORBBase/src/dynorb/include/Tracking.h:28[m[K,
+[3.583s]                  from [01m[K/home/parallels/DynORBBase/src/dynorb/include/System.h:30[m[K,
+[3.583s]                  from [01m[K/home/parallels/DynORBBase/src/dynorb/Examples/Monocular/mono_tum.cc:29[m[K:
+[3.583s] [01m[K/usr/include/eigen3/Eigen/src/Core/util/Constants.h:167:37:[m[K [01;36m[Knote: [m[Kdeclared here
+[3.583s]   167 | EIGEN_DEPRECATED const unsigned int [01;36m[KAlignedBit[m[K = 0x80;
+[3.583s]       |                                     [01;36m[K^~~~~~~~~~[m[K
+[3.588s] In file included from [01m[K/home/parallels/DynORBBase/src/dynorb/Thirdparty/g2o/g2o/types/types_seven_dof_expmap.h:35[m[K,
+[3.588s]                  from [01m[K/home/parallels/DynORBBase/src/dynorb/include/LoopClosing.h:34[m[K,
+[3.588s]                  from [01m[K/home/parallels/DynORBBase/src/dynorb/include/LocalMapping.h:26[m[K,
+[3.588s]                  from [01m[K/home/parallels/DynORBBase/src/dynorb/include/Tracking.h:31[m[K,
+[3.588s]                  from [01m[K/home/parallels/DynORBBase/src/dynorb/include/System.h:30[m[K,
+[3.588s]                  from [01m[K/home/parallels/DynORBBase/src/dynorb/Examples/Monocular/mono_tum.cc:29[m[K:
+[3.588s] [01m[K/home/parallels/DynORBBase/src/dynorb/Thirdparty/g2o/g2o/types/../core/base_binary_edge.h:59:82:[m[K [01;35m[Kwarning: [m[K‘[01m[KEigen::AlignedBit[m[K’ is deprecated [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wdeprecated-declarations-Wdeprecated-declarations]8;;[m[K]
+[3.588s]    59 | Map<Matrix<double, Di, Dj>, Matrix<double, Di, Dj>::Flags & [01;35m[KAlignedBit[m[K ? Aligned : Unaligned > HessianBlockType;
+[3.588s]       |                                                             [01;35m[K^~~~~~~~~~[m[K
+[3.588s] 
+[3.588s] In file included from [01m[K/usr/include/eigen3/Eigen/Core:161[m[K,
+[3.588s]                  from [01m[K/home/parallels/Pangolin/include/pangolin/display/opengl_render_state.h:40[m[K,
+[3.588s]                  from [01m[K/home/parallels/Pangolin/include/pangolin/display/viewport.h:31[m[K,
+[3.588s]                  from [01m[K/home/parallels/Pangolin/include/pangolin/gl/gl.h:30[m[K,
+[3.588s]                  from [01m[K/home/parallels/Pangolin/include/pangolin/pangolin.h:33[m[K,
+[3.588s]                  from [01m[K/home/parallels/DynORBBase/src/dynorb/include/MapDrawer.h:27[m[K,
+[3.588s]                  from [01m[K/home/parallels/DynORBBase/src/dynorb/include/Viewer.h:26[m[K,
+[3.588s]                  from [01m[K/home/parallels/DynORBBase/src/dynorb/include/Tracking.h:28[m[K,
+[3.588s]                  from [01m[K/home/parallels/DynORBBase/src/dynorb/include/System.h:30[m[K,
+[3.588s]                  from [01m[K/home/parallels/DynORBBase/src/dynorb/Examples/Monocular/mono_tum.cc:29[m[K:
+[3.588s] [01m[K/usr/include/eigen3/Eigen/src/Core/util/Constants.h:167:37:[m[K [01;36m[Knote: [m[Kdeclared here
+[3.588s]   167 | EIGEN_DEPRECATED const unsigned int [01;36m[KAlignedBit[m[K = 0x80;
+[3.588s]       |                                     [01;36m[K^~~~~~~~~~[m[K
+[3.588s] In file included from [01m[K/home/parallels/DynORBBase/src/dynorb/Thirdparty/g2o/g2o/types/types_seven_dof_expmap.h:35[m[K,
+[3.588s]                  from [01m[K/home/parallels/DynORBBase/src/dynorb/include/LoopClosing.h:34[m[K,
+[3.588s]                  from [01m[K/home/parallels/DynORBBase/src/dynorb/include/LocalMapping.h:26[m[K,
+[3.588s]                  from [01m[K/home/parallels/DynORBBase/src/dynorb/include/Tracking.h:31[m[K,
+[3.588s]                  from [01m[K/home/parallels/DynORBBase/src/dynorb/include/System.h:30[m[K,
+[3.588s]                  from [01m[K/home/parallels/DynORBBase/src/dynorb/Examples/Monocular/mono_tum.cc:29[m[K:
+[3.588s] [01m[K/home/parallels/DynORBBase/src/dynorb/Thirdparty/g2o/g2o/types/../core/base_binary_edge.h:60:82:[m[K [01;35m[Kwarning: [m[K‘[01m[KEigen::AlignedBit[m[K’ is deprecated [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wdeprecated-declarations-Wdeprecated-declarations]8;;[m[K]
+[3.588s]    60 | Map<Matrix<double, Dj, Di>, Matrix<double, Dj, Di>::Flags & [01;35m[KAlignedBit[m[K ? Aligned : Unaligned > HessianBlockTransposedType;
+[3.588s]       |                                                             [01;35m[K^~~~~~~~~~[m[K
+[3.588s] 
+[3.588s] In file included from [01m[K/usr/include/eigen3/Eigen/Core:161[m[K,
+[3.588s]                  from [01m[K/home/parallels/Pangolin/include/pangolin/display/opengl_render_state.h:40[m[K,
+[3.589s]                  from [01m[K/home/parallels/Pangolin/include/pangolin/display/viewport.h:31[m[K,
+[3.589s]                  from [01m[K/home/parallels/Pangolin/include/pangolin/gl/gl.h:30[m[K,
+[3.589s]                  from [01m[K/home/parallels/Pangolin/include/pangolin/pangolin.h:33[m[K,
+[3.589s]                  from [01m[K/home/parallels/DynORBBase/src/dynorb/include/MapDrawer.h:27[m[K,
+[3.589s]                  from [01m[K/home/parallels/DynORBBase/src/dynorb/include/Viewer.h:26[m[K,
+[3.589s]                  from [01m[K/home/parallels/DynORBBase/src/dynorb/include/Tracking.h:28[m[K,
+[3.589s]                  from [01m[K/home/parallels/DynORBBase/src/dynorb/include/System.h:30[m[K,
+[3.589s]                  from [01m[K/home/parallels/DynORBBase/src/dynorb/Examples/Monocular/mono_tum.cc:29[m[K:
+[3.589s] [01m[K/usr/include/eigen3/Eigen/src/Core/util/Constants.h:167:37:[m[K [01;36m[Knote: [m[Kdeclared here
+[3.589s]   167 | EIGEN_DEPRECATED const unsigned int [01;36m[KAlignedBit[m[K = 0x80;
+[3.589s]       |                                     [01;36m[K^~~~~~~~~~[m[K
+[3.600s] In file included from [01m[K/home/parallels/DynORBBase/src/dynorb/Thirdparty/g2o/g2o/types/types_six_dof_expmap.h:41[m[K,
+[3.600s]                  from [01m[K/home/parallels/DynORBBase/src/dynorb/Thirdparty/g2o/g2o/types/types_seven_dof_expmap.h:36[m[K,
+[3.600s]                  from [01m[K/home/parallels/DynORBBase/src/dynorb/include/LoopClosing.h:34[m[K,
+[3.600s]                  from [01m[K/home/parallels/DynORBBase/src/dynorb/include/LocalMapping.h:26[m[K,
+[3.600s]                  from [01m[K/home/parallels/DynORBBase/src/dynorb/include/Tracking.h:31[m[K,
+[3.600s]                  from [01m[K/home/parallels/DynORBBase/src/dynorb/include/System.h:30[m[K,
+[3.600s]                  from [01m[K/home/parallels/DynORBBase/src/dynorb/Examples/Monocular/mono_tum.cc:29[m[K:
+[3.600s] [01m[K/home/parallels/DynORBBase/src/dynorb/Thirdparty/g2o/g2o/types/se3quat.h:43:38:[m[K [01;35m[Kwarning: [m[Kextra ‘[01m[K;[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wpedantic-Wpedantic]8;;[m[K]
+[3.600s]    43 |       EIGEN_MAKE_ALIGNED_OPERATOR_NEW[01;35m[K;[m[K
+[3.600s]       |                                      [01;35m[K^[m[K
+[3.600s]       |                                      [31m[K-[m[K
+[3.847s] In file included from [01m[K/home/parallels/DynORBBase/src/dynorb/Thirdparty/g2o/g2o/types/types_seven_dof_expmap.h:34[m[K,
+[3.847s]                  from [01m[K/home/parallels/DynORBBase/src/dynorb/include/LoopClosing.h:34[m[K,
+[3.847s]                  from [01m[K/home/parallels/DynORBBase/src/dynorb/include/LocalMapping.h:26[m[K,
+[3.847s]                  from [01m[K/home/parallels/DynORBBase/src/dynorb/include/Tracking.h:31[m[K,
+[3.847s]                  from [01m[K/home/parallels/DynORBBase/src/dynorb/include/System.h:30[m[K,
+[3.847s]                  from [01m[K/home/parallels/DynORBBase/src/dynorb/Examples/Monocular/mono_tum.cc:29[m[K:
+[3.847s] /home/parallels/DynORBBase/src/dynorb/Thirdparty/g2o/g2o/types/../core/base_vertex.h: In instantiation of ‘[01m[Kclass g2o::BaseVertex<3, Eigen::Matrix<double, 3, 1> >[m[K’:
+[3.847s] [01m[K/home/parallels/DynORBBase/src/dynorb/Thirdparty/g2o/g2o/types/types_sba.h:40:35:[m[K   required from here
+[3.847s] [01m[K/home/parallels/DynORBBase/src/dynorb/Thirdparty/g2o/g2o/types/../core/base_vertex.h:62:72:[m[K [01;35m[Kwarning: [m[K‘[01m[KEigen::AlignedBit[m[K’ is deprecated [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wdeprecated-declarations-Wdeprecated-declarations]8;;[m[K]
+[3.847s]    62 |  Eigen::Map<Matrix<double, D, D>, Matrix<double,D,D>::[01;35m[KFlags & AlignedBit[m[K ? Aligned : Unaligned >  HessianBlockType;
+[3.847s]       |                                                       [01;35m[K~~~~~~^~~~~~~~~~~~[m[K
+[3.848s] 
+[3.848s] In file included from [01m[K/usr/include/eigen3/Eigen/Core:161[m[K,
+[3.848s]                  from [01m[K/home/parallels/Pangolin/include/pangolin/display/opengl_render_state.h:40[m[K,
+[3.848s]                  from [01m[K/home/parallels/Pangolin/include/pangolin/display/viewport.h:31[m[K,
+[3.848s]                  from [01m[K/home/parallels/Pangolin/include/pangolin/gl/gl.h:30[m[K,
+[3.848s]                  from [01m[K/home/parallels/Pangolin/include/pangolin/pangolin.h:33[m[K,
+[3.848s]                  from [01m[K/home/parallels/DynORBBase/src/dynorb/include/MapDrawer.h:27[m[K,
+[3.848s]                  from [01m[K/home/parallels/DynORBBase/src/dynorb/include/Viewer.h:26[m[K,
+[3.848s]                  from [01m[K/home/parallels/DynORBBase/src/dynorb/include/Tracking.h:28[m[K,
+[3.848s]                  from [01m[K/home/parallels/DynORBBase/src/dynorb/include/System.h:30[m[K,
+[3.848s]                  from [01m[K/home/parallels/DynORBBase/src/dynorb/Examples/Monocular/mono_tum.cc:29[m[K:
+[3.848s] [01m[K/usr/include/eigen3/Eigen/src/Core/util/Constants.h:167:37:[m[K [01;36m[Knote: [m[Kdeclared here
+[3.848s]   167 | EIGEN_DEPRECATED const unsigned int [01;36m[KAlignedBit[m[K = 0x80;
+[3.848s]       |                                     [01;36m[K^~~~~~~~~~[m[K
+[3.858s] In file included from [01m[K/home/parallels/DynORBBase/src/dynorb/Thirdparty/g2o/g2o/types/types_seven_dof_expmap.h:34[m[K,
+[3.858s]                  from [01m[K/home/parallels/DynORBBase/src/dynorb/include/LoopClosing.h:34[m[K,
+[3.858s]                  from [01m[K/home/parallels/DynORBBase/src/dynorb/include/LocalMapping.h:26[m[K,
+[3.858s]                  from [01m[K/home/parallels/DynORBBase/src/dynorb/include/Tracking.h:31[m[K,
+[3.858s]                  from [01m[K/home/parallels/DynORBBase/src/dynorb/include/System.h:30[m[K,
+[3.858s]                  from [01m[K/home/parallels/DynORBBase/src/dynorb/Examples/Monocular/mono_tum.cc:29[m[K:
+[3.858s] /home/parallels/DynORBBase/src/dynorb/Thirdparty/g2o/g2o/types/../core/base_vertex.h: In instantiation of ‘[01m[Kclass g2o::BaseVertex<6, g2o::SE3Quat>[m[K’:
+[3.858s] [01m[K/home/parallels/DynORBBase/src/dynorb/Thirdparty/g2o/g2o/types/types_six_dof_expmap.h:59:33:[m[K   required from here
+[3.858s] [01m[K/home/parallels/DynORBBase/src/dynorb/Thirdparty/g2o/g2o/types/../core/base_vertex.h:62:72:[m[K [01;35m[Kwarning: [m[K‘[01m[KEigen::AlignedBit[m[K’ is deprecated [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wdeprecated-declarations-Wdeprecated-declarations]8;;[m[K]
+[3.858s]    62 |  Eigen::Map<Matrix<double, D, D>, Matrix<double,D,D>::[01;35m[KFlags & AlignedBit[m[K ? Aligned : Unaligned >  HessianBlockType;
+[3.858s]       |                                                       [01;35m[K~~~~~~^~~~~~~~~~~~[m[K
+[3.858s] 
+[3.858s] In file included from [01m[K/usr/include/eigen3/Eigen/Core:161[m[K,
+[3.858s]                  from [01m[K/home/parallels/Pangolin/include/pangolin/display/opengl_render_state.h:40[m[K,
+[3.858s]                  from [01m[K/home/parallels/Pangolin/include/pangolin/display/viewport.h:31[m[K,
+[3.858s]                  from [01m[K/home/parallels/Pangolin/include/pangolin/gl/gl.h:30[m[K,
+[3.858s]                  from [01m[K/home/parallels/Pangolin/include/pangolin/pangolin.h:33[m[K,
+[3.858s]                  from [01m[K/home/parallels/DynORBBase/src/dynorb/include/MapDrawer.h:27[m[K,
+[3.858s]                  from [01m[K/home/parallels/DynORBBase/src/dynorb/include/Viewer.h:26[m[K,
+[3.858s]                  from [01m[K/home/parallels/DynORBBase/src/dynorb/include/Tracking.h:28[m[K,
+[3.858s]                  from [01m[K/home/parallels/DynORBBase/src/dynorb/include/System.h:30[m[K,
+[3.858s]                  from [01m[K/home/parallels/DynORBBase/src/dynorb/Examples/Monocular/mono_tum.cc:29[m[K:
+[3.858s] [01m[K/usr/include/eigen3/Eigen/src/Core/util/Constants.h:167:37:[m[K [01;36m[Knote: [m[Kdeclared here
+[3.858s]   167 | EIGEN_DEPRECATED const unsigned int [01;36m[KAlignedBit[m[K = 0x80;
+[3.858s]       |                                     [01;36m[K^~~~~~~~~~[m[K
+[3.912s] In file included from [01m[K/home/parallels/DynORBBase/src/dynorb/Thirdparty/g2o/g2o/types/types_seven_dof_expmap.h:35[m[K,
+[3.912s]                  from [01m[K/home/parallels/DynORBBase/src/dynorb/include/LoopClosing.h:34[m[K,
+[3.912s]                  from [01m[K/home/parallels/DynORBBase/src/dynorb/include/LocalMapping.h:26[m[K,
+[3.912s]                  from [01m[K/home/parallels/DynORBBase/src/dynorb/include/Tracking.h:31[m[K,
+[3.912s]                  from [01m[K/home/parallels/DynORBBase/src/dynorb/include/System.h:30[m[K,
+[3.912s]                  from [01m[K/home/parallels/DynORBBase/src/dynorb/Examples/Monocular/mono_tum.cc:29[m[K:
+[3.912s] /home/parallels/DynORBBase/src/dynorb/Thirdparty/g2o/g2o/types/../core/base_binary_edge.h: In instantiation of ‘[01m[Kclass g2o::BaseBinaryEdge<2, Eigen::Matrix<double, 2, 1>, g2o::VertexSBAPointXYZ, g2o::VertexSE3Expmap>[m[K’:
+[3.912s] [01m[K/home/parallels/DynORBBase/src/dynorb/Thirdparty/g2o/g2o/types/types_six_dof_expmap.h:80:35:[m[K   required from here
+[3.912s] [01m[K/home/parallels/DynORBBase/src/dynorb/Thirdparty/g2o/g2o/types/../core/base_binary_edge.h:59:80:[m[K [01;35m[Kwarning: [m[K‘[01m[KEigen::AlignedBit[m[K’ is deprecated [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wdeprecated-declarations-Wdeprecated-declarations]8;;[m[K]
+[3.912s]    59 | ::Map<Matrix<double, Di, Dj>, Matrix<double, Di, Dj>::[01;35m[KFlags & AlignedBit[m[K ? Aligned : Unaligned > HessianBlockType;
+[3.912s]       |                                                       [01;35m[K~~~~~~^~~~~~~~~~~~[m[K
+[3.912s] 
+[3.912s] In file included from [01m[K/usr/include/eigen3/Eigen/Core:161[m[K,
+[3.913s]                  from [01m[K/home/parallels/Pangolin/include/pangolin/display/opengl_render_state.h:40[m[K,
+[3.913s]                  from [01m[K/home/parallels/Pangolin/include/pangolin/display/viewport.h:31[m[K,
+[3.913s]                  from [01m[K/home/parallels/Pangolin/include/pangolin/gl/gl.h:30[m[K,
+[3.913s]                  from [01m[K/home/parallels/Pangolin/include/pangolin/pangolin.h:33[m[K,
+[3.913s]                  from [01m[K/home/parallels/DynORBBase/src/dynorb/include/MapDrawer.h:27[m[K,
+[3.913s]                  from [01m[K/home/parallels/DynORBBase/src/dynorb/include/Viewer.h:26[m[K,
+[3.913s]                  from [01m[K/home/parallels/DynORBBase/src/dynorb/include/Tracking.h:28[m[K,
+[3.913s]                  from [01m[K/home/parallels/DynORBBase/src/dynorb/include/System.h:30[m[K,
+[3.913s]                  from [01m[K/home/parallels/DynORBBase/src/dynorb/Examples/Monocular/mono_tum.cc:29[m[K:
+[3.913s] [01m[K/usr/include/eigen3/Eigen/src/Core/util/Constants.h:167:37:[m[K [01;36m[Knote: [m[Kdeclared here
+[3.913s]   167 | EIGEN_DEPRECATED const unsigned int [01;36m[KAlignedBit[m[K = 0x80;
+[3.913s]       |                                     [01;36m[K^~~~~~~~~~[m[K
+[3.921s] In file included from [01m[K/home/parallels/DynORBBase/src/dynorb/Thirdparty/g2o/g2o/types/types_seven_dof_expmap.h:35[m[K,
+[3.921s]                  from [01m[K/home/parallels/DynORBBase/src/dynorb/include/LoopClosing.h:34[m[K,
+[3.921s]                  from [01m[K/home/parallels/DynORBBase/src/dynorb/include/LocalMapping.h:26[m[K,
+[3.921s]                  from [01m[K/home/parallels/DynORBBase/src/dynorb/include/Tracking.h:31[m[K,
+[3.921s]                  from [01m[K/home/parallels/DynORBBase/src/dynorb/include/System.h:30[m[K,
+[3.921s]                  from [01m[K/home/parallels/DynORBBase/src/dynorb/Examples/Monocular/mono_tum.cc:29[m[K:
+[3.921s] [01m[K/home/parallels/DynORBBase/src/dynorb/Thirdparty/g2o/g2o/types/../core/base_binary_edge.h:60:80:[m[K [01;35m[Kwarning: [m[K‘[01m[KEigen::AlignedBit[m[K’ is deprecated [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wdeprecated-declarations-Wdeprecated-declarations]8;;[m[K]
+[3.921s]    60 | ::Map<Matrix<double, Dj, Di>, Matrix<double, Dj, Di>::[01;35m[KFlags & AlignedBit[m[K ? Aligned : Unaligned > HessianBlockTransposedType;
+[3.921s]       |                                                       [01;35m[K~~~~~~^~~~~~~~~~~~[m[K
+[3.921s] 
+[3.921s] In file included from [01m[K/usr/include/eigen3/Eigen/Core:161[m[K,
+[3.921s]                  from [01m[K/home/parallels/Pangolin/include/pangolin/display/opengl_render_state.h:40[m[K,
+[3.921s]                  from [01m[K/home/parallels/Pangolin/include/pangolin/display/viewport.h:31[m[K,
+[3.921s]                  from [01m[K/home/parallels/Pangolin/include/pangolin/gl/gl.h:30[m[K,
+[3.921s]                  from [01m[K/home/parallels/Pangolin/include/pangolin/pangolin.h:33[m[K,
+[3.921s]                  from [01m[K/home/parallels/DynORBBase/src/dynorb/include/MapDrawer.h:27[m[K,
+[3.921s]                  from [01m[K/home/parallels/DynORBBase/src/dynorb/include/Viewer.h:26[m[K,
+[3.921s]                  from [01m[K/home/parallels/DynORBBase/src/dynorb/include/Tracking.h:28[m[K,
+[3.921s]                  from [01m[K/home/parallels/DynORBBase/src/dynorb/include/System.h:30[m[K,
+[3.921s]                  from [01m[K/home/parallels/DynORBBase/src/dynorb/Examples/Monocular/mono_tum.cc:29[m[K:
+[3.921s] [01m[K/usr/include/eigen3/Eigen/src/Core/util/Constants.h:167:37:[m[K [01;36m[Knote: [m[Kdeclared here
+[3.921s]   167 | EIGEN_DEPRECATED const unsigned int [01;36m[KAlignedBit[m[K = 0x80;
+[3.921s]       |                                     [01;36m[K^~~~~~~~~~[m[K
+[3.960s] In file included from [01m[K/home/parallels/DynORBBase/src/dynorb/Thirdparty/g2o/g2o/types/types_seven_dof_expmap.h:35[m[K,
+[3.960s]                  from [01m[K/home/parallels/DynORBBase/src/dynorb/include/LoopClosing.h:34[m[K,
+[3.960s]                  from [01m[K/home/parallels/DynORBBase/src/dynorb/include/LocalMapping.h:26[m[K,
+[3.960s]                  from [01m[K/home/parallels/DynORBBase/src/dynorb/include/Tracking.h:31[m[K,
+[3.960s]                  from [01m[K/home/parallels/DynORBBase/src/dynorb/include/System.h:30[m[K,
+[3.961s]                  from [01m[K/home/parallels/DynORBBase/src/dynorb/Examples/Monocular/mono_tum.cc:29[m[K:
+[3.961s] /home/parallels/DynORBBase/src/dynorb/Thirdparty/g2o/g2o/types/../core/base_binary_edge.h: In instantiation of ‘[01m[Kclass g2o::BaseBinaryEdge<3, Eigen::Matrix<double, 3, 1>, g2o::VertexSBAPointXYZ, g2o::VertexSE3Expmap>[m[K’:
+[3.961s] [01m[K/home/parallels/DynORBBase/src/dynorb/Thirdparty/g2o/g2o/types/types_six_dof_expmap.h:112:41:[m[K   required from here
+[3.961s] [01m[K/home/parallels/DynORBBase/src/dynorb/Thirdparty/g2o/g2o/types/../core/base_binary_edge.h:59:80:[m[K [01;35m[Kwarning: [m[K‘[01m[KEigen::AlignedBit[m[K’ is deprecated [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wdeprecated-declarations-Wdeprecated-declarations]8;;[m[K]
+[3.961s]    59 | ::Map<Matrix<double, Di, Dj>, Matrix<double, Di, Dj>::[01;35m[KFlags & AlignedBit[m[K ? Aligned : Unaligned > HessianBlockType;
+[3.961s]       |                                                       [01;35m[K~~~~~~^~~~~~~~~~~~[m[K
+[3.961s] 
+[3.961s] In file included from [01m[K/usr/include/eigen3/Eigen/Core:161[m[K,
+[3.961s]                  from [01m[K/home/parallels/Pangolin/include/pangolin/display/opengl_render_state.h:40[m[K,
+[3.961s]                  from [01m[K/home/parallels/Pangolin/include/pangolin/display/viewport.h:31[m[K,
+[3.961s]                  from [01m[K/home/parallels/Pangolin/include/pangolin/gl/gl.h:30[m[K,
+[3.961s]                  from [01m[K/home/parallels/Pangolin/include/pangolin/pangolin.h:33[m[K,
+[3.961s]                  from [01m[K/home/parallels/DynORBBase/src/dynorb/include/MapDrawer.h:27[m[K,
+[3.961s]                  from [01m[K/home/parallels/DynORBBase/src/dynorb/include/Viewer.h:26[m[K,
+[3.961s]                  from [01m[K/home/parallels/DynORBBase/src/dynorb/include/Tracking.h:28[m[K,
+[3.961s]                  from [01m[K/home/parallels/DynORBBase/src/dynorb/include/System.h:30[m[K,
+[3.961s]                  from [01m[K/home/parallels/DynORBBase/src/dynorb/Examples/Monocular/mono_tum.cc:29[m[K:
+[3.961s] [01m[K/usr/include/eigen3/Eigen/src/Core/util/Constants.h:167:37:[m[K [01;36m[Knote: [m[Kdeclared here
+[3.961s]   167 | EIGEN_DEPRECATED const unsigned int [01;36m[KAlignedBit[m[K = 0x80;
+[3.961s]       |                                     [01;36m[K^~~~~~~~~~[m[K
+[3.961s] In file included from [01m[K/home/parallels/DynORBBase/src/dynorb/Thirdparty/g2o/g2o/types/types_seven_dof_expmap.h:35[m[K,
+[3.961s]                  from [01m[K/home/parallels/DynORBBase/src/dynorb/include/LoopClosing.h:34[m[K,
+[3.961s]                  from [01m[K/home/parallels/DynORBBase/src/dynorb/include/LocalMapping.h:26[m[K,
+[3.961s]                  from [01m[K/home/parallels/DynORBBase/src/dynorb/include/Tracking.h:31[m[K,
+[3.961s]                  from [01m[K/home/parallels/DynORBBase/src/dynorb/include/System.h:30[m[K,
+[3.961s]                  from [01m[K/home/parallels/DynORBBase/src/dynorb/Examples/Monocular/mono_tum.cc:29[m[K:
+[3.961s] [01m[K/home/parallels/DynORBBase/src/dynorb/Thirdparty/g2o/g2o/types/../core/base_binary_edge.h:60:80:[m[K [01;35m[Kwarning: [m[K‘[01m[KEigen::AlignedBit[m[K’ is deprecated [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wdeprecated-declarations-Wdeprecated-declarations]8;;[m[K]
+[3.962s]    60 | ::Map<Matrix<double, Dj, Di>, Matrix<double, Dj, Di>::[01;35m[KFlags & AlignedBit[m[K ? Aligned : Unaligned > HessianBlockTransposedType;
+[3.962s]       |                                                       [01;35m[K~~~~~~^~~~~~~~~~~~[m[K
+[3.962s] 
+[3.962s] In file included from [01m[K/usr/include/eigen3/Eigen/Core:161[m[K,
+[3.962s]                  from [01m[K/home/parallels/Pangolin/include/pangolin/display/opengl_render_state.h:40[m[K,
+[3.962s]                  from [01m[K/home/parallels/Pangolin/include/pangolin/display/viewport.h:31[m[K,
+[3.962s]                  from [01m[K/home/parallels/Pangolin/include/pangolin/gl/gl.h:30[m[K,
+[3.962s]                  from [01m[K/home/parallels/Pangolin/include/pangolin/pangolin.h:33[m[K,
+[3.962s]                  from [01m[K/home/parallels/DynORBBase/src/dynorb/include/MapDrawer.h:27[m[K,
+[3.962s]                  from [01m[K/home/parallels/DynORBBase/src/dynorb/include/Viewer.h:26[m[K,
+[3.962s]                  from [01m[K/home/parallels/DynORBBase/src/dynorb/include/Tracking.h:28[m[K,
+[3.962s]                  from [01m[K/home/parallels/DynORBBase/src/dynorb/include/System.h:30[m[K,
+[3.962s]                  from [01m[K/home/parallels/DynORBBase/src/dynorb/Examples/Monocular/mono_tum.cc:29[m[K:
+[3.962s] [01m[K/usr/include/eigen3/Eigen/src/Core/util/Constants.h:167:37:[m[K [01;36m[Knote: [m[Kdeclared here
+[3.962s]   167 | EIGEN_DEPRECATED const unsigned int [01;36m[KAlignedBit[m[K = 0x80;
+[3.962s]       |                                     [01;36m[K^~~~~~~~~~[m[K
+[4.104s] In file included from [01m[K/home/parallels/DynORBBase/src/dynorb/Thirdparty/g2o/g2o/types/types_seven_dof_expmap.h:34[m[K,
+[4.104s]                  from [01m[K/home/parallels/DynORBBase/src/dynorb/include/LoopClosing.h:34[m[K,
+[4.104s]                  from [01m[K/home/parallels/DynORBBase/src/dynorb/include/LocalMapping.h:26[m[K,
+[4.104s]                  from [01m[K/home/parallels/DynORBBase/src/dynorb/include/Tracking.h:31[m[K,
+[4.104s]                  from [01m[K/home/parallels/DynORBBase/src/dynorb/include/System.h:30[m[K,
+[4.104s]                  from [01m[K/home/parallels/DynORBBase/src/dynorb/Examples/Monocular/mono_tum.cc:29[m[K:
+[4.104s] /home/parallels/DynORBBase/src/dynorb/Thirdparty/g2o/g2o/types/../core/base_vertex.h: In instantiation of ‘[01m[Kclass g2o::BaseVertex<7, g2o::Sim3>[m[K’:
+[4.104s] [01m[K/home/parallels/DynORBBase/src/dynorb/Thirdparty/g2o/g2o/types/types_seven_dof_expmap.h:48:35:[m[K   required from here
+[4.104s] [01m[K/home/parallels/DynORBBase/src/dynorb/Thirdparty/g2o/g2o/types/../core/base_vertex.h:62:72:[m[K [01;35m[Kwarning: [m[K‘[01m[KEigen::AlignedBit[m[K’ is deprecated [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wdeprecated-declarations-Wdeprecated-declarations]8;;[m[K]
+[4.104s]    62 |  Eigen::Map<Matrix<double, D, D>, Matrix<double,D,D>::[01;35m[KFlags & AlignedBit[m[K ? Aligned : Unaligned >  HessianBlockType;
+[4.104s]       |                                                       [01;35m[K~~~~~~^~~~~~~~~~~~[m[K
+[4.104s] 
+[4.104s] In file included from [01m[K/usr/include/eigen3/Eigen/Core:161[m[K,
+[4.104s]                  from [01m[K/home/parallels/Pangolin/include/pangolin/display/opengl_render_state.h:40[m[K,
+[4.104s]                  from [01m[K/home/parallels/Pangolin/include/pangolin/display/viewport.h:31[m[K,
+[4.104s]                  from [01m[K/home/parallels/Pangolin/include/pangolin/gl/gl.h:30[m[K,
+[4.104s]                  from [01m[K/home/parallels/Pangolin/include/pangolin/pangolin.h:33[m[K,
+[4.104s]                  from [01m[K/home/parallels/DynORBBase/src/dynorb/include/MapDrawer.h:27[m[K,
+[4.104s]                  from [01m[K/home/parallels/DynORBBase/src/dynorb/include/Viewer.h:26[m[K,
+[4.105s]                  from [01m[K/home/parallels/DynORBBase/src/dynorb/include/Tracking.h:28[m[K,
+[4.105s]                  from [01m[K/home/parallels/DynORBBase/src/dynorb/include/System.h:30[m[K,
+[4.105s]                  from [01m[K/home/parallels/DynORBBase/src/dynorb/Examples/Monocular/mono_tum.cc:29[m[K:
+[4.105s] [01m[K/usr/include/eigen3/Eigen/src/Core/util/Constants.h:167:37:[m[K [01;36m[Knote: [m[Kdeclared here
+[4.105s]   167 | EIGEN_DEPRECATED const unsigned int [01;36m[KAlignedBit[m[K = 0x80;
+[4.105s]       |                                     [01;36m[K^~~~~~~~~~[m[K
+[4.126s] In file included from [01m[K/home/parallels/DynORBBase/src/dynorb/Thirdparty/g2o/g2o/types/types_seven_dof_expmap.h:35[m[K,
+[4.126s]                  from [01m[K/home/parallels/DynORBBase/src/dynorb/include/LoopClosing.h:34[m[K,
+[4.126s]                  from [01m[K/home/parallels/DynORBBase/src/dynorb/include/LocalMapping.h:26[m[K,
+[4.126s]                  from [01m[K/home/parallels/DynORBBase/src/dynorb/include/Tracking.h:31[m[K,
+[4.126s]                  from [01m[K/home/parallels/DynORBBase/src/dynorb/include/System.h:30[m[K,
+[4.126s]                  from [01m[K/home/parallels/DynORBBase/src/dynorb/Examples/Monocular/mono_tum.cc:29[m[K:
+[4.126s] /home/parallels/DynORBBase/src/dynorb/Thirdparty/g2o/g2o/types/../core/base_binary_edge.h: In instantiation of ‘[01m[Kclass g2o::BaseBinaryEdge<7, g2o::Sim3, g2o::VertexSim3Expmap, g2o::VertexSim3Expmap>[m[K’:
+[4.126s] [01m[K/home/parallels/DynORBBase/src/dynorb/Thirdparty/g2o/g2o/types/types_seven_dof_expmap.h:99:27:[m[K   required from here
+[4.126s] [01m[K/home/parallels/DynORBBase/src/dynorb/Thirdparty/g2o/g2o/types/../core/base_binary_edge.h:59:80:[m[K [01;35m[Kwarning: [m[K‘[01m[KEigen::AlignedBit[m[K’ is deprecated [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wdeprecated-declarations-Wdeprecated-declarations]8;;[m[K]
+[4.126s]    59 | ::Map<Matrix<double, Di, Dj>, Matrix<double, Di, Dj>::[01;35m[KFlags & AlignedBit[m[K ? Aligned : Unaligned > HessianBlockType;
+[4.126s]       |                                                       [01;35m[K~~~~~~^~~~~~~~~~~~[m[K
+[4.126s] 
+[4.126s] In file included from [01m[K/usr/include/eigen3/Eigen/Core:161[m[K,
+[4.126s]                  from [01m[K/home/parallels/Pangolin/include/pangolin/display/opengl_render_state.h:40[m[K,
+[4.126s]                  from [01m[K/home/parallels/Pangolin/include/pangolin/display/viewport.h:31[m[K,
+[4.126s]                  from [01m[K/home/parallels/Pangolin/include/pangolin/gl/gl.h:30[m[K,
+[4.126s]                  from [01m[K/home/parallels/Pangolin/include/pangolin/pangolin.h:33[m[K,
+[4.126s]                  from [01m[K/home/parallels/DynORBBase/src/dynorb/include/MapDrawer.h:27[m[K,
+[4.126s]                  from [01m[K/home/parallels/DynORBBase/src/dynorb/include/Viewer.h:26[m[K,
+[4.126s]                  from [01m[K/home/parallels/DynORBBase/src/dynorb/include/Tracking.h:28[m[K,
+[4.126s]                  from [01m[K/home/parallels/DynORBBase/src/dynorb/include/System.h:30[m[K,
+[4.127s]                  from [01m[K/home/parallels/DynORBBase/src/dynorb/Examples/Monocular/mono_tum.cc:29[m[K:
+[4.127s] [01m[K/usr/include/eigen3/Eigen/src/Core/util/Constants.h:167:37:[m[K [01;36m[Knote: [m[Kdeclared here
+[4.127s]   167 | EIGEN_DEPRECATED const unsigned int [01;36m[KAlignedBit[m[K = 0x80;
+[4.127s]       |                                     [01;36m[K^~~~~~~~~~[m[K
+[4.127s] In file included from [01m[K/home/parallels/DynORBBase/src/dynorb/Thirdparty/g2o/g2o/types/types_seven_dof_expmap.h:35[m[K,
+[4.127s]                  from [01m[K/home/parallels/DynORBBase/src/dynorb/include/LoopClosing.h:34[m[K,
+[4.127s]                  from [01m[K/home/parallels/DynORBBase/src/dynorb/include/LocalMapping.h:26[m[K,
+[4.127s]                  from [01m[K/home/parallels/DynORBBase/src/dynorb/include/Tracking.h:31[m[K,
+[4.127s]                  from [01m[K/home/parallels/DynORBBase/src/dynorb/include/System.h:30[m[K,
+[4.127s]                  from [01m[K/home/parallels/DynORBBase/src/dynorb/Examples/Monocular/mono_tum.cc:29[m[K:
+[4.127s] [01m[K/home/parallels/DynORBBase/src/dynorb/Thirdparty/g2o/g2o/types/../core/base_binary_edge.h:60:80:[m[K [01;35m[Kwarning: [m[K‘[01m[KEigen::AlignedBit[m[K’ is deprecated [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wdeprecated-declarations-Wdeprecated-declarations]8;;[m[K]
+[4.127s]    60 | ::Map<Matrix<double, Dj, Di>, Matrix<double, Dj, Di>::[01;35m[KFlags & AlignedBit[m[K ? Aligned : Unaligned > HessianBlockTransposedType;
+[4.127s]       |                                                       [01;35m[K~~~~~~^~~~~~~~~~~~[m[K
+[4.127s] 
+[4.127s] In file included from [01m[K/usr/include/eigen3/Eigen/Core:161[m[K,
+[4.127s]                  from [01m[K/home/parallels/Pangolin/include/pangolin/display/opengl_render_state.h:40[m[K,
+[4.127s]                  from [01m[K/home/parallels/Pangolin/include/pangolin/display/viewport.h:31[m[K,
+[4.127s]                  from [01m[K/home/parallels/Pangolin/include/pangolin/gl/gl.h:30[m[K,
+[4.127s]                  from [01m[K/home/parallels/Pangolin/include/pangolin/pangolin.h:33[m[K,
+[4.127s]                  from [01m[K/home/parallels/DynORBBase/src/dynorb/include/MapDrawer.h:27[m[K,
+[4.127s]                  from [01m[K/home/parallels/DynORBBase/src/dynorb/include/Viewer.h:26[m[K,
+[4.127s]                  from [01m[K/home/parallels/DynORBBase/src/dynorb/include/Tracking.h:28[m[K,
+[4.127s]                  from [01m[K/home/parallels/DynORBBase/src/dynorb/include/System.h:30[m[K,
+[4.127s]                  from [01m[K/home/parallels/DynORBBase/src/dynorb/Examples/Monocular/mono_tum.cc:29[m[K:
+[4.127s] [01m[K/usr/include/eigen3/Eigen/src/Core/util/Constants.h:167:37:[m[K [01;36m[Knote: [m[Kdeclared here
+[4.127s]   167 | EIGEN_DEPRECATED const unsigned int [01;36m[KAlignedBit[m[K = 0x80;
+[4.127s]       |                                     [01;36m[K^~~~~~~~~~[m[K
+[4.155s] In file included from [01m[K/home/parallels/DynORBBase/src/dynorb/Thirdparty/g2o/g2o/types/types_seven_dof_expmap.h:35[m[K,
+[4.155s]                  from [01m[K/home/parallels/DynORBBase/src/dynorb/include/LoopClosing.h:34[m[K,
+[4.155s]                  from [01m[K/home/parallels/DynORBBase/src/dynorb/include/LocalMapping.h:26[m[K,
+[4.155s]                  from [01m[K/home/parallels/DynORBBase/src/dynorb/include/Tracking.h:31[m[K,
+[4.155s]                  from [01m[K/home/parallels/DynORBBase/src/dynorb/include/System.h:30[m[K,
+[4.155s]                  from [01m[K/home/parallels/DynORBBase/src/dynorb/Examples/Monocular/mono_tum.cc:29[m[K:
+[4.155s] /home/parallels/DynORBBase/src/dynorb/Thirdparty/g2o/g2o/types/../core/base_binary_edge.h: In instantiation of ‘[01m[Kclass g2o::BaseBinaryEdge<2, Eigen::Matrix<double, 2, 1>, g2o::VertexSBAPointXYZ, g2o::VertexSim3Expmap>[m[K’:
+[4.155s] [01m[K/home/parallels/DynORBBase/src/dynorb/Thirdparty/g2o/g2o/types/types_seven_dof_expmap.h:130:36:[m[K   required from here
+[4.155s] [01m[K/home/parallels/DynORBBase/src/dynorb/Thirdparty/g2o/g2o/types/../core/base_binary_edge.h:59:80:[m[K [01;35m[Kwarning: [m[K‘[01m[KEigen::AlignedBit[m[K’ is deprecated [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wdeprecated-declarations-Wdeprecated-declarations]8;;[m[K]
+[4.155s]    59 | ::Map<Matrix<double, Di, Dj>, Matrix<double, Di, Dj>::[01;35m[KFlags & AlignedBit[m[K ? Aligned : Unaligned > HessianBlockType;
+[4.155s]       |                                                       [01;35m[K~~~~~~^~~~~~~~~~~~[m[K
+[4.155s] 
+[4.155s] In file included from [01m[K/usr/include/eigen3/Eigen/Core:161[m[K,
+[4.155s]                  from [01m[K/home/parallels/Pangolin/include/pangolin/display/opengl_render_state.h:40[m[K,
+[4.155s]                  from [01m[K/home/parallels/Pangolin/include/pangolin/display/viewport.h:31[m[K,
+[4.155s]                  from [01m[K/home/parallels/Pangolin/include/pangolin/gl/gl.h:30[m[K,
+[4.156s]                  from [01m[K/home/parallels/Pangolin/include/pangolin/pangolin.h:33[m[K,
+[4.156s]                  from [01m[K/home/parallels/DynORBBase/src/dynorb/include/MapDrawer.h:27[m[K,
+[4.156s]                  from [01m[K/home/parallels/DynORBBase/src/dynorb/include/Viewer.h:26[m[K,
+[4.156s]                  from [01m[K/home/parallels/DynORBBase/src/dynorb/include/Tracking.h:28[m[K,
+[4.156s]                  from [01m[K/home/parallels/DynORBBase/src/dynorb/include/System.h:30[m[K,
+[4.156s]                  from [01m[K/home/parallels/DynORBBase/src/dynorb/Examples/Monocular/mono_tum.cc:29[m[K:
+[4.156s] [01m[K/usr/include/eigen3/Eigen/src/Core/util/Constants.h:167:37:[m[K [01;36m[Knote: [m[Kdeclared here
+[4.156s]   167 | EIGEN_DEPRECATED const unsigned int [01;36m[KAlignedBit[m[K = 0x80;
+[4.156s]       |                                     [01;36m[K^~~~~~~~~~[m[K
+[4.163s] In file included from [01m[K/home/parallels/DynORBBase/src/dynorb/Thirdparty/g2o/g2o/types/types_seven_dof_expmap.h:35[m[K,
+[4.163s]                  from [01m[K/home/parallels/DynORBBase/src/dynorb/include/LoopClosing.h:34[m[K,
+[4.163s]                  from [01m[K/home/parallels/DynORBBase/src/dynorb/include/LocalMapping.h:26[m[K,
+[4.163s]                  from [01m[K/home/parallels/DynORBBase/src/dynorb/include/Tracking.h:31[m[K,
+[4.164s]                  from [01m[K/home/parallels/DynORBBase/src/dynorb/include/System.h:30[m[K,
+[4.164s]                  from [01m[K/home/parallels/DynORBBase/src/dynorb/Examples/Monocular/mono_tum.cc:29[m[K:
+[4.164s] [01m[K/home/parallels/DynORBBase/src/dynorb/Thirdparty/g2o/g2o/types/../core/base_binary_edge.h:60:80:[m[K [01;35m[Kwarning: [m[K‘[01m[KEigen::AlignedBit[m[K’ is deprecated [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wdeprecated-declarations-Wdeprecated-declarations]8;;[m[K]
+[4.164s]    60 | ::Map<Matrix<double, Dj, Di>, Matrix<double, Dj, Di>::[01;35m[KFlags & AlignedBit[m[K ? Aligned : Unaligned > HessianBlockTransposedType;
+[4.164s]       |                                                       [01;35m[K~~~~~~^~~~~~~~~~~~[m[K
+[4.164s] 
+[4.164s] In file included from [01m[K/usr/include/eigen3/Eigen/Core:161[m[K,
+[4.164s]                  from [01m[K/home/parallels/Pangolin/include/pangolin/display/opengl_render_state.h:40[m[K,
+[4.164s]                  from [01m[K/home/parallels/Pangolin/include/pangolin/display/viewport.h:31[m[K,
+[4.164s]                  from [01m[K/home/parallels/Pangolin/include/pangolin/gl/gl.h:30[m[K,
+[4.164s]                  from [01m[K/home/parallels/Pangolin/include/pangolin/pangolin.h:33[m[K,
+[4.164s]                  from [01m[K/home/parallels/DynORBBase/src/dynorb/include/MapDrawer.h:27[m[K,
+[4.164s]                  from [01m[K/home/parallels/DynORBBase/src/dynorb/include/Viewer.h:26[m[K,
+[4.164s]                  from [01m[K/home/parallels/DynORBBase/src/dynorb/include/Tracking.h:28[m[K,
+[4.164s]                  from [01m[K/home/parallels/DynORBBase/src/dynorb/include/System.h:30[m[K,
+[4.164s]                  from [01m[K/home/parallels/DynORBBase/src/dynorb/Examples/Monocular/mono_tum.cc:29[m[K:
+[4.164s] [01m[K/usr/include/eigen3/Eigen/src/Core/util/Constants.h:167:37:[m[K [01;36m[Knote: [m[Kdeclared here
+[4.164s]   167 | EIGEN_DEPRECATED const unsigned int [01;36m[KAlignedBit[m[K = 0x80;
+[4.164s]       |                                     [01;36m[K^~~~~~~~~~[m[K
+[8.563s] [100%] [32m[1mLinking CXX executable ../../Examples/Monocular/mono_tum[0m
+[8.683s] /usr/bin/ld: warning: libopencv_imgcodecs.so.4.5d, needed by /opt/ros/humble/lib/libcv_bridge.so, may conflict with libopencv_imgcodecs.so.3.4
+[8.683s] /usr/bin/ld: warning: libopencv_core.so.4.5d, needed by /opt/ros/humble/lib/libcv_bridge.so, may conflict with libopencv_core.so.3.4
+[9.043s] [100%] Built target mono_tum
+[9.052s] Invoked command in '/home/parallels/DynORBBase/src/dynorb/build/dynorb' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/parallels/DynORBBase/install/sam_tracking:/home/parallels/DynORBBase/src/install/sam_tracking:/opt/ros/humble /usr/bin/cmake --build /home/parallels/DynORBBase/src/dynorb/build/dynorb -- -j2 -l2
+[9.102s] Invoking command in '/home/parallels/DynORBBase/src/dynorb/build/dynorb': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/parallels/DynORBBase/install/sam_tracking:/home/parallels/DynORBBase/src/install/sam_tracking:/opt/ros/humble /usr/bin/cmake --install /home/parallels/DynORBBase/src/dynorb/build/dynorb
+[9.107s] -- Install configuration: "Release"
+[9.107s] -- Up-to-date: /home/parallels/DynORBBase/src/dynorb/install/dynorb/share/ament_index/resource_index/package_run_dependencies/dynorb
+[9.108s] -- Up-to-date: /home/parallels/DynORBBase/src/dynorb/install/dynorb/share/ament_index/resource_index/parent_prefix_path/dynorb
+[9.108s] -- Up-to-date: /home/parallels/DynORBBase/src/dynorb/install/dynorb/share/dynorb/environment/ament_prefix_path.sh
+[9.108s] -- Up-to-date: /home/parallels/DynORBBase/src/dynorb/install/dynorb/share/dynorb/environment/ament_prefix_path.dsv
+[9.108s] -- Up-to-date: /home/parallels/DynORBBase/src/dynorb/install/dynorb/share/dynorb/environment/path.sh
+[9.108s] -- Up-to-date: /home/parallels/DynORBBase/src/dynorb/install/dynorb/share/dynorb/environment/path.dsv
+[9.108s] -- Up-to-date: /home/parallels/DynORBBase/src/dynorb/install/dynorb/share/dynorb/local_setup.bash
+[9.109s] -- Up-to-date: /home/parallels/DynORBBase/src/dynorb/install/dynorb/share/dynorb/local_setup.sh
+[9.109s] -- Up-to-date: /home/parallels/DynORBBase/src/dynorb/install/dynorb/share/dynorb/local_setup.zsh
+[9.109s] -- Up-to-date: /home/parallels/DynORBBase/src/dynorb/install/dynorb/share/dynorb/local_setup.dsv
+[9.109s] -- Installing: /home/parallels/DynORBBase/src/dynorb/install/dynorb/share/dynorb/package.dsv
+[9.109s] -- Up-to-date: /home/parallels/DynORBBase/src/dynorb/install/dynorb/share/ament_index/resource_index/packages/dynorb
+[9.110s] -- Up-to-date: /home/parallels/DynORBBase/src/dynorb/install/dynorb/share/dynorb/cmake/dynorbConfig.cmake
+[9.110s] -- Up-to-date: /home/parallels/DynORBBase/src/dynorb/install/dynorb/share/dynorb/cmake/dynorbConfig-version.cmake
+[9.110s] -- Up-to-date: /home/parallels/DynORBBase/src/dynorb/install/dynorb/share/dynorb/package.xml
+[9.116s] Invoked command in '/home/parallels/DynORBBase/src/dynorb/build/dynorb' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/parallels/DynORBBase/install/sam_tracking:/home/parallels/DynORBBase/src/install/sam_tracking:/opt/ros/humble /usr/bin/cmake --install /home/parallels/DynORBBase/src/dynorb/build/dynorb
